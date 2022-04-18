@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
+- path: Assets/Wand and Circles/Polygon City Free Pack - Environment and Interior/DEMO.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
