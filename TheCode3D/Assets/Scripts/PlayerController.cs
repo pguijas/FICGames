@@ -13,9 +13,9 @@ public class PlayerController : MonoBehaviour {
     public float walkSpeed = 5f;
     public float runSpeed = 20f;
     [Header ("Rotation")]
-    public float rotationSensibility = 100f;
+    public float rotationSensibility = 1000f;
     [Header ("Jump")]
-    public float jumpHeight = 10f;
+    public float jumpHeight = 1.9f;
 
     private float cameraVerticalAngle;
     Vector3 moveInput = Vector3.zero;
