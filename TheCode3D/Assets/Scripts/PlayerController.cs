@@ -4,13 +4,22 @@ using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour {
-    
+
+    [Header ("References")]
+    public Camera playerCamera;
+    [Header ("Physics")]
+    public float gravityScale = -20f;
+    [Header ("Movement")]
     public float walkSpeed = 5f;
     public float runSpeed = 20f;
+    [Header ("Rotation")]
+    public float rotationSensibility = 100f;
+    [Header ("Jump")]
     public float jumpHeight = 10f;
-    public float gravityScale = -20f;
 
+    private float cameraVerticalAngle;
     Vector3 moveInput = Vector3.zero;
+    Vector2 rotationInput = Vector3.zero;
     CharacterController characterController;
 
     private void Awake() {
@@ -18,6 +27,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Update() {
+        Look();
         Move();
     }
 
@@ -36,5 +46,14 @@ public class PlayerController : MonoBehaviour {
         }
         moveInput.y += gravityScale * Time.deltaTime;
 	    characterController.Move(moveInput * Time.deltaTime);
+    }
+
+    private void Look() {
+        rotationInput.x = Input.GetAxis("Mouse X") * rotationSensibility * Time.deltaTime;
+        rotationInput.y = Input.GetAxis("Mouse Y") * rotationSensibility * Time.deltaTime;
+        cameraVerticalAngle = cameraVerticalAngle + rotationInput.y;
+        cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -70f, 70f);
+        transform.Rotate(Vector3.up * rotationInput.x);
+        playerCamera.transform.localRotation = Quaternion.Euler(-cameraVerticalAngle, 0f, 0f);
     }
 }
