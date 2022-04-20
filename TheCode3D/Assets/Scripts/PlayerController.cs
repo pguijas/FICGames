@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     [Header ("References")]
     public Camera playerCamera;
     [Header ("Physics")]
-    public float gravityScale = -20f;
+    public float gravityScale = -40f;
     [Header ("Movement")]
     public float walkSpeed = 5f;
     public float runSpeed = 20f;
