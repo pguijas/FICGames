@@ -228,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599195989438943303}
   - component: {fileID: 4736094462429803154}
+  - component: {fileID: 750921499790384963}
   m_Layer: 3
   m_Name: shotgun2_prefab
   m_TagString: Untagged
@@ -262,6 +263,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &750921499790384963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124200299945822973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2136405122739697319

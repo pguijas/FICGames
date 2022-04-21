@@ -1207,6 +1207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3850927788420626714}
   - component: {fileID: -2518018691669446517}
+  - component: {fileID: -4060058692730626540}
   m_Layer: 3
   m_Name: ar2(automatic rifle)_prefab
   m_TagString: Untagged
@@ -1241,6 +1242,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4060058692730626540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484158918520316832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4564769908715421052

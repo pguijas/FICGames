@@ -915,6 +915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5393944737388192463}
   - component: {fileID: -2553227951681074676}
+  - component: {fileID: -3164497744663179591}
   m_Layer: 3
   m_Name: pistol2_prefab
   m_TagString: Untagged
@@ -950,6 +951,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3164497744663179591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724544863606683765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4799883395947093943
