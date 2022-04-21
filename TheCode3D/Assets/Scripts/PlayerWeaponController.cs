@@ -15,20 +15,33 @@ public class PlayerWeaponController : MonoBehaviour {
         activeWeaponIndex = -1;
         foreach (WeaponController startingWeapon in startingWeapons)
             AddWeapon(startingWeapon);
+        // eliminar estas dos líneas para aparecer sin armas
+        activeWeaponIndex = 0;
+        weaponSlots[activeWeaponIndex].gameObject.SetActive(true);
     }
 
     // Update is called once per frame
     void Update() {
         if (Input.GetKeyDown(KeyCode.Alpha1))
             SwitchWeapon(0);
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+            SwitchWeapon(1);
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+            SwitchWeapon(2);
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+            SwitchWeapon(3);
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+            SwitchWeapon(4);
     }
 
     private void SwitchWeapon(int p_weaponIndex) {
         if (p_weaponIndex != activeWeaponIndex && p_weaponIndex >= 0) {
-            weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
+            if (activeWeaponIndex != -1)
+                weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
+            weaponParentSocket.position = defaultWeaponPosition.position;
             weaponSlots[p_weaponIndex].gameObject.SetActive(true);
             activeWeaponIndex = p_weaponIndex;
-        } 
+        }
     }
 
     private void AddWeapon(WeaponController p_weaponPrefab) {
@@ -37,8 +50,7 @@ public class PlayerWeaponController : MonoBehaviour {
         for (int i = 0; i<weaponSlots.Length; i++) {
             if (weaponSlots[i] == null) {
                 WeaponController weaponClone = Instantiate(p_weaponPrefab, weaponParentSocket);
-                //weaponClone.gameObject.SetActive(false);
-                weaponClone.gameObject.SetActive(true);
+                weaponClone.gameObject.SetActive(false);
                 weaponSlots[i] = weaponClone;
                 return;
             }
