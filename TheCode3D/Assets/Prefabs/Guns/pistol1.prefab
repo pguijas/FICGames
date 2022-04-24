@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7738682753831756662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9025360245624183960}
+  m_Layer: 3
+  m_Name: Boquilla
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9025360245624183960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738682753831756662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3908, y: 0.2046, z: 1.2302}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 241461543816196556}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7901633931245048698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,6 +360,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7330234428275062796, guid: 63706c2e38877884d9dcb119f12d2c48, type: 3}
   m_PrefabInstance: {fileID: 7901633931245048698}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &241461543816196556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7994427878275818166, guid: 63706c2e38877884d9dcb119f12d2c48, type: 3}
+  m_PrefabInstance: {fileID: 7901633931245048698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7072345867609906556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,8 +377,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponMuzzle: {fileID: 9025360245624183960}
   hittableLayers:
     serializedVersion: 2
     m_Bits: 4294967295
   bulletHolePrefab: {fileID: 1366514852588606, guid: 6652ae6947dd55c4fb422e220702f33e, type: 3}
   fireRange: 200
+  recoilForce: 4
+  flashEffect: {fileID: 7796404658644021614, guid: 9e63fd7500dc0f9d8a0235f7627d36d6, type: 3}
