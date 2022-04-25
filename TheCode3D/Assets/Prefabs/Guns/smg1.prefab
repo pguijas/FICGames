@@ -389,3 +389,4 @@ MonoBehaviour:
   fireRange: 200
   recoilForce: 4
   flashEffect: {fileID: 7796404658644021614, guid: 9e63fd7500dc0f9d8a0235f7627d36d6, type: 3}
+  bullet: {fileID: 4440924034055739044, guid: 43e328bae3536a84eaca0891841b6f1d, type: 3}

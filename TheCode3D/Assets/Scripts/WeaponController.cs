@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponController : MonoBehaviour
@@ -13,10 +11,10 @@ public class WeaponController : MonoBehaviour
 
     [Header("Shoot Paramaters")]
     public float fireRange = 200;
-    public float recoilForce = 4f; //Fuerza de retroceso del arma
 
     [Header("Sounds & Visuals")]
     public GameObject flashEffect;
+    public GameObject bullet;
 
     private Transform cameraPlayerTransform;
 
@@ -36,7 +34,6 @@ public class WeaponController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            // instanciar con la misma rotacion que la camara
             GameObject flashClone = Instantiate(flashEffect, weaponMuzzle.position, Quaternion.Euler(weaponMuzzle.forward), transform);
             Destroy(flashClone, 1f);
 
@@ -44,7 +41,6 @@ public class WeaponController : MonoBehaviour
             if (Physics.Raycast(cameraPlayerTransform.position, cameraPlayerTransform.forward, out hit, fireRange, hittableLayers))
             {
                 GameObject bulletHoleClone = Instantiate(bulletHolePrefab, hit.point + hit.normal * 0.001f, Quaternion.LookRotation(hit.normal));
-                Destroy(bulletHoleClone, 4f);
             } 
         }
     }
