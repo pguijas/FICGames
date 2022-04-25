@@ -365,6 +365,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 594403104461204279, guid: 63706c2e38877884d9dcb119f12d2c48, type: 3}
   m_PrefabInstance: {fileID: 7901633931245048698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7355828171552280561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581535351469026166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7072345867609906556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,19 +393,7 @@ MonoBehaviour:
   hittableLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  bulletHolePrefab: {fileID: 1366514852588606, guid: 6652ae6947dd55c4fb422e220702f33e, type: 3}
+  bulletHolePrefab: {fileID: 5047930849404457510, guid: 4c729d8d6bb4809c196e433fa55ea730, type: 3}
   fireRange: 200
   recoilForce: 4
   flashEffect: {fileID: 7796404658644021614, guid: 9e63fd7500dc0f9d8a0235f7627d36d6, type: 3}
---- !u!114 &-7355828171552280561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581535351469026166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
