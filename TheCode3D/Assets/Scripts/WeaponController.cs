@@ -36,6 +36,7 @@ public class WeaponController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            // instanciar con la misma rotacion que la camara
             GameObject flashClone = Instantiate(flashEffect, weaponMuzzle.position, Quaternion.Euler(weaponMuzzle.forward), transform);
             Destroy(flashClone, 1f);
 
