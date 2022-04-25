@@ -382,6 +382,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   bulletHolePrefab: {fileID: 5847797400468465233, guid: 97af47792c9124c8fa8f347581fb9416, type: 3}
-  fireRange: 200
+  fireRange: 400
   recoilForce: 4
   flashEffect: {fileID: 4647289282572018704, guid: b859b4bd160d7029181ef3e39e9baffc, type: 3}
+--- !u!114 &6323206910606053214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871035511430751616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

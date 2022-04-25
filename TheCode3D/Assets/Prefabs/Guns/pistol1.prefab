@@ -385,3 +385,15 @@ MonoBehaviour:
   fireRange: 200
   recoilForce: 4
   flashEffect: {fileID: 7796404658644021614, guid: 9e63fd7500dc0f9d8a0235f7627d36d6, type: 3}
+--- !u!114 &-7355828171552280561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581535351469026166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

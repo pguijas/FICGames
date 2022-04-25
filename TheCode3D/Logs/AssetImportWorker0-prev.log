@@ -23,11 +23,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-32965
+42815
 Successfully changed project path to: /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D
 /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 154,45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 34,04 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -47,192 +47,104 @@ L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_
 blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_
 NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_N
 V_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -64655208
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1192139416
 Initialize mono
 Mono path[0] = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56205
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56809
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,009058 seconds.
+Registered in 0,002154 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 143,94 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 30,59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2,661 seconds
+- Completed reload, in  0,574 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2662ms)
-		BeginReloadAssembly (238ms)
+	ReloadAssembly (574ms)
+		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (2123ms)
-			LoadAssemblies (234ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (459ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (659ms)
+			SetupTypeCache (138ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (148ms)
-			SetupLoadedEditorAssemblies (921ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (196ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (144ms)
-				BeforeProcessingInitializeOnLoad (30ms)
-				ProcessInitializeOnLoadAttributes (593ms)
-				ProcessInitializeOnLoadMethodAttributes (126ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (31ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,017122 seconds.
+Registered in 0,003333 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1,04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4,987 seconds
+- Completed reload, in  0,941 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4993ms)
-		BeginReloadAssembly (704ms)
+	ReloadAssembly (942ms)
+		BeginReloadAssembly (129ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (22ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (76ms)
-		EndReloadAssembly (3939ms)
-			LoadAssemblies (521ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (758ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1287ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (213ms)
-			SetupLoadedEditorAssemblies (1560ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (256ms)
-				ProcessInitializeOnLoadAttributes (1203ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (39ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0,37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1543 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77,6 MB.
-System memory in use after: 77,6 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1994.
-Total: 6,531392 ms (FindLiveObjects: 0,233477 ms CreateObjectMapping: 0,121564 ms MarkObjects: 5,963873 ms  DeleteObjects: 0,211033 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/PlayerWeaponController.cs
-  artifactKey: Guid(2162cb3356ad79e5695d3a30ec0787f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerWeaponController.cs using Guid(2162cb3356ad79e5695d3a30ec0787f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b161c86a7e835723416b9b370ba158c') in 0,009446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000332 seconds.
-  path: Assets/Scripts/WeaponController.cs
-  artifactKey: Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/WeaponController.cs using Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43842b929d88af29ddf466c7e4417a4d') in 0,003520 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000235 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(df3601a8e047f0cffab9770ac0be6771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(df3601a8e047f0cffab9770ac0be6771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42395f3f07e03d4b7dd48f8758c91a7d') in 0,002622 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 255,339140 seconds.
-  path: Assets/Prefabs/Flash.prefab
-  artifactKey: Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Flash.prefab using Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54d781b697cd82c5c576f832e1efec5') in 0,021967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27,075894 seconds.
-  path: Assets/Prefabs/Flash.prefab
-  artifactKey: Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Flash.prefab using Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb6d87e3f69c6bea9e20923570d4375') in 0,134473 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003528 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,935 seconds
-Domain Reload Profiling:
-	ReloadAssembly (935ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (773ms)
-			LoadAssemblies (89ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (306ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (307ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (235ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (236ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,34 ms, found 0 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0,35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78,8 MB.
-System memory in use after: 78,9 MB.
+Unloading 1543 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77,7 MB.
+System memory in use after: 77,8 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2005.
-Total: 4,411784 ms (FindLiveObjects: 0,166552 ms CreateObjectMapping: 0,042135 ms MarkObjects: 4,141297 ms  DeleteObjects: 0,060689 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1995.
+Total: 4,519748 ms (FindLiveObjects: 0,125688 ms CreateObjectMapping: 0,056298 ms MarkObjects: 4,117841 ms  DeleteObjects: 0,219077 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -245,44 +157,240 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1045,890327 seconds.
-  path: Assets/Prefabs/Flash.prefab
-  artifactKey: Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Flash.prefab using Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f561b2d01e5941062804eedcc042c7') in 0,056105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2,267975 seconds.
-  path: Assets/Prefabs/Guns/ar1.prefab
-  artifactKey: Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/ar1.prefab using Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4329b9cf6da6eb5817a54d01a84629dc') in 0,013163 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000222 seconds.
   path: Assets/Prefabs/Guns/smg1.prefab
   artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c23003384acfdbaad73fc37a9635c2e') in 0,016368 seconds 
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5f2fa9f76d71a1fc73370d8c1774e4') in 0,080766 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0,000232 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e175728a1c6cf4428276a50fb0835c36') in 0,015640 seconds 
+  Time since last request: 1,111265 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c09b1ef3fd2719cbe86054d6fa469c9') in 0,022603 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1,670035 seconds.
-  path: Assets/Scenes/Level1.unity
-  artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbc0dd3b8123c2069148e83cce2c4d0') in 0,001608 seconds 
+  Time since last request: 5,247971 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0da56e4ad21b4e0eb1efbbb19d32f2a') in 0,013362 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 30,158688 seconds.
-  path: Assets/Prefabs/Guns/ar1.prefab
-  artifactKey: Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/ar1.prefab using Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f700532f559ab7d32633fce38497869') in 0,017500 seconds 
+  Time since last request: 2,004058 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a8312ef215fa8f34d72860119826f4') in 0,016004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,892011 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139e772a319fe4d84edd838c7189e9b8') in 1,076583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,440068 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36aa0fb79aa979a4bef2666fcf53671') in 0,024703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,308147 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70deda1b116dd19b060576ec9b57a58d') in 0,020864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,433753 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587e34c30f5af243504d26d399f6a281') in 0,017289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,112701 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34673494f7e81f724529f37a0aa6fb11') in 0,014482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15,388442 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7bafe8230b3e24ed30732d92c7ad15') in 0,017218 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0,018713 seconds.
+Registered in 0,005279 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,260 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1260ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1070ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (489ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (376ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78,9 MB.
+System memory in use after: 79,0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2006.
+Total: 6,035448 ms (FindLiveObjects: 0,146719 ms CreateObjectMapping: 0,056092 ms MarkObjects: 5,783011 ms  DeleteObjects: 0,048167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 192,475896 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37788b82622bf595d64b6745e228b7ed') in 0,138764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,693154 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3611c8e458b211c591b2a2132d68bf') in 0,017424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,596646 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92fbb9a2950638ff5bfc3077b7238e4') in 0,018313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29,601076 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd325a624a337011c814afb6b9d83aaa0') in 0,013739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,393187 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aaa6e3e36cdfa73f3f9afd601251c46') in 0,013399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,400471 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42472a1edeb903bfccdd1b18462472d') in 0,013746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,325896 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe627a5fe46328116679a8d72a7c51a') in 0,012695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,862931 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15654cc34da48aba7e61cd82557b3e85') in 0,013076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22,445381 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66db0f38d710479080d96d5b5fe80be1') in 0,099496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,437887 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9735ea857330a28ca3524580242d959e') in 0,105278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,132907 seconds.
+  path: Assets/Prefabs/Guns/pistol1.prefab
+  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389b6f09b0e4a4fff26f401ad5224379') in 0,020132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,164916 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537a01e55b5a3eea89b90fb612b9244b') in 0,015015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15,560222 seconds.
+  path: Assets/Prefabs/Guns/ar1.prefab
+  artifactKey: Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar1.prefab using Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50b45784b3ed7a41b4129d4e5a4905e') in 0,014116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12,782322 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55070b8d4ae9402b33f7878c971889bc') in 0,014286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,532424 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '621e269f9f6e37cce0c41bb565e339dc') in 0,015207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25,707424 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d27b46e72249348dadd0788b00f93d') in 0,104595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,805402 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6ac8a6006f29fc806681d6cb886cc9') in 0,017262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24,318780 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ec3984f3c96433daa74b02cebe7012') in 0,018104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15,132858 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eec4fde341f6f28816f7d211100ef58') in 0,001356 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,002695 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
@@ -292,19 +400,279 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2,232 seconds
+- Completed reload, in  0,923 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2233ms)
-		BeginReloadAssembly (368ms)
+	ReloadAssembly (923ms)
+		BeginReloadAssembly (103ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (104ms)
-		EndReloadAssembly (1608ms)
-			LoadAssemblies (378ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (94ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (941ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (294ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,1 MB.
+System memory in use after: 79,1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2010.
+Total: 4,143553 ms (FindLiveObjects: 0,164561 ms CreateObjectMapping: 0,042203 ms MarkObjects: 3,898228 ms  DeleteObjects: 0,033186 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 89,165587 seconds.
+  path: Assets/Prefabs/Guns/ar1.prefab
+  artifactKey: Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar1.prefab using Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Guns/ar1.prefab from editor
+Resuming Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Guns/ar1.prefab skipped because a previous one failed already
+ -> (artifact id: '00000000000000000000000000000000') in 0,084100 seconds  code(4) message(Build asset version error: )
+  ERROR: Build asset version error: 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000218 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Guns/smg1.prefab from editor
+Resuming Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Guns/smg1.prefab skipped because a previous one failed already
+ -> (artifact id: '00000000000000000000000000000000') in 0,040188 seconds  code(4) message(Build asset version error: )
+  ERROR: Build asset version error: 
+========================================================================
+Received Import Request.
+  Time since last request: 12,275935 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7eb76ee8eef4ecba9ed5e2cd4fff774') in 0,002489 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,002939 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,896 seconds
+Domain Reload Profiling:
+	ReloadAssembly (897ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (744ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (240ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,1 MB.
+System memory in use after: 79,2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2013.
+Total: 4,331403 ms (FindLiveObjects: 0,124955 ms CreateObjectMapping: 0,066781 ms MarkObjects: 4,109427 ms  DeleteObjects: 0,029337 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3,219038 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d33228af884d32c532f101755055cb4') in 0,004341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,034319 seconds.
+  path: Assets/Prefabs/Guns/ar1.prefab
+  artifactKey: Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar1.prefab using Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c1dbd50432a4932bd91041df265529') in 0,093949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000224 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed84dfce68cbe76571ee712e7df5330') in 0,012253 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,004040 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,880 seconds
+Domain Reload Profiling:
+	ReloadAssembly (880ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (732ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (236ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (39ms)
 			SetupLoadedEditorAssemblies (288ms)
@@ -313,21 +681,21 @@ Domain Reload Profiling:
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (220ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78,9 MB.
-System memory in use after: 78,9 MB.
+System memory in use before: 79,2 MB.
+System memory in use after: 79,2 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2010.
-Total: 4,237021 ms (FindLiveObjects: 0,131643 ms CreateObjectMapping: 0,039201 ms MarkObjects: 3,985997 ms  DeleteObjects: 0,064158 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2017.
+Total: 4,091903 ms (FindLiveObjects: 0,149706 ms CreateObjectMapping: 0,039073 ms MarkObjects: 3,871874 ms  DeleteObjects: 0,030477 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -340,14 +708,73 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 32,704653 seconds.
-  path: Assets/Prefabs/Guns/smg1.prefab
-  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5984423348beaa5a64bafd060687993') in 0,058403 seconds 
+  Time since last request: 118,816874 seconds.
+  path: Assets/Scripts/WeaponController.cs
+  artifactKey: Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/WeaponController.cs using Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4a706626f42cd8ecb2211d5403f38e') in 0,003325 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0,003945 seconds.
+Registered in 0,003639 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,907 seconds
+Domain Reload Profiling:
+	ReloadAssembly (908ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (755ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (250ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (289ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,2 MB.
+System memory in use after: 79,2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2020.
+Total: 4,005173 ms (FindLiveObjects: 0,118907 ms CreateObjectMapping: 0,042773 ms MarkObjects: 3,811631 ms  DeleteObjects: 0,031133 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003527 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
@@ -357,29 +784,159 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0,38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,914 seconds
+- Completed reload, in  0,916 seconds
 Domain Reload Profiling:
-	ReloadAssembly (915ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (916ms)
+		BeginReloadAssembly (94ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (759ms)
-			LoadAssemblies (90ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (766ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (252ms)
+			SetupTypeCache (242ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (290ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,2 MB.
+System memory in use after: 79,3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2023.
+Total: 3,988271 ms (FindLiveObjects: 0,125133 ms CreateObjectMapping: 0,042361 ms MarkObjects: 3,789155 ms  DeleteObjects: 0,030751 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003587 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,938 seconds
+Domain Reload Profiling:
+	ReloadAssembly (939ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (779ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (269ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (294ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (223ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (224ms)
 				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,2 MB.
+System memory in use after: 79,3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2026.
+Total: 4,116304 ms (FindLiveObjects: 0,126421 ms CreateObjectMapping: 0,041752 ms MarkObjects: 3,915948 ms  DeleteObjects: 0,031335 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 123,253732 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be79646c8df7ef99ae6924f1ac033211') in 0,077036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12,585571 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab
+  artifactKey: Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab.prefab using Guid(66c909a2d70f62d18b00e71b206f6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3328e654fb4fbc3df4cac3dc6e03b359') in 0,013577 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003161 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,923 seconds
+Domain Reload Profiling:
+	ReloadAssembly (924ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (760ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -388,11 +945,70 @@ Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0,35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78,9 MB.
-System memory in use after: 79,0 MB.
+System memory in use before: 79,3 MB.
+System memory in use after: 79,4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2014.
-Total: 4,179015 ms (FindLiveObjects: 0,129448 ms CreateObjectMapping: 0,043103 ms MarkObjects: 3,974211 ms  DeleteObjects: 0,031358 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2030.
+Total: 4,311087 ms (FindLiveObjects: 0,219253 ms CreateObjectMapping: 0,048693 ms MarkObjects: 4,006235 ms  DeleteObjects: 0,035944 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003340 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,025 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1026ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (857ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (344ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,3 MB.
+System memory in use after: 79,4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2033.
+Total: 4,235891 ms (FindLiveObjects: 0,172398 ms CreateObjectMapping: 0,048156 ms MarkObjects: 3,981268 ms  DeleteObjects: 0,033295 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -405,237 +1021,177 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 69,703420 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f014380f3e7cad4811ed9ffd1950ad43') in 0,056339 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6,058893 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524b61c7fb21a220722d5a1ecc52f662') in 0,011772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3,623233 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44898d2740f32482034f210f9a09025') in 0,020699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4,649261 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5d42fda2b34be486bb8d277dad030b') in 0,013741 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6,881461 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e22d388ceb0edbb53f666c9b12a5be') in 0,018605 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21,324934 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33cf64b6ab5094d4b8a5ee53e464bd7') in 0,016971 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6,843236 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30197def9681ad0b47eb80abcd1e2bc') in 0,013907 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16,096858 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337840858c76b332b530aa22d694476b') in 0,015337 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31,493125 seconds.
+  Time since last request: 160,412821 seconds.
   path: Assets/Scenes/Level1.unity
   artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4acbd41222b0f86dc961eee7345f454d') in 0,003185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2,063926 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d16ca6095e00f5bf16f4234248ed098') in 0,034138 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29,613273 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e1d0beb36894b42d5b42701f07fedb') in 0,014061 seconds 
+Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fcda7a9aa4c85d3e9f8b95e16f613b') in 0,006457 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0,016375 seconds.
+Registered in 0,003856 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1,10 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4,359 seconds
+- Completed reload, in  0,948 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4361ms)
-		BeginReloadAssembly (387ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (20ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (107ms)
-		EndReloadAssembly (3670ms)
-			LoadAssemblies (392ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1167ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (202ms)
-			SetupLoadedEditorAssemblies (1398ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (228ms)
-				ProcessInitializeOnLoadAttributes (1072ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (32ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1,03 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79,0 MB.
-System memory in use after: 79,1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2018.
-Total: 20,773583 ms (FindLiveObjects: 0,433071 ms CreateObjectMapping: 0,161302 ms MarkObjects: 20,061043 ms  DeleteObjects: 0,112522 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,017283 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1,04 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4,120 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4121ms)
-		BeginReloadAssembly (373ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (20ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (104ms)
-		EndReloadAssembly (3486ms)
-			LoadAssemblies (385ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1139ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (187ms)
-			SetupLoadedEditorAssemblies (1360ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (29ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (217ms)
-				ProcessInitializeOnLoadAttributes (1051ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1,09 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79,0 MB.
-System memory in use after: 79,1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2021.
-Total: 17,802906 ms (FindLiveObjects: 0,384093 ms CreateObjectMapping: 0,167598 ms MarkObjects: 17,093816 ms  DeleteObjects: 0,153096 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,002862 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,906 seconds
-Domain Reload Profiling:
-	ReloadAssembly (906ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (948ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (758ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (785ms)
 			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (268ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (304ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,3 MB.
+System memory in use after: 79,4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2036.
+Total: 4,239516 ms (FindLiveObjects: 0,153088 ms CreateObjectMapping: 0,038153 ms MarkObjects: 3,998477 ms  DeleteObjects: 0,033980 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003185 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (922ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (731ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (286ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79,3 MB.
+System memory in use after: 79,4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2039.
+Total: 4,203617 ms (FindLiveObjects: 0,153524 ms CreateObjectMapping: 0,041458 ms MarkObjects: 3,974445 ms  DeleteObjects: 0,033301 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003529 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,923 seconds
+Domain Reload Profiling:
+	ReloadAssembly (923ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (253ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (41ms)
 			SetupLoadedEditorAssemblies (290ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (221ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (222ms)
 				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,38 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79,0 MB.
-System memory in use after: 79,1 MB.
+System memory in use before: 79,3 MB.
+System memory in use after: 79,4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2024.
-Total: 4,474278 ms (FindLiveObjects: 0,240376 ms CreateObjectMapping: 0,048999 ms MarkObjects: 4,141691 ms  DeleteObjects: 0,041976 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2042.
+Total: 4,482800 ms (FindLiveObjects: 0,154054 ms CreateObjectMapping: 0,061091 ms MarkObjects: 4,232373 ms  DeleteObjects: 0,034444 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -647,54 +1203,246 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 386,504307 seconds.
+  path: Assets/Prefabs/Particle System.prefab
+  artifactKey: Guid(86700d0dfd82f7d938c200f650033267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Particle System.prefab using Guid(86700d0dfd82f7d938c200f650033267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19508fff7061675ceeb287dcfafb3d9c') in 0,053708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000255 seconds.
+  path: Assets/Prefabs/Flash.prefab
+  artifactKey: Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Flash.prefab using Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd63cb43f7f0891aebfa12693a94e762c') in 0,008100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000141 seconds.
+  path: Assets/Prefabs/BigFlash.prefab
+  artifactKey: Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BigFlash.prefab using Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a69eb3fde0fba05b3f49753a000360') in 0,006968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75,649864 seconds.
+  path: Assets/Prefabs/BigFlash.prefab
+  artifactKey: Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BigFlash.prefab using Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/BigFlash.prefab from editor
+Resuming Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/BigFlash.prefab skipped because a previous one failed already
+ -> (artifact id: '1c59db090bc5a3cc6a94d0a53ea01fa9') in 0,043854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000283 seconds.
+  path: Assets/Prefabs/Flash.prefab
+  artifactKey: Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Flash.prefab using Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Flash.prefab from editor
+Resuming Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Flash.prefab skipped because a previous one failed already
+ -> (artifact id: 'ebb552d16fd2e2c815ef0e5924aac470') in 0,041499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000211 seconds.
+  path: Assets/Prefabs/Particle System.prefab
+  artifactKey: Guid(86700d0dfd82f7d938c200f650033267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Particle System.prefab using Guid(86700d0dfd82f7d938c200f650033267) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(86700d0dfd82f7d938c200f650033267) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Particle System.prefab from editor
+Resuming Guid(86700d0dfd82f7d938c200f650033267) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(86700d0dfd82f7d938c200f650033267) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Particle System.prefab skipped because a previous one failed already
+ -> (artifact id: '1aa61b4830d185d07074a80faf391d5c') in 0,041683 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0,016831 seconds.
+Registered in 0,003297 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1,04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4,075 seconds
+- Completed reload, in  0,879 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4077ms)
-		BeginReloadAssembly (372ms)
+	ReloadAssembly (879ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (20ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (105ms)
-		EndReloadAssembly (3447ms)
-			LoadAssemblies (381ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (730ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1129ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (181ms)
-			SetupLoadedEditorAssemblies (1351ms)
+			SetupTypeCache (236ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (285ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (29ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (216ms)
-				ProcessInitializeOnLoadAttributes (1043ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (1ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1,04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 1536 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79,0 MB.
-System memory in use after: 79,1 MB.
+System memory in use before: 79,4 MB.
+System memory in use after: 79,4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2027.
-Total: 17,064631 ms (FindLiveObjects: 0,396563 ms CreateObjectMapping: 0,171375 ms MarkObjects: 16,373037 ms  DeleteObjects: 0,118960 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2046.
+Total: 4,091766 ms (FindLiveObjects: 0,125330 ms CreateObjectMapping: 0,042468 ms MarkObjects: 3,864491 ms  DeleteObjects: 0,058596 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -705,4 +1453,178 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12,780379 seconds.
+  path: Assets/Prefabs/Flash.prefab
+  artifactKey: Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Flash.prefab using Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Flash.prefab from editor
+Resuming Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(9e63fd7500dc0f9d8a0235f7627d36d6) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Flash.prefab skipped because a previous one failed already
+ -> (artifact id: 'ebb552d16fd2e2c815ef0e5924aac470') in 0,041543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000258 seconds.
+  path: Assets/Prefabs/BigFlash.prefab
+  artifactKey: Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BigFlash.prefab using Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/BigFlash.prefab from editor
+Resuming Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(b859b4bd160d7029181ef3e39e9baffc) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/BigFlash.prefab skipped because a previous one failed already
+ -> (artifact id: '1c59db090bc5a3cc6a94d0a53ea01fa9') in 0,043492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000305 seconds.
+  path: Assets/Prefabs/Particle System.prefab
+  artifactKey: Guid(86700d0dfd82f7d938c200f650033267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Particle System.prefab using Guid(86700d0dfd82f7d938c200f650033267) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(86700d0dfd82f7d938c200f650033267) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Particle System.prefab from editor
+Resuming Guid(86700d0dfd82f7d938c200f650033267) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 
+VerifyArtifactRevisionIntegrity called with invalid artifact id
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'r.artifactID.IsValid() || r.abortImport'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Sub-import of Guid(86700d0dfd82f7d938c200f650033267) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Particle System.prefab skipped because a previous one failed already
+ -> (artifact id: '1aa61b4830d185d07074a80faf391d5c') in 0,042825 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

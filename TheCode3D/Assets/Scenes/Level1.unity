@@ -2311,7 +2311,6 @@ MonoBehaviour:
   startingWeapons:
   - {fileID: 7072345867609906556, guid: 54e89b6b93df44ae89eb5fa28742c5b8, type: 3}
   - {fileID: 3464177186398212497, guid: b67af9158b9e5448f80df25019a4dbe6, type: 3}
-  - {fileID: 6984104221774363879, guid: bd5f02057b0f541c48b8ef6e477381f6, type: 3}
   weaponParentSocket: {fileID: 1553479761}
   defaultWeaponPosition: {fileID: 508879436}
   aimingPosition: {fileID: 440608760}
