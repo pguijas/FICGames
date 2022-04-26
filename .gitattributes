@@ -1,0 +1,11 @@
+TheCode3D/Library/Artifacts/*
+*.cubemap lfs
+*.unitypackage lfs
+*-[Tt]errain.asset -unityyaml lfs
+*-[Nn]av[Mm]esh.asset -unityyaml lfs
+*.jpg lfs
+*.jpeg lfs
+*.png lfs
+*.mp3 lfs
+*.ogg lfs
+*.wav lfs
