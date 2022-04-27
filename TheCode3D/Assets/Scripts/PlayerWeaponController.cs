@@ -56,6 +56,9 @@ public class PlayerWeaponController : MonoBehaviour {
 
         if (Input.GetButtonDown("Sprint"))
             weaponSlots[activeWeaponIndex].Sprint();
+        
+        if (Input.GetButtonUp("Sprint"))
+            weaponSlots[activeWeaponIndex].Idle();
     }
 
 

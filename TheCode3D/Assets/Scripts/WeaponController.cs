@@ -39,7 +39,7 @@ public class WeaponController : MonoBehaviour
     {
         if (LastShootTime + ShootDelay < Time.time)
         {
-            animator.SetBool("IsShooting", true);
+            animator.SetBool("Shooting", true);
             ShootingSystem.Play();
             Vector3 direction = GetDirection();
             if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask))
@@ -110,7 +110,7 @@ public class WeaponController : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        animator.SetBool("IsShooting", false);
+        animator.SetBool("Shooting", false);
         Trail.transform.position = Hit.point;
         Instantiate(ImpactParticleSystem, Hit.point, Quaternion.LookRotation(Hit.normal));
         Destroy(Trail.gameObject, Trail.time);
@@ -128,7 +128,7 @@ public class WeaponController : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        animator.SetBool("IsShooting", false);
+        animator.SetBool("Shooting", false);
         Trail.transform.position = endPosition;
         Destroy(Trail.gameObject, Trail.time);
     }
