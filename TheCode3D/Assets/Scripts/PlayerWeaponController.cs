@@ -8,7 +8,7 @@ public class PlayerWeaponController : MonoBehaviour {
     public Transform defaultWeaponPosition;
     public Transform aimingPosition;
     public int activeWeaponIndex { get; private set; }
-    private WeaponController[] weaponSlots = new WeaponController[2];
+    private WeaponController[] weaponSlots = new WeaponController[10];
 
     // Start is called before the first frame update
     void Start() {
@@ -26,7 +26,13 @@ public class PlayerWeaponController : MonoBehaviour {
             SwitchWeapon(0);
         else if (Input.GetKeyDown(KeyCode.Alpha2))
             SwitchWeapon(1);
-        if (Input.GetButtonDown("Fire1"))
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+            SwitchWeapon(2);
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+            SwitchWeapon(3);
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+            SwitchWeapon(4);
+        if (Input.GetButton("Fire1"))
             weaponSlots[activeWeaponIndex].Shoot();
     }
 

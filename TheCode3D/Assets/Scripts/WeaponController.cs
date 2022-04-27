@@ -19,8 +19,11 @@ public class WeaponController : MonoBehaviour
     [SerializeField]
     private float ShootDelay = 0.5f;
     [SerializeField]
+    private float BulletSpeed = 350f;
+    [SerializeField]
     private LayerMask Mask;
 
+    // esto es para hacer la máquina de estados
     private Animator Animator;
     private float LastShootTime;
 
@@ -44,7 +47,7 @@ public class WeaponController : MonoBehaviour
             } else
             {
                 TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
-                StartCoroutine(SpawnTrail(trail));
+                StartCoroutine(SpawnTrail(trail, direction));
                 LastShootTime = Time.time;
             }
         }
@@ -69,10 +72,12 @@ public class WeaponController : MonoBehaviour
     {
         float time = 0;
         Vector3 startPosition = Trail.transform.position;
-        while (time < 1)
+        float distance = Hit.distance;
+        // un impacto q este a BulletSpeed m -> 1 segundo
+        while (time < distance/BulletSpeed)
         {
             Trail.transform.position = Vector3.Lerp(startPosition, Hit.point, time);
-            time += Time.deltaTime / Trail.time;
+            time += Time.deltaTime;
             yield return null;
         }
         Animator.SetBool("IsShooting", false);
@@ -81,15 +86,16 @@ public class WeaponController : MonoBehaviour
         Destroy(Trail.gameObject, Trail.time);
     }
 
-    private IEnumerator SpawnTrail(TrailRenderer Trail)
+    private IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 direction)
     {
         float time = 0;
         Vector3 startPosition = Trail.transform.position;
-        Vector3 endPosition = startPosition + transform.forward * 100;
-        while (time < 1)
+        Vector3 endPosition = startPosition + direction * 100;
+        float distance = Vector3.Distance(startPosition, endPosition);
+        while (time < distance/BulletSpeed)
         {
             Trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
-            time += Time.deltaTime / Trail.time;
+            time += Time.deltaTime;
             yield return null;
         }
         Animator.SetBool("IsShooting", false);

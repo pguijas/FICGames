@@ -335,40 +335,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 594403104461204279, guid: 63706c2e38877884d9dcb119f12d2c48, type: 3}
   m_PrefabInstance: {fileID: 7901633931245048698}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-7355828171552280561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581535351469026166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7072345867609906556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581535351469026166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AddBulletSpread: 1
-  BulletSpreadVariance: {x: 0.1, y: 0.1, z: 0.1}
-  ShootingSystem: {fileID: 0}
-  BulletSpawnPoint: {fileID: 0}
-  ImpactParticleSystem: {fileID: 0}
-  BulletTrail: {fileID: 0}
-  ShootDelay: 0.5
-  Mask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!95 &1155389975408530764
 Animator:
   serializedVersion: 3
@@ -388,6 +354,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-7355828171552280561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581535351469026166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roationDelay: 5
+--- !u!114 &7072345867609906556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581535351469026166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddBulletSpread: 0
+  BulletSpreadVariance: {x: 0.01, y: 0.01, z: 0.01}
+  ShootingSystem: {fileID: 8419710409859459073}
+  BulletSpawnPoint: {fileID: 8509499111427823951}
+  ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
+  BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
+  ShootDelay: 0.6
+  BulletSpeed: 280
+  Mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &8509717610612356443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -497,3 +499,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+--- !u!4 &8509499111427823951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  m_PrefabInstance: {fileID: 8509717610612356443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8419710409859459073 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  m_PrefabInstance: {fileID: 8509717610612356443}
+  m_PrefabAsset: {fileID: 0}
