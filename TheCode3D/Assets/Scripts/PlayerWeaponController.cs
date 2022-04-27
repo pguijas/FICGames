@@ -10,6 +10,11 @@ public class PlayerWeaponController : MonoBehaviour {
     public int activeWeaponIndex { get; private set; }
     private WeaponController[] weaponSlots = new WeaponController[10];
 
+
+    //comentar más el código
+
+
+
     // Start is called before the first frame update
     void Start() {
         activeWeaponIndex = -1;
@@ -32,13 +37,34 @@ public class PlayerWeaponController : MonoBehaviour {
             SwitchWeapon(3);
         else if (Input.GetKeyDown(KeyCode.Alpha5))
             SwitchWeapon(4);
+
+        // DIFERENCIAR AUTOMÄTICO / MANUAL
+        //if (Input.GetButtonDown("Fire1")){
+        //            TryShoot();
+        //}
         if (Input.GetButton("Fire1"))
             weaponSlots[activeWeaponIndex].Shoot();
+
+        if (Input.GetButtonDown("Fire2"))
+            weaponSlots[activeWeaponIndex].Aim();
+
+        if (Input.GetButtonUp("Fire2"))
+            weaponSlots[activeWeaponIndex].Idle();
+
+        if (Input.GetButtonDown("Reload"))
+            weaponSlots[activeWeaponIndex].Reload();
+
+        if (Input.GetButtonDown("Sprint"))
+            weaponSlots[activeWeaponIndex].Sprint();
     }
 
+
+    // Al cambiar de arma meter una sleep para Hide y luego sacar el nuevo arma
+
+    //esto cascaría si se tienen dos armas solo, comprobar que el índice sea válido
     private void SwitchWeapon(int p_weaponIndex) {
         if (p_weaponIndex != activeWeaponIndex && p_weaponIndex >= 0) {
-            if (activeWeaponIndex != -1)
+            if (activeWeaponIndex != -1) //esto x ejemplo xq está, por si no hayarmas?
                 weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
             weaponParentSocket.position = defaultWeaponPosition.position;
             weaponSlots[p_weaponIndex].gameObject.SetActive(true);
