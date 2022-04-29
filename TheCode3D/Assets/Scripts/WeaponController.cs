@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
-public class WeaponController : MonoBehaviour
-{
+public class WeaponController : MonoBehaviour{
+    //esta parte de aqui esta basatnte mal -> arreglarla 
     [SerializeField]
     private bool AddBulletSpread = true;
     [SerializeField]
@@ -23,32 +24,38 @@ public class WeaponController : MonoBehaviour
     [SerializeField]
     private LayerMask Mask;
 
+    [SerializeField]
+    public Vector3 aimcorrection = new Vector3(0f, 0f, 0f);
+
     // esto es para hacer la máquina de estados
     private Animator animator;
     private float LastShootTime;
 
 
     // REVISAR LOS NOMBRES DE LAS VARIABLES (empiezan mayúsculas)
+    private Vector3 originPosition;
+    private void start(){
+        originPosition = transform.localPosition;
+    }
 
-    private void Awake()
-    {
+    private void Awake(){
         animator = GetComponent<Animator>();
     }
 
-    public void Shoot()
-    {
-        if (LastShootTime + ShootDelay < Time.time)
-        {
+
+
+    public void Shoot(){
+        if (LastShootTime + ShootDelay < Time.time){
+            
             animator.SetBool("Shooting", true);
             ShootingSystem.Play();
             Vector3 direction = GetDirection();
-            if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask))
-            {
+            if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
                 TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
                 StartCoroutine(SpawnTrail(trail, hit));
                 LastShootTime = Time.time;
-            } else
-            {
+            
+            } else{
                 TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
                 StartCoroutine(SpawnTrail(trail, direction));
                 LastShootTime = Time.time;
@@ -67,19 +74,41 @@ public class WeaponController : MonoBehaviour
         animator.SetTrigger("Hide");
     }
 
+
+    private bool aim = false;
     public void Aim(){
-        animator.SetTrigger("Aim");
-        Debug.Log("Aiming");
+        if (!aim){
+            StartCoroutine(AimAnimation(originPosition, originPosition + aimcorrection));
+            aim = true;
+        } 
     }
 
+    //revisar xq lo hice pero sin entenderlo al 100
+    private IEnumerator AimAnimation(Vector3 origin, Vector3 target){
+        float desiredDuration = .1f; //meterlo en otro lado
+        float time = 0;
+        while (time < desiredDuration){
+            time += Time.deltaTime;
+            transform.localPosition = Vector3.Lerp(origin, target, time/desiredDuration);
+            Debug.Log(Time.deltaTime);
+            yield return null;
+        }
+    }
+
+
+
     public void Idle(){
-        animator.SetTrigger("Idle");
+        if (aim){
+            StartCoroutine(AimAnimation(originPosition + aimcorrection, originPosition)); //recordar cargarse la otra corrutina
+            aim = false;
+        }
+        animator.SetBool("Sprint",false);
         Debug.Log("Idle");
     }
 
 
     public void Sprint(){
-        animator.SetTrigger("Sprint");
+        animator.SetBool("Sprint",true);
         Debug.Log("Sprinting");
     }
 
@@ -111,7 +140,8 @@ public class WeaponController : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        animator.SetBool("Shooting", false);
+        animator.SetBool("Shooting", false); 
+
         Trail.transform.position = Hit.point;
         Instantiate(ImpactParticleSystem, Hit.point, Quaternion.LookRotation(Hit.normal));
         Destroy(Trail.gameObject, Trail.time);
@@ -129,7 +159,7 @@ public class WeaponController : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        animator.SetBool("Shooting", false);
+        animator.SetBool("Shooting", false); 
         Trail.transform.position = endPosition;
         Destroy(Trail.gameObject, Trail.time);
     }
