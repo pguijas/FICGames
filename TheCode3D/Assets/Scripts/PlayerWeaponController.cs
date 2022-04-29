@@ -10,7 +10,7 @@ public class PlayerWeaponController : MonoBehaviour {
     public int activeWeaponIndex { get; private set; }
     private WeaponController[] weaponSlots = new WeaponController[10];
 
-
+    private bool running = false;
     //comentar más el código
 
 
@@ -42,23 +42,50 @@ public class PlayerWeaponController : MonoBehaviour {
         //if (Input.GetButtonDown("Fire1")){
         //            TryShoot();
         //}
-        if (Input.GetButton("Fire1"))
+        /*
+        Mejor asi creo yo
+        if (weaponSlots[activeWeaponIndex].isAutomatic) {
+            if (Input.GetButton("Fire1"))
+                TryShoot();
+        } else {
+            if (Input.GetButtonDown("Fire1"))
+                TryShoot();
+        }
+        */
+        if (Input.GetButton("Fire1")) {
+            if (running) {
+                running = false;
+                weaponSlots[activeWeaponIndex].Idle();
+            }
             weaponSlots[activeWeaponIndex].Shoot();
+        } else {
+            if (Input.GetButtonDown("Sprint")) {
+                running = true;
+                weaponSlots[activeWeaponIndex].Sprint();
+            }
+            if (Input.GetButtonUp("Sprint")) {
+                running = false;
+                weaponSlots[activeWeaponIndex].Idle();
+            }
+        }
 
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2")) {
+            if (running) {
+                running = false;
+                weaponSlots[activeWeaponIndex].Idle();
+            }
             weaponSlots[activeWeaponIndex].Aim();
+        }
 
-        if (Input.GetButtonUp("Fire2"))
-            weaponSlots[activeWeaponIndex].Idle();
+        if (Input.GetButtonUp("Fire2")) {
+            if (running)
+                weaponSlots[activeWeaponIndex].Sprint();
+            else
+                weaponSlots[activeWeaponIndex].Idle();
+        }
 
         if (Input.GetButtonDown("Reload"))
             weaponSlots[activeWeaponIndex].Reload();
-
-        if (Input.GetButtonDown("Sprint"))
-            weaponSlots[activeWeaponIndex].Sprint();
-        
-        if (Input.GetButtonUp("Sprint"))
-            weaponSlots[activeWeaponIndex].Idle();
     }
 
 
