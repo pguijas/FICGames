@@ -1,185 +1,96 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.Collections.Generic;
 
-[RequireComponent(typeof(Animator))]
-public class WeaponController : MonoBehaviour{
-    //esta parte de aqui esta basatnte mal -> arreglarla 
-    // REVISAR LOS NOMBRES DE LAS VARIABLES (empiezan may煤sculas)
-    
-    [Header ("Weapon Animations")]
-    [SerializeField]
-    private ParticleSystem ShootingSystem;
-    [SerializeField]
-    private Transform BulletSpawnPoint;
-    [SerializeField]
-    private ParticleSystem ImpactParticleSystem;
-    [SerializeField]
-    private TrailRenderer BulletTrail;
-    
-    [Header ("Shoot Settings")]
-    [SerializeField]
-    private float ShootDelay = 0.5f;
-    [SerializeField]
-    public float recoilForce = 4f;
-    [SerializeField]
-    private float BulletSpeed = 350f;
-    [SerializeField]
-    public Vector3 aimcorrection = new Vector3(0f, 0f, 0f);
-    
-    [Header ("Bullet Spreading")]
-    [SerializeField]
-    private bool AddBulletSpread = true;
-    [SerializeField]
-    private Vector3 BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
-    
-    [SerializeField]
-    private LayerMask Mask;
-    
-    private Animator animator;
-    private float LastShootTime;
-    private Vector3 originPosition;
+/// <summary>
+/// Revisar Tema de PlayerPrefs
+/// </summary>
 
 
-    private void start(){
-        originPosition = transform.localPosition;
+public class OptionsController : MonoBehaviour{
+
+    public Slider volumeSlider;
+    public Toggle fsToggle;
+    public TMP_Dropdown resDropdown;
+    private Resolution[] resolutions;
+    public TMP_Dropdown qualityDropdown;
+    public int quality = 3;
+
+    public void Start(){ 
+        // Volume
+        volumeSlider.value = PlayerPrefs.GetFloat("volumeAudio", .5f);
+        AudioListener.volume = volumeSlider.value;
+        // FS
+        fsToggle.isOn = Screen.fullScreen;
+        // Resolution
+        CheckResolution();
+        // Quality
+        quality = PlayerPrefs.GetInt("quality", quality);
+        qualityDropdown.value = quality;
+        ChangeQuality(quality);
+    }
+
+    public void ChangeVolume(float value){
+        Debug.Log(value);
+        PlayerPrefs.SetFloat("volumenAudio", value);
+        AudioListener.volume = volumeSlider.value;
     }
 
 
-    private void Awake(){
-        animator = GetComponent<Animator>();
-    }
+    ///////////////////////
+    //    Resolutions    //
+    ///////////////////////
 
+    private void CheckResolution(){
+        resolutions = Screen.resolutions;
+        resDropdown.ClearOptions();
+        List<string> stringResList = new List<string>();
 
-    public void Shoot(){
-        // 
-        if (LastShootTime + ShootDelay < Time.time){
-            //animator.SetBool("Shooting", true);
-            ShootingSystem.Play();
-            Vector3 direction = GetDirection();
-            // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
-            if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
-                TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
-                StartCoroutine(SpawnTrail(trail, hit));
-                LastShootTime = Time.time;
-            // Si no impacta, lo renderizamos desde la boquilla en l铆nea recta + dispersi贸n una determinada distancia
-            } else{
-                TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
-                StartCoroutine(SpawnTrail(trail, direction));
-                LastShootTime = Time.time;
-            }
-            // Fuerza de retroceso en el arma
-            AddRecoil(recoilForce);
-            AddRecoil(-recoilForce);
+        int actualRes = 0;
+        bool foundActualRes = false;
+        foreach (Resolution res in resolutions) { 
+            string strRes = res.width +  " x " + res.height;
+            stringResList.Add(strRes);
+
+            if (!foundActualRes)
+                if (Screen.fullScreen && res.width == Screen.currentResolution.width && res.height == Screen.currentResolution.height)
+                    foundActualRes = true;
+                else
+                    actualRes++;
+
         }
-    }
 
+        // Adding to DropDown
+        resDropdown.AddOptions(stringResList);
+        resDropdown.value = actualRes;
+        resDropdown.RefreshShownValue();
 
-    /*           F脥SICAS DE DISPARO                */
-    
-    // Aleatorizar el vector que indica la direccion de disparo (bullet spread)
-    private Vector3 GetDirection() {
-        Vector3 direction = transform.forward;
-        if (AddBulletSpread) {
-            // A帽adimos una dispersi贸n aleatoria al vector de direcci贸n
-            direction += new Vector3(
-                Random.Range(-BulletSpreadVariance.x, BulletSpreadVariance.x),
-                Random.Range(-BulletSpreadVariance.y, BulletSpreadVariance.y),
-                Random.Range(-BulletSpreadVariance.z, BulletSpreadVariance.z)
-            );
-            direction.Normalize();
-        }
-        return direction;
-    }
-
-    // Spawnear el trail desde el origen al punto de impacto
-    private IEnumerator SpawnTrail(TrailRenderer Trail, RaycastHit Hit) {
-        float time = 0;
-        Vector3 startPosition = Trail.transform.position;
-        float distance = Hit.distance;
-        // un impacto q este a BulletSpeed m -> 1 segundo
-        // distancia/velocidad = tiempo
-        // spawneamos la bala un determinado tiempo
-        while (time < distance/BulletSpeed) {
-            Trail.transform.position = Vector3.Lerp(startPosition, Hit.point, time);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        Trail.transform.position = Hit.point;
-        Instantiate(ImpactParticleSystem, Hit.point, Quaternion.LookRotation(Hit.normal));
-        Destroy(Trail.gameObject, Trail.time);
-    }
-
-    // Spawnear el trail desde el origen una determinada distancia hacia delante
-    // para dar sensaci贸n de disparo hasta el infinito
-    private IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 direction) {
-        float time = 0;
-        Vector3 startPosition = Trail.transform.position;
-        Vector3 endPosition = startPosition + direction * 100;
-        float distance = Vector3.Distance(startPosition, endPosition);
-        while (time < distance/BulletSpeed) {
-            Trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        Trail.transform.position = endPosition;
-        Destroy(Trail.gameObject, Trail.time);
-    }
-
-
-    /*           ANIMACIONES DE DISPARO                */
-
-    private void AddRecoil(float recoil) {
-        transform.Rotate(-recoilForce, 0f, 0f);
-    }
-
-
-    private bool isReoading = false;
-    public void Reload() {
-        animator.SetTrigger("Reload");
-        Debug.Log("Reloading");
-    }
-
-
-    public void Hide() {
-        animator.SetTrigger("Hide");
-    }
-
-
-    private bool aim = false;
-    public void Aim() {
-        if (!aim){
-            StartCoroutine(AimAnimation(originPosition, originPosition + aimcorrection));
-            aim = true;
+        // Cargamos Resoluci髇 (NO SE GUARDAN LOS PLAYER PREFS!)
+        int prefRes = PlayerPrefs.GetInt("resolution", -1);
+        if (prefRes!=-1){
+            ChangeResolution(prefRes);
+            resDropdown.value = prefRes;
         } 
+
     }
 
-    //revisar xq lo hice pero sin entenderlo al 100
-    private IEnumerator AimAnimation(Vector3 origin, Vector3 target){
-        float desiredDuration = .1f; //meterlo en otro lado
-        float time = 0;
-        while (time < desiredDuration) {
-            time += Time.deltaTime;
-            transform.localPosition = Vector3.Lerp(origin, target, time/desiredDuration);
-            Debug.Log(Time.deltaTime);
-            yield return null;
-        }
+    public void ChangeResolution(int index){
+        PlayerPrefs.SetInt("resolution", index);
+        Resolution resolucion = resolutions[index];
+        Screen.SetResolution(resolucion.width, resolucion.height, Screen.fullScreen);
     }
 
-
-    public void Idle() {
-        if (aim) {
-            StartCoroutine(AimAnimation(originPosition + aimcorrection, originPosition)); //recordar cargarse la otra corrutina
-            aim = false;
-        }
-        animator.SetBool("Sprint",false);
-        Debug.Log("Idle");
+    public void ChangeFs(bool value){
+        Screen.fullScreen = value;
     }
 
 
-    public void Sprint() {
-        animator.SetBool("Sprint",true);
-        Debug.Log("Sprinting");
+    ///////////////////
+    //    Quality    //
+    ///////////////////
+    public void ChangeQuality(int index){
+        PlayerPrefs.SetInt("quality", index);
+        QualitySettings.SetQualityLevel(index);
     }
-
 }
