@@ -17,6 +17,14 @@ public class WeaponController : MonoBehaviour{
     [SerializeField]
     private TrailRenderer BulletTrail;
     
+    [Header ("Gun Settings")]
+    [SerializeField]
+    public int MagSize = 30;
+    [SerializeField]
+    public int CurrentMag = 30;
+    [SerializeField]
+    public int Bullets = 3000;
+
     [Header ("Shoot Settings")]
     [SerializeField]
     private float ShootDelay = 0.5f;
@@ -53,7 +61,7 @@ public class WeaponController : MonoBehaviour{
 
     public void Shoot(){
         // 
-        if (LastShootTime + ShootDelay < Time.time){
+        if ((LastShootTime + ShootDelay < Time.time) && (CurrentMag > 0) && !isReloading) {
             //animator.SetBool("Shooting", true);
             ShootingSystem.Play();
             Vector3 direction = GetDirection();
@@ -68,10 +76,12 @@ public class WeaponController : MonoBehaviour{
                 StartCoroutine(SpawnTrail(trail, direction));
                 LastShootTime = Time.time;
             }
+            CurrentMag -= 1;
             // Fuerza de retroceso en el arma
             AddRecoil(recoilForce);
             AddRecoil(-recoilForce);
-        }
+        } else if (CurrentMag == 0)
+            Reload();
     }
 
 
@@ -134,10 +144,13 @@ public class WeaponController : MonoBehaviour{
     }
 
 
-    private bool isReoading = false;
+    private bool isReloading = false;
     public void Reload() {
+        if (isReloading == true || CurrentMag == MagSize || Bullets == 0)
+            return;
         animator.SetTrigger("Reload");
-        Debug.Log("Reloading");
+        isReloading = true;
+        StartCoroutine(AfterReload());
     }
 
 
@@ -182,4 +195,12 @@ public class WeaponController : MonoBehaviour{
         Debug.Log("Sprinting");
     }
 
+    // esto esta mal, hay que hacerlo con animation events, pero en linux no me funciona
+    public IEnumerator AfterReload() {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        CurrentMag = MagSize;
+        Bullets -= MagSize;
+        isReloading = false;
+        Debug.Log(Bullets);
+    }
 }
