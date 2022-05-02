@@ -16,6 +16,8 @@ public class OptionsController : MonoBehaviour{
     private Resolution[] resolutions;
     public TMP_Dropdown qualityDropdown;
     public int quality = 3;
+    public Slider sensSlider;
+    public GameObject playerController;
 
     public void Start(){ 
         // Volume
@@ -26,29 +28,42 @@ public class OptionsController : MonoBehaviour{
         // Resolution
         CheckResolution();
         // Quality
-        quality = PlayerPrefs.GetInt("quality", quality);
-        qualityDropdown.value = quality;
-        ChangeQuality(quality);
+        qualityDropdown.value = PlayerPrefs.GetInt("quality", quality);
+        ChangeQuality(qualityDropdown.value);
+        // Sens
+        sensSlider.value = PlayerPrefs.GetFloat("sensibility", .5f);
+        ChangeSens(sensSlider.value);
     }
 
+
+    //////////////////
+    //    Volume    //
+    //////////////////
     public void ChangeVolume(float value){
-        Debug.Log(value);
-        PlayerPrefs.SetFloat("volumenAudio", value);
+        PlayerPrefs.SetFloat("volumeAudio", value);
         AudioListener.volume = volumeSlider.value;
     }
-
 
     ///////////////////////
     //    Resolutions    //
     ///////////////////////
 
     private void CheckResolution(){
+        // Loading Resolutions
         resolutions = Screen.resolutions;
         resDropdown.ClearOptions();
         List<string> stringResList = new List<string>();
 
+        // Revisamos Valores De resoluciÃ³n actuales
         int actualRes = 0;
         bool foundActualRes = false;
+        
+        int prefRes = PlayerPrefs.GetInt("resolution", -1);
+        if (prefRes!=-1){
+            actualRes = prefRes;
+            foundActualRes = true;
+        } 
+        
         foreach (Resolution res in resolutions) { 
             string strRes = res.width +  " x " + res.height;
             stringResList.Add(strRes);
@@ -61,17 +76,11 @@ public class OptionsController : MonoBehaviour{
 
         }
 
-        // Adding to DropDown
+        // Adding to DropDown and Setting Actual Resolution
         resDropdown.AddOptions(stringResList);
         resDropdown.value = actualRes;
         resDropdown.RefreshShownValue();
-
-        // Cargamos Resolución (NO SE GUARDAN LOS PLAYER PREFS!)
-        int prefRes = PlayerPrefs.GetInt("resolution", -1);
-        if (prefRes!=-1){
-            ChangeResolution(prefRes);
-            resDropdown.value = prefRes;
-        } 
+        ChangeResolution(resDropdown.value);
 
     }
 
@@ -85,12 +94,24 @@ public class OptionsController : MonoBehaviour{
         Screen.fullScreen = value;
     }
 
-
     ///////////////////
     //    Quality    //
     ///////////////////
+    
     public void ChangeQuality(int index){
         PlayerPrefs.SetInt("quality", index);
         QualitySettings.SetQualityLevel(index);
     }
+
+    ///////////////////
+    //     Sens      //
+    ///////////////////
+    
+    public void ChangeSens(float value){
+        PlayerPrefs.SetFloat("sensibility", value);
+        if (playerController != null)
+            Debug.Log("(sin hacer) Sensibility: " + value);
+    }
+
 }
+

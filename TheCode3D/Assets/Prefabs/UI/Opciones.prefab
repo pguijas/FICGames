@@ -295,7 +295,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8842699659288469822}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: OptionsController, Assembly-CSharp
         m_MethodName: ChangeQuality
         m_Mode: 0
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8842699659288469822}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: OptionsController, Assembly-CSharp
         m_MethodName: ChangeVolume
         m_Mode: 0
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8842699659288469822}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: OptionsController, Assembly-CSharp
         m_MethodName: ChangeFs
         m_Mode: 0
@@ -3519,7 +3519,7 @@ RectTransform:
   m_GameObject: {fileID: 8842699659285300424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.32999998, y: 1, z: 1}
+  m_LocalScale: {x: 0.32999998, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 8842699659288469823}
   m_RootOrder: 0
@@ -3578,7 +3578,6 @@ GameObject:
   - component: {fileID: 8842699659288469823}
   - component: {fileID: 8842699659288469816}
   - component: {fileID: 8842699659288469817}
-  - component: {fileID: 8842699659288469822}
   m_Layer: 5
   m_Name: Opciones
   m_TagString: Untagged
@@ -3652,23 +3651,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8842699659288469822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8842699659288469820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf5ffe8caf7cdc41bbbb1c6913ff5b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 8842699658165327803}
-  fsToggle: {fileID: 8842699658792767166}
-  resDropdown: {fileID: 8842699660009254557}
-  qualityDropdown: {fileID: 8842699658065791318}
-  quality: 3
 --- !u!1 &8842699659297102363
 GameObject:
   m_ObjectHideFlags: 0
@@ -4983,7 +4965,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8842699659288469822}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: OptionsController, Assembly-CSharp
         m_MethodName: ChangeResolution
         m_Mode: 0
