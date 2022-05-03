@@ -427,8 +427,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6637333370649155732}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 9dc5517fd53dccb40b195e1098d5ebb4, type: 3}
+  m_Controller: {fileID: 9100000, guid: 854c9c0ece5ca3c2d9975f757546843a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -449,14 +449,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AddBulletSpread: 0
-  BulletSpreadVariance: {x: 0.09, y: 0.09, z: 0.09}
   ShootingSystem: {fileID: 5477741152151534619}
   BulletSpawnPoint: {fileID: 5677872373995097429}
   ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
   BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
+  MagSize: 30
+  CurrentMag: 30
+  Bullets: 3000
   ShootDelay: 0.15
+  recoilForce: 2
   BulletSpeed: 350
+  aimcorrection: {x: -0.263, y: 0.105, z: -0.55}
+  AddBulletSpread: 1
+  BulletSpreadVariance: {x: 0.09, y: 0.09, z: 0.09}
   Mask:
     serializedVersion: 2
     m_Bits: 4294967295

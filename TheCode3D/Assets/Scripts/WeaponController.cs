@@ -31,6 +31,8 @@ public class WeaponController : MonoBehaviour{
     [SerializeField]
     public float recoilForce = 4f;
     [SerializeField]
+    public float RecoilCorrection = 2f;
+    [SerializeField]
     private float BulletSpeed = 350f;
     [SerializeField]
     public Vector3 aimcorrection = new Vector3(0f, 0f, 0f);
@@ -48,6 +50,9 @@ public class WeaponController : MonoBehaviour{
     private float LastShootTime;
     private Vector3 originPosition;
 
+    // flags
+    private bool isReloading = false;
+    private bool isAiming = false;
 
     private void start(){
         originPosition = transform.localPosition;
@@ -60,7 +65,6 @@ public class WeaponController : MonoBehaviour{
 
 
     public void Shoot(){
-        // 
         if ((LastShootTime + ShootDelay < Time.time) && (CurrentMag > 0) && !isReloading) {
             //animator.SetBool("Shooting", true);
             ShootingSystem.Play();
@@ -78,8 +82,7 @@ public class WeaponController : MonoBehaviour{
             }
             CurrentMag -= 1;
             // Fuerza de retroceso en el arma
-            AddRecoil(recoilForce);
-            AddRecoil(-recoilForce);
+            AddRecoil();
         } else if (CurrentMag == 0)
             Reload();
     }
@@ -91,12 +94,21 @@ public class WeaponController : MonoBehaviour{
     private Vector3 GetDirection() {
         Vector3 direction = transform.forward;
         if (AddBulletSpread) {
-            // Añadimos una dispersión aleatoria al vector de dirección
-            direction += new Vector3(
-                Random.Range(-BulletSpreadVariance.x, BulletSpreadVariance.x),
-                Random.Range(-BulletSpreadVariance.y, BulletSpreadVariance.y),
-                Random.Range(-BulletSpreadVariance.z, BulletSpreadVariance.z)
-            );
+            // Añadimos una dispersión aleatoria al vector de dirección, que sera 
+            // menor o mayor según si si estamos apuntando o no
+            if (isAiming) {
+                direction += new Vector3(
+                    Random.Range(-BulletSpreadVariance.x/2, BulletSpreadVariance.x/2),
+                    Random.Range(-BulletSpreadVariance.y/2, BulletSpreadVariance.y/2),
+                    Random.Range(-BulletSpreadVariance.z/2, BulletSpreadVariance.z/2)
+                );
+            } else {
+                direction += new Vector3(
+                    Random.Range(-BulletSpreadVariance.x, BulletSpreadVariance.x),
+                    Random.Range(-BulletSpreadVariance.y, BulletSpreadVariance.y),
+                    Random.Range(-BulletSpreadVariance.z, BulletSpreadVariance.z)
+                );
+            }
             direction.Normalize();
         }
         return direction;
@@ -139,12 +151,14 @@ public class WeaponController : MonoBehaviour{
 
     /*           ANIMACIONES DE DISPARO                */
 
-    private void AddRecoil(float recoil) {
-        transform.Rotate(-recoilForce, 0f, 0f);
+    private void AddRecoil() {
+        if (isAiming)
+            transform.Rotate(-RecoilCorrection, 0f, 0f);
+        else 
+            transform.Rotate(-recoilForce, 0f, 0f);
     }
 
 
-    private bool isReloading = false;
     public void Reload() {
         if (isReloading == true || CurrentMag == MagSize || Bullets == 0)
             return;
@@ -153,19 +167,27 @@ public class WeaponController : MonoBehaviour{
         StartCoroutine(AfterReload());
     }
 
+    // esto esta mal, hay que hacerlo con animation events, pero en linux no me funciona
+    private IEnumerator AfterReload() {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        CurrentMag = MagSize;
+        Bullets -= MagSize;
+        isReloading = false;
+    }
+
 
     public void Hide() {
         animator.SetTrigger("Hide");
     }
 
 
-    private bool aim = false;
     public void Aim() {
-        if (!aim){
+        if (!isAiming){
             StartCoroutine(AimAnimation(originPosition, originPosition + aimcorrection));
-            aim = true;
-        } 
+            isAiming = true;
+        }
     }
+
 
     //revisar xq lo hice pero sin entenderlo al 100
     private IEnumerator AimAnimation(Vector3 origin, Vector3 target){
@@ -174,33 +196,25 @@ public class WeaponController : MonoBehaviour{
         while (time < desiredDuration) {
             time += Time.deltaTime;
             transform.localPosition = Vector3.Lerp(origin, target, time/desiredDuration);
-            Debug.Log(Time.deltaTime);
             yield return null;
         }
     }
 
 
     public void Idle() {
-        if (aim) {
+        if (isAiming) {
             StartCoroutine(AimAnimation(originPosition + aimcorrection, originPosition)); //recordar cargarse la otra corrutina
-            aim = false;
+            isAiming = false;
         }
         animator.SetBool("Sprint",false);
-        Debug.Log("Idle");
     }
 
 
     public void Sprint() {
         animator.SetBool("Sprint",true);
-        Debug.Log("Sprinting");
-    }
-
-    // esto esta mal, hay que hacerlo con animation events, pero en linux no me funciona
-    public IEnumerator AfterReload() {
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        CurrentMag = MagSize;
-        Bullets -= MagSize;
-        isReloading = false;
-        Debug.Log(Bullets);
+        if (isAiming) {
+            StartCoroutine(AimAnimation(originPosition + aimcorrection, originPosition)); //recordar cargarse la otra corrutina
+            isAiming = false;
+        }
     }
 }

@@ -64080,6 +64080,7 @@ GameObject:
   - component: {fileID: 2037403211}
   - component: {fileID: 2037403210}
   - component: {fileID: 2037403209}
+  - component: {fileID: 2037403212}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -64145,6 +64146,25 @@ Transform:
   m_Father: {fileID: 432320223}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2037403212
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037403208}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4ad578cae3c7f448995f77895d9b1f72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2038577975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67052,6 +67072,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3173718196979559498, guid: 9a3b233d7693e9547b8ceceaae46d590, type: 3}
+      propertyPath: startingWeapons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173718196979559498, guid: 9a3b233d7693e9547b8ceceaae46d590, type: 3}
+      propertyPath: startingWeapons.Array.data[1]
+      value: 
+      objectReference: {fileID: 7072345867609906556, guid: 54e89b6b93df44ae89eb5fa28742c5b8, type: 3}
+    - target: {fileID: 3173718196979559498, guid: 9a3b233d7693e9547b8ceceaae46d590, type: 3}
+      propertyPath: startingWeapons.Array.data[2]
+      value: 
+      objectReference: {fileID: 6984104221774363879, guid: bd5f02057b0f541c48b8ef6e477381f6, type: 3}
+    - target: {fileID: 3173718196979559498, guid: 9a3b233d7693e9547b8ceceaae46d590, type: 3}
+      propertyPath: startingWeapons.Array.data[3]
+      value: 
+      objectReference: {fileID: 4754851337472847420, guid: dc7def5b5db1af380aeac78e31f6bbc4, type: 3}
+    - target: {fileID: 3173718196979559498, guid: 9a3b233d7693e9547b8ceceaae46d590, type: 3}
+      propertyPath: startingWeapons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1512499762477644922, guid: 9412a988f55e913c7b026821856195d2, type: 3}
     - target: {fileID: 5650527054294483659, guid: 9a3b233d7693e9547b8ceceaae46d590, type: 3}
       propertyPath: m_Name
       value: Player
