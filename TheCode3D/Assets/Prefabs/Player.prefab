@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4216096408627842634}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FirstPersonSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1734369958601182653}
   - component: {fileID: 8236547953517288040}
   - component: {fileID: 1556109990194064225}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1190029166553501192}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AimParentSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 2608763494295113092}
   - component: {fileID: 2792501270269547262}
   - component: {fileID: 3173718196979559498}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 6078634914533201010}
   - component: {fileID: 2737386894235448696}
   - component: {fileID: 744661223420821011}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: WeaponCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2577970610842100464}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: WeaponParentSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7669039881504570620}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DefaultParentSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}

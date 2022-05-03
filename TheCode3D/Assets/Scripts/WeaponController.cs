@@ -21,9 +21,9 @@ public class WeaponController : MonoBehaviour{
     [SerializeField]
     public int MagSize = 30;
     [SerializeField]
-    public int CurrentMag = 30;
+    public int currentMag = 30;
     [SerializeField]
-    public int Bullets = 3000;
+    public int bullets = 3000;
 
     [Header ("Shoot Settings")]
     [SerializeField]
@@ -61,11 +61,11 @@ public class WeaponController : MonoBehaviour{
 
     private void Awake(){
         animator = GetComponent<Animator>();
+        EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
     }
 
-
     public void Shoot(){
-        if ((LastShootTime + ShootDelay < Time.time) && (CurrentMag > 0) && !isReloading) {
+        if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
             //animator.SetBool("Shooting", true);
             ShootingSystem.Play();
             Vector3 direction = GetDirection();
@@ -80,10 +80,12 @@ public class WeaponController : MonoBehaviour{
                 StartCoroutine(SpawnTrail(trail, direction));
                 LastShootTime = Time.time;
             }
-            CurrentMag -= 1;
+            currentMag -= 1;
+            //Actualizamos Hud
+            EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
             // Fuerza de retroceso en el arma
             AddRecoil();
-        } else if (CurrentMag == 0)
+        } else if (currentMag == 0)
             Reload();
     }
 
@@ -160,9 +162,11 @@ public class WeaponController : MonoBehaviour{
 
 
     public void Reload() {
-        if (isReloading == true || CurrentMag == MagSize || Bullets == 0)
+        if (isReloading == true || currentMag == MagSize || bullets == 0)
             return;
         animator.SetTrigger("Reload");
+        EventManager.instance.UpdateBulletsEvent.Invoke(-1,bullets);
+
         isReloading = true;
         StartCoroutine(AfterReload());
     }
@@ -170,9 +174,10 @@ public class WeaponController : MonoBehaviour{
     // esto esta mal, hay que hacerlo con animation events, pero en linux no me funciona
     private IEnumerator AfterReload() {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        CurrentMag = MagSize;
-        Bullets -= MagSize;
+        currentMag = MagSize;
+        bullets -= MagSize;
         isReloading = false;
+        EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
     }
 
 
