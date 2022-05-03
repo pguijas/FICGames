@@ -384,10 +384,12 @@ MonoBehaviour:
   ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
   BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
   MagSize: 7
-  CurrentMag: 7
-  Bullets: 3000
+  currentMag: 7
+  bullets: 3000
+  isAutomatic: 0
   ShootDelay: 0.6
-  recoilForce: 2
+  recoilForce: 3
+  RecoilCorrection: 2
   BulletSpeed: 280
   aimcorrection: {x: -0.315, y: 0.2, z: -0.5}
   AddBulletSpread: 1

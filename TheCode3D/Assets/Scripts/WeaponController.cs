@@ -24,6 +24,8 @@ public class WeaponController : MonoBehaviour{
     public int currentMag = 30;
     [SerializeField]
     public int bullets = 3000;
+    [SerializeField]
+    private bool isAutomatic = true;
 
     [Header ("Shoot Settings")]
     [SerializeField]
@@ -53,6 +55,8 @@ public class WeaponController : MonoBehaviour{
     // flags
     private bool isReloading = false;
     private bool isAiming = false;
+    private bool isSprinting = false;
+
 
     private void start(){
         originPosition = transform.localPosition;
@@ -63,6 +67,12 @@ public class WeaponController : MonoBehaviour{
         animator = GetComponent<Animator>();
         EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
     }
+
+
+    public bool IsAutomatic() {
+        return isAutomatic;
+    }
+
 
     public void Shoot(){
         if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
@@ -166,7 +176,6 @@ public class WeaponController : MonoBehaviour{
             return;
         animator.SetTrigger("Reload");
         EventManager.instance.UpdateBulletsEvent.Invoke(-1,bullets);
-
         isReloading = true;
         StartCoroutine(AfterReload());
     }
@@ -180,6 +189,9 @@ public class WeaponController : MonoBehaviour{
         EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
     }
 
+    public bool IsReloading() {
+        return isReloading;
+    }
 
     public void Hide() {
         animator.SetTrigger("Hide");
@@ -205,6 +217,9 @@ public class WeaponController : MonoBehaviour{
         }
     }
 
+    public bool IsAiming() {
+        return isAiming;
+    }
 
     public void Idle() {
         if (isAiming) {
@@ -212,14 +227,19 @@ public class WeaponController : MonoBehaviour{
             isAiming = false;
         }
         animator.SetBool("Sprint",false);
+        isSprinting = false;
+        GameObject player =GameObject.FindWithTag("Player");
+        player.GetComponent<PlayerController>().StopSprint();
     }
-
 
     public void Sprint() {
         animator.SetBool("Sprint",true);
-        if (isAiming) {
-            StartCoroutine(AimAnimation(originPosition + aimcorrection, originPosition)); //recordar cargarse la otra corrutina
-            isAiming = false;
-        }
+        isSprinting = true;
+        GameObject player = GameObject.FindWithTag("Player");
+        player.GetComponent<PlayerController>().Sprint();
+    }
+
+    public bool IsSprinting() {
+        return isSprinting;
     }
 }

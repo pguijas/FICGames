@@ -27,6 +27,8 @@ public class WeaponManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        WeaponController activeWeapon = weaponSlots[activeWeaponIndex];
+        // Números para cambiar de arma
         if (Input.GetKeyDown(KeyCode.Alpha1))
             SwitchWeapon(0);
         else if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -38,12 +40,8 @@ public class WeaponManager : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Alpha5))
             SwitchWeapon(4);
 
-        // DIFERENCIAR AUTOMÄTICO / MANUAL
-        //if (Input.GetButtonDown("Fire1")){
-        //            TryShoot();
-        //}
+        // DIFERENCIAR AUTOMÁTICO / MANUAL
         /*
-        Mejor asi creo yo
         if (weaponSlots[activeWeaponIndex].isAutomatic) {
             if (Input.GetButton("Fire1"))
                 TryShoot();
@@ -52,7 +50,73 @@ public class WeaponManager : MonoBehaviour {
                 TryShoot();
         }
         */
-        if (Input.GetButton("Fire1")) {
+
+        if (!activeWeapon.IsReloading()) {
+            // Lógica de apuntado
+            // Si estamos corriendo, paramos y apuntamos
+            if (Input.GetButton("Fire2")) {
+                if (activeWeapon.IsSprinting())
+                    activeWeapon.Idle();
+                activeWeapon.Aim();
+            } else if (Input.GetButtonUp("Fire2"))
+                activeWeapon.Idle();
+            // Lógica de disparo
+            // Si se dispara, no se corre
+            if (activeWeapon.IsAutomatic() ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1")) {
+                if (activeWeapon.IsSprinting())
+                    activeWeapon.Idle();
+                activeWeapon.Shoot();
+            } else {
+                // Si no estamos apuntando, corremos
+                if (Input.GetButton("Sprint") && !activeWeapon.IsAiming()) 
+                    activeWeapon.Sprint();
+                else if (Input.GetButtonUp("Sprint")) 
+                    activeWeapon.Idle();
+            }
+            // Lógica de recarga
+            // No se puede recargar mientras se corre
+            if (Input.GetButtonDown("Reload")) {
+                if (activeWeapon.IsSprinting())
+                    activeWeapon.Idle();
+                activeWeapon.Reload();
+            }
+        } else {
+            // Si está recargando, no se puede apuntar
+            if (activeWeapon.IsAiming())
+                activeWeapon.Idle();
+        }
+    }
+
+
+    // Al cambiar de arma meter una sleep para Hide y luego sacar el nuevo arma
+
+    //esto cascaría si se tienen dos armas solo, comprobar que el índice sea válido
+    private void SwitchWeapon(int p_weaponIndex) {
+        if (p_weaponIndex != activeWeaponIndex && p_weaponIndex >= 0) {
+            if (activeWeaponIndex != -1) //esto x ejemplo xq está, por si no hayarmas?
+                weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
+            weaponParentSocket.position = defaultWeaponPosition.position;
+            weaponSlots[p_weaponIndex].gameObject.SetActive(true);
+            activeWeaponIndex = p_weaponIndex;
+        }
+    }
+
+    private void AddWeapon(WeaponController p_weaponPrefab) {
+        weaponParentSocket.position = defaultWeaponPosition.position;
+        for (int i = 0; i<weaponSlots.Length; i++) {
+            if (weaponSlots[i] == null) {
+                WeaponController weaponClone = Instantiate(p_weaponPrefab, weaponParentSocket);
+                weaponClone.gameObject.SetActive(false);
+                weaponSlots[i] = weaponClone;
+                return;
+            }
+        }
+    }
+}
+
+/*
+
+if (Input.GetButton("Fire1")) {
             if (running) {
                 running = false;
                 weaponSlots[activeWeaponIndex].Idle();
@@ -86,31 +150,5 @@ public class WeaponManager : MonoBehaviour {
 
         if (Input.GetButtonDown("Reload"))
             weaponSlots[activeWeaponIndex].Reload();
-    }
 
-
-    // Al cambiar de arma meter una sleep para Hide y luego sacar el nuevo arma
-
-    //esto cascaría si se tienen dos armas solo, comprobar que el índice sea válido
-    private void SwitchWeapon(int p_weaponIndex) {
-        if (p_weaponIndex != activeWeaponIndex && p_weaponIndex >= 0) {
-            if (activeWeaponIndex != -1) //esto x ejemplo xq está, por si no hayarmas?
-                weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
-            weaponParentSocket.position = defaultWeaponPosition.position;
-            weaponSlots[p_weaponIndex].gameObject.SetActive(true);
-            activeWeaponIndex = p_weaponIndex;
-        }
-    }
-
-    private void AddWeapon(WeaponController p_weaponPrefab) {
-        weaponParentSocket.position = defaultWeaponPosition.position;
-        for (int i = 0; i<weaponSlots.Length; i++) {
-            if (weaponSlots[i] == null) {
-                WeaponController weaponClone = Instantiate(p_weaponPrefab, weaponParentSocket);
-                weaponClone.gameObject.SetActive(false);
-                weaponSlots[i] = weaponClone;
-                return;
-            }
-        }
-    }
-}
+*/

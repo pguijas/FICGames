@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     [Header ("Jump")]
     public float jumpHeight = 1.9f;
 
+    private bool run = false;
     private float cameraVerticalAngle;
     Vector3 moveInput = Vector3.zero;
     Vector2 rotationInput = Vector3.zero;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour {
 
     private void Awake() {
         characterController = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update() {
@@ -35,7 +37,7 @@ public class PlayerController : MonoBehaviour {
         if (characterController.isGrounded) {
             moveInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
             moveInput = Vector3.ClampMagnitude(moveInput, 1f);
-            if (Input.GetButton("Sprint"))
+            if (run)
                 moveInput = transform.TransformDirection(moveInput) * runSpeed;
             else
                 moveInput = transform.TransformDirection(moveInput) * walkSpeed;
@@ -53,5 +55,13 @@ public class PlayerController : MonoBehaviour {
         cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -70f, 70f);
         transform.Rotate(Vector3.up * rotationInput.x);
         playerCamera.transform.localRotation = Quaternion.Euler(-cameraVerticalAngle, 0f, 0f);
+    }
+
+    public void Sprint() {
+        run = true;
+    }
+
+    public void StopSprint() {
+        run = false;
     }
 }

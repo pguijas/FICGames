@@ -17,12 +17,14 @@ public class InGamePause : MonoBehaviour{
     }
 
     public void Resume(){
+        Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         GameInPause = false;
     }
 
     public void Pause(){
+        Cursor.lockState = CursorLockMode.None;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         GameInPause = true;

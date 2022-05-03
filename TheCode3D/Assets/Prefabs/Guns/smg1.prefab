@@ -463,14 +463,15 @@ MonoBehaviour:
   ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
   BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
   MagSize: 30
-  CurrentMag: 30
-  Bullets: 3000
+  currentMag: 30
+  bullets: 3000
   ShootDelay: 0.1
   recoilForce: 5
+  RecoilCorrection: 2.5
   BulletSpeed: 350
   aimcorrection: {x: -0.266, y: 0.155, z: -0.35}
   AddBulletSpread: 1
-  BulletSpreadVariance: {x: 0.1, y: 0.1, z: 0.1}
+  BulletSpreadVariance: {x: 0.08, y: 0.08, z: 0.08}
   Mask:
     serializedVersion: 2
     m_Bits: 4294967295
