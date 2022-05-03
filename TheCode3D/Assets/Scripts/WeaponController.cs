@@ -106,22 +106,16 @@ public class WeaponController : MonoBehaviour{
     private Vector3 GetDirection() {
         Vector3 direction = transform.forward;
         if (AddBulletSpread) {
-            // Añadimos una dispersión aleatoria al vector de dirección, que sera 
-            // menor o mayor según si si estamos apuntando o no
-            if (isAiming) {
-                direction += new Vector3(
-                    Random.Range(-BulletSpreadVariance.x/2, BulletSpreadVariance.x/2),
-                    Random.Range(-BulletSpreadVariance.y/2, BulletSpreadVariance.y/2),
-                    Random.Range(-BulletSpreadVariance.z/2, BulletSpreadVariance.z/2)
-                );
-            } else {
+            // Añadimos una dispersión aleatoria al vector de dirección, 
+            // si estamos apuntando
+            if (!isAiming) {
                 direction += new Vector3(
                     Random.Range(-BulletSpreadVariance.x, BulletSpreadVariance.x),
                     Random.Range(-BulletSpreadVariance.y, BulletSpreadVariance.y),
                     Random.Range(-BulletSpreadVariance.z, BulletSpreadVariance.z)
                 );
+                direction.Normalize();
             }
-            direction.Normalize();
         }
         return direction;
     }
@@ -162,6 +156,10 @@ public class WeaponController : MonoBehaviour{
 
 
     /*           ANIMACIONES DE DISPARO                */
+
+    public bool IsAnimPlaying(string animation) {
+        return animator.GetCurrentAnimatorStateInfo(0).IsName(animation);
+    }
 
     private void AddRecoil() {
         if (isAiming)

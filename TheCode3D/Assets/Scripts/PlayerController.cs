@@ -12,9 +12,7 @@ public class PlayerController : MonoBehaviour {
     [Header ("Movement")]
     public float walkSpeed = 5f;
     public float runSpeed = 20f;
-    [Header ("Rotation")]
     public float rotationSensibility = 1000f;
-    [Header ("Jump")]
     public float jumpHeight = 1.9f;
 
     private bool run = false;

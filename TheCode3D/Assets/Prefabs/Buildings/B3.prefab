@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203149835346088}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203149864388102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203150175895702}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203150381911226}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203151455433800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203151598808223}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203151628231735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: B3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203151663709276}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124203151667441788}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lighting (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,6 +322,10 @@ PrefabInstance:
     - target: {fileID: 1541016816933474, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
       propertyPath: m_Name
       value: Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541016816933474, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4271693154756708, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
       propertyPath: m_RootOrder
@@ -385,6 +389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 1139623533584016, guid: 8575136039de953429462a2d62d64eb4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4430151540654778, guid: 8575136039de953429462a2d62d64eb4, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -446,6 +454,10 @@ PrefabInstance:
     - target: {fileID: 1995939172379070, guid: 599e8e453ec32e34dac9e5ad2435e71c, type: 3}
       propertyPath: m_Name
       value: Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995939172379070, guid: 599e8e453ec32e34dac9e5ad2435e71c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4392236307276106, guid: 599e8e453ec32e34dac9e5ad2435e71c, type: 3}
       propertyPath: m_RootOrder
@@ -509,6 +521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench
       objectReference: {fileID: 0}
+    - target: {fileID: 1974199930870268, guid: 9176f5462c21b344998c3c078c3661f6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4495021207823274, guid: 9176f5462c21b344998c3c078c3661f6, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -570,6 +586,10 @@ PrefabInstance:
     - target: {fileID: 1900919126172130, guid: 03696568ac2c4044b987f5a9954f80c1, type: 3}
       propertyPath: m_Name
       value: Box 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900919126172130, guid: 03696568ac2c4044b987f5a9954f80c1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4658347305734828, guid: 03696568ac2c4044b987f5a9954f80c1, type: 3}
       propertyPath: m_RootOrder
@@ -645,6 +665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1207467144341034, guid: dddb89b0373ae404e8e394dbdc7271e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4146019286474700, guid: dddb89b0373ae404e8e394dbdc7271e5, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -706,6 +730,10 @@ PrefabInstance:
     - target: {fileID: 1057699520941730, guid: e5d70f5b7498c1a45a05f1fef3758827, type: 3}
       propertyPath: m_Name
       value: Metall box
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057699520941730, guid: e5d70f5b7498c1a45a05f1fef3758827, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4258145663848320, guid: e5d70f5b7498c1a45a05f1fef3758827, type: 3}
       propertyPath: m_RootOrder
@@ -781,6 +809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1541016816933474, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4271693154756708, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -842,6 +874,10 @@ PrefabInstance:
     - target: {fileID: 1478231704606430, guid: e789afaff5a84fc4d97c4b23d69ccb47, type: 3}
       propertyPath: m_Name
       value: Box 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478231704606430, guid: e789afaff5a84fc4d97c4b23d69ccb47, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4501305900135098, guid: e789afaff5a84fc4d97c4b23d69ccb47, type: 3}
       propertyPath: m_RootOrder
@@ -917,6 +953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1505577890622300, guid: f16e4caecb55b0b489beca4bedc29547, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4313792363276644, guid: f16e4caecb55b0b489beca4bedc29547, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -978,6 +1018,10 @@ PrefabInstance:
     - target: {fileID: 1541016816933474, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
       propertyPath: m_Name
       value: Barrel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541016816933474, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4271693154756708, guid: 2e324f98fec5eb644937a11ec2aa516f, type: 3}
       propertyPath: m_RootOrder
@@ -1041,6 +1085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bed
       objectReference: {fileID: 0}
+    - target: {fileID: 1753771530351694, guid: 2bb28de3bad3c464d9eac3553f03a80d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4437353441257060, guid: 2bb28de3bad3c464d9eac3553f03a80d, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1102,6 +1150,10 @@ PrefabInstance:
     - target: {fileID: 1098976063495422, guid: c6577cd2d2a21dc49bbd62c5a96e4f40, type: 3}
       propertyPath: m_Name
       value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098976063495422, guid: c6577cd2d2a21dc49bbd62c5a96e4f40, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4374077548002656, guid: c6577cd2d2a21dc49bbd62c5a96e4f40, type: 3}
       propertyPath: m_RootOrder
@@ -1209,6 +1261,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 91.4
@@ -1278,6 +1342,18 @@ PrefabInstance:
     - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Name
       value: Lampara (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
@@ -1385,6 +1461,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 49.5
@@ -1454,6 +1542,18 @@ PrefabInstance:
     - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Name
       value: Lampara (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
@@ -1561,6 +1661,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 205.9
@@ -1667,6 +1779,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 77.4
@@ -1737,6 +1861,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 52.4
@@ -1806,6 +1942,18 @@ PrefabInstance:
     - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Name
       value: Lampara (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
@@ -1913,6 +2061,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 83.2
@@ -1982,6 +2142,18 @@ PrefabInstance:
     - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Name
       value: Lampara
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
@@ -2053,6 +2225,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 140
@@ -2123,6 +2307,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 196.8
@@ -2148,6 +2344,10 @@ PrefabInstance:
     - target: {fileID: 1894624453837016, guid: 1baf7789d809a9e4eac0c4a58a186ca1, type: 3}
       propertyPath: m_Name
       value: Walls_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894624453837016, guid: 1baf7789d809a9e4eac0c4a58a186ca1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4663157161393570, guid: 1baf7789d809a9e4eac0c4a58a186ca1, type: 3}
       propertyPath: m_RootOrder
@@ -2255,6 +2455,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 205.9
@@ -2316,6 +2528,10 @@ PrefabInstance:
     - target: {fileID: 1493624621625318, guid: 7b8104b22d53860469727a3ea77f69fd, type: 3}
       propertyPath: m_Name
       value: Roof_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493624621625318, guid: 7b8104b22d53860469727a3ea77f69fd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4836649725135302, guid: 7b8104b22d53860469727a3ea77f69fd, type: 3}
       propertyPath: m_RootOrder
@@ -2423,6 +2639,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 91
@@ -2492,6 +2720,18 @@ PrefabInstance:
     - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Name
       value: Lampara (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
@@ -2563,6 +2803,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 102.9
@@ -2588,6 +2840,10 @@ PrefabInstance:
     - target: {fileID: 1156029807894004, guid: ee3836af3e2e96e488ca39d5662a5107, type: 3}
       propertyPath: m_Name
       value: Foundation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156029807894004, guid: ee3836af3e2e96e488ca39d5662a5107, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4703696086272550, guid: ee3836af3e2e96e488ca39d5662a5107, type: 3}
       propertyPath: m_RootOrder
@@ -2695,6 +2951,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lampara
       objectReference: {fileID: 0}
+    - target: {fileID: 7525736893661557686, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644828405409067069, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645936265637807817, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8645936265637807818, guid: 5a726f251d9b2614a9b2de02000ca876, type: 3}
       propertyPath: m_Range
       value: 218.6
@@ -2720,6 +2988,10 @@ PrefabInstance:
     - target: {fileID: 1022175314884616, guid: bcf11769da9171e4988a45bebf019cbc, type: 3}
       propertyPath: m_Name
       value: Table 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022175314884616, guid: bcf11769da9171e4988a45bebf019cbc, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4824349093614218, guid: bcf11769da9171e4988a45bebf019cbc, type: 3}
       propertyPath: m_RootOrder

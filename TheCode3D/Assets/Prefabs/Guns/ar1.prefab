@@ -373,6 +373,7 @@ MonoBehaviour:
   MagSize: 30
   currentMag: 30
   bullets: 3000
+  isAutomatic: 1
   ShootDelay: 0.3
   recoilForce: 4
   RecoilCorrection: 2.5
@@ -382,7 +383,7 @@ MonoBehaviour:
   BulletSpreadVariance: {x: 0.06, y: 0.06, z: 0.06}
   Mask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4294967295
 --- !u!114 &6323206910606053214
 MonoBehaviour:
   m_ObjectHideFlags: 0

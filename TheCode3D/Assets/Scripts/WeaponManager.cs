@@ -2,22 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class WeaponManager : MonoBehaviour {
+
+    [Header ("Weapons")]
+    [SerializeField]
     public List<WeaponController> startingWeapons = new List<WeaponController>();
+    [Header ("Positions")]
+    [SerializeField]
     public Transform weaponParentSocket;
+    [SerializeField]
     public Transform defaultWeaponPosition;
+    [SerializeField]
     public Transform aimingPosition;
-    public int activeWeaponIndex { get; private set; }
-    private WeaponController[] weaponSlots = new WeaponController[10];
-
-    private bool running = false;
-    //comentar más el código
+    
+    private int activeWeaponIndex = -1;
+    private WeaponController[] weaponSlots = new WeaponController[5];
 
 
-
-    // Start is called before the first frame update
     void Start() {
-        activeWeaponIndex = -1;
         foreach (WeaponController startingWeapon in startingWeapons)
             AddWeapon(startingWeapon);
         // eliminar estas dos líneas para aparecer sin armas
@@ -25,8 +29,10 @@ public class WeaponManager : MonoBehaviour {
         weaponSlots[activeWeaponIndex].gameObject.SetActive(true);
     }
 
+
     // Update is called once per frame
     void Update() {
+
         WeaponController activeWeapon = weaponSlots[activeWeaponIndex];
         // Números para cambiar de arma
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -39,17 +45,6 @@ public class WeaponManager : MonoBehaviour {
             SwitchWeapon(3);
         else if (Input.GetKeyDown(KeyCode.Alpha5))
             SwitchWeapon(4);
-
-        // DIFERENCIAR AUTOMÁTICO / MANUAL
-        /*
-        if (weaponSlots[activeWeaponIndex].isAutomatic) {
-            if (Input.GetButton("Fire1"))
-                TryShoot();
-        } else {
-            if (Input.GetButtonDown("Fire1"))
-                TryShoot();
-        }
-        */
 
         if (!activeWeapon.IsReloading()) {
             // Lógica de apuntado
@@ -65,7 +60,8 @@ public class WeaponManager : MonoBehaviour {
             if (activeWeapon.IsAutomatic() ? Input.GetButton("Fire1") : Input.GetButtonDown("Fire1")) {
                 if (activeWeapon.IsSprinting())
                     activeWeapon.Idle();
-                activeWeapon.Shoot();
+                if (!activeWeapon.IsAnimPlaying("Run"))
+                    activeWeapon.Shoot();
             } else {
                 // Si no estamos apuntando, corremos
                 if (Input.GetButton("Sprint") && !activeWeapon.IsAiming()) 
@@ -89,11 +85,9 @@ public class WeaponManager : MonoBehaviour {
 
 
     // Al cambiar de arma meter una sleep para Hide y luego sacar el nuevo arma
-
-    //esto cascaría si se tienen dos armas solo, comprobar que el índice sea válido
     private void SwitchWeapon(int p_weaponIndex) {
         if (p_weaponIndex != activeWeaponIndex && p_weaponIndex >= 0) {
-            if (activeWeaponIndex != -1) //esto x ejemplo xq está, por si no hayarmas?
+            if (activeWeaponIndex != -1)
                 weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
             weaponParentSocket.position = defaultWeaponPosition.position;
             weaponSlots[p_weaponIndex].gameObject.SetActive(true);
@@ -101,9 +95,12 @@ public class WeaponManager : MonoBehaviour {
         }
     }
 
+    // Inicializar armas
     private void AddWeapon(WeaponController p_weaponPrefab) {
+        // Ponermos la posición actual como la default
         weaponParentSocket.position = defaultWeaponPosition.position;
         for (int i = 0; i<weaponSlots.Length; i++) {
+            // Para cada arma, la instanciamos, la desactivamos y la añadimos al array de armas
             if (weaponSlots[i] == null) {
                 WeaponController weaponClone = Instantiate(p_weaponPrefab, weaponParentSocket);
                 weaponClone.gameObject.SetActive(false);
@@ -113,42 +110,3 @@ public class WeaponManager : MonoBehaviour {
         }
     }
 }
-
-/*
-
-if (Input.GetButton("Fire1")) {
-            if (running) {
-                running = false;
-                weaponSlots[activeWeaponIndex].Idle();
-            }
-            weaponSlots[activeWeaponIndex].Shoot();
-        } else {
-            if (Input.GetButtonDown("Sprint")) {
-                running = true;
-                weaponSlots[activeWeaponIndex].Sprint();
-            }
-            if (Input.GetButtonUp("Sprint")) {
-                running = false;
-                weaponSlots[activeWeaponIndex].Idle();
-            }
-        }
-
-        if (Input.GetButtonDown("Fire2")) {
-            if (running) {
-                running = false;
-                weaponSlots[activeWeaponIndex].Idle();
-            }
-            weaponSlots[activeWeaponIndex].Aim();
-        }
-
-        if (Input.GetButtonUp("Fire2")) {
-            if (running)
-                weaponSlots[activeWeaponIndex].Sprint();
-            else
-                weaponSlots[activeWeaponIndex].Idle();
-        }
-
-        if (Input.GetButtonDown("Reload"))
-            weaponSlots[activeWeaponIndex].Reload();
-
-*/

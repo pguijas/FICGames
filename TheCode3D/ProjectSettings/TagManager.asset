@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - crosshair
+  - schutzstaffel_b
+  - schutzstaffel_a
+  - wehrmacht_c
+  - wehrmacht_b
+  - wehrmacht_a
+  - way_point
   layers:
   - Default
   - TransparentFX
@@ -12,8 +18,8 @@ TagManager:
   - Weapon
   - Water
   - UI
-  - 
-  - 
+  - Enemies
+  - Obstacles
   - 
   - 
   - 

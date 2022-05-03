@@ -456,6 +456,7 @@ MonoBehaviour:
   MagSize: 45
   currentMag: 45
   bullets: 3000
+  isAutomatic: 1
   ShootDelay: 0.15
   recoilForce: 2
   RecoilCorrection: 1.4

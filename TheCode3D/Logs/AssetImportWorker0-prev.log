@@ -1,0 +1,2030 @@
+Unity Editor version:    2020.3.33f1 (915a7af8b0d5)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #123-Ubuntu SMP Fri Apr 8 09:10:54 UTC 2022
+Kernel version:          5.4.0-109-generic
+Architecture:            x86_64
+Available memory:        15850 MB
+Using pre-set license
+Pro License: NO
+Desktop is 3840 x 1080 @ 60 Hz
+
+COMMAND LINE ARGUMENTS:
+Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+33877
+Successfully changed project path to: /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D
+/media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 39,85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Assets
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+Renderer: NVIDIA GeForce GTX 1070/PCIe/SSE2
+Vendor:   NVIDIA Corporation
+Version:  4.5.0 NVIDIA 470.103.01
+GLES:     0
+ GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragmen
+t_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoki
+ng_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_locations GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_A
+RB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_filter_minmax GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_t
+ranspose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters 
+GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_multiview_texture_multisample GL_EXT_multiview_timer_query GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_post_depth_coverage GL_EXT_provoking_vertex GL_EXT_raster_multisample GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_sparse_texture2 GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_filter_minmax GL_EXT_texture_integer GL_EXT_texture_lod G
+L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_NV_robustness_video_memory_purge GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_fd GL_NV_memory_object_sparse GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_fd GL_NV_timeline_semaphore GL_KHR_shader_subgroup GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_
+blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_
+NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_N
+V_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1962765016
+Initialize mono
+Mono path[0] = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56411
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0,002095 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 38,43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0,606 seconds
+Domain Reload Profiling:
+	ReloadAssembly (606ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (484ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (150ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (210ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (39ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0,003593 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1,078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (888ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (387ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1635 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70,7 MB.
+System memory in use after: 70,8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2075.
+Total: 4,620550 ms (FindLiveObjects: 0,156426 ms CreateObjectMapping: 0,069526 ms MarkObjects: 4,239863 ms  DeleteObjects: 0,153723 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/WW2_German_soilders
+  artifactKey: Guid(46a3c028843ff4ec0af5505c3aedebc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders using Guid(46a3c028843ff4ec0af5505c3aedebc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b9665815381d2f55ac6aa54e546f15') in 0,010041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000201 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene
+  artifactKey: Guid(3bafd513bfbf86040bcc679fdea4ced9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene using Guid(3bafd513bfbf86040bcc679fdea4ced9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a21beab26a64174ce8eccf018bf4381') in 0,002543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,368756 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/WW2_German_soilders.unity
+  artifactKey: Guid(d01ce03903961a94aa2fe8aec9243517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/WW2_German_soilders.unity using Guid(d01ce03903961a94aa2fe8aec9243517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc7a20e83c00acca1d1571c950af8a39') in 0,005608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45,665390 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/WW2_German_soilders
+  artifactKey: Guid(3fa190c55b0c6ed4c965ecccba0607fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/WW2_German_soilders using Guid(3fa190c55b0c6ed4c965ecccba0607fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd41a6c4ac47ac8f34b280c5a5cea6b') in 0,001414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,288111 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/WW2_German_soilders/NavMesh.asset
+  artifactKey: Guid(2129188c821f7a440a229140bfc7b033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/WW2_German_soilders/NavMesh.asset using Guid(2129188c821f7a440a229140bfc7b033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d9c8ae72cfd4c9eb3782ae1cb44831') in 0,028344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8,206799 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene
+  artifactKey: Guid(48f8da3d27d3a8048bd67385fe0f352c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene using Guid(48f8da3d27d3a8048bd67385fe0f352c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d30ba4e20874555cc5c7675ea0c476a') in 0,003121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,103508 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/leaf.png
+  artifactKey: Guid(fa07cf48cfa4fcd46bc829668fa00c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/leaf.png using Guid(fa07cf48cfa4fcd46bc829668fa00c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3791f378c918a9f330cf87c6de329f1') in 0,048572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000234 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/sky.mat
+  artifactKey: Guid(ff8482ec0d386af45ba49b7219fdf572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/sky.mat using Guid(ff8482ec0d386af45ba49b7219fdf572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13af49d93c03eeedaf552707f0c03c12') in 0,063506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000263 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_tree_wood.mat
+  artifactKey: Guid(bd985d65cd5ab2d41921a7ada7a39582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_tree_wood.mat using Guid(bd985d65cd5ab2d41921a7ada7a39582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac2ed07d23bce2c83a804c67c26ea57') in 0,015846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000228 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_terrain.fbx
+  artifactKey: Guid(3b431fea33205334d853369fcafa4823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_terrain.fbx using Guid(3b431fea33205334d853369fcafa4823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd51ef5dda3a287c848c327b67f9da5c') in 0,047351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000203 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_tree_prefab.prefab
+  artifactKey: Guid(ac9a897cc545ebb4cab6c71ad38791f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_tree_prefab.prefab using Guid(ac9a897cc545ebb4cab6c71ad38791f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b975bd2eae86fc0f8606bec911c7ab') in 0,015770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000259 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_tree_leafes.mat
+  artifactKey: Guid(d95c4e6088e02df4791ed03e45f30a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_tree_leafes.mat using Guid(d95c4e6088e02df4791ed03e45f30a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0f933647af151ed905b90e8f3dc48f') in 0,015941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000398 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/New LightmapParameters.giparams
+  artifactKey: Guid(c72cf24ae7147034caacbcb5737ba352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/New LightmapParameters.giparams using Guid(c72cf24ae7147034caacbcb5737ba352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7725b79cf3ba050f71b4be59d93ba7c') in 0,003471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000524 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_terrain.mat
+  artifactKey: Guid(c35b2ce3398e39f45a963961b41fce3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_terrain.mat using Guid(c35b2ce3398e39f45a963961b41fce3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e3478ee48d48b90e2374dcf7db0937') in 0,013238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000242 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/sky.png
+  artifactKey: Guid(922407b72eefee54b9257ca911d1c1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/sky.png using Guid(922407b72eefee54b9257ca911d1c1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a4c209d31fde8616e7bbe796ca34c1') in 0,011935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000329 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_terrain.png
+  artifactKey: Guid(ad381f2e4d0bc494c8ff0c4fb0609968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_terrain.png using Guid(ad381f2e4d0bc494c8ff0c4fb0609968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c30c8b665410ad3b8f622af3cd2942') in 0,013401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000184 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_Tree_A.fbx
+  artifactKey: Guid(0285e5bd484639a47a63c110a49e90fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/Test_Tree_A.fbx using Guid(0285e5bd484639a47a63c110a49e90fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7cfb6ea183667eb47219eaed27b093') in 0,018625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000211 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/wood.png
+  artifactKey: Guid(e3d2275fe22cbe746a1dc2c727fa0bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/wood.png using Guid(e3d2275fe22cbe746a1dc2c727fa0bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6701e9dc7cbdb6933274308f4ec9c4') in 0,013068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,323976 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs
+  artifactKey: Guid(f7632d9916e65d64b8bfd23af4147d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs using Guid(f7632d9916e65d64b8bfd23af4147d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7489f4558997ab0838eec844e5167e23') in 0,009315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,108804 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs/K98_bullet_prefab.prefab
+  artifactKey: Guid(ae4406b540dfdf646bad05989746a423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs/K98_bullet_prefab.prefab using Guid(ae4406b540dfdf646bad05989746a423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3f2b1aefdf750b5018becff2b481cc') in 0,021197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000236 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs/Luger_Bulletcase_Prefab.prefab
+  artifactKey: Guid(e8bc26a2e5b752b46afdb0e17e5fd503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs/Luger_Bulletcase_Prefab.prefab using Guid(e8bc26a2e5b752b46afdb0e17e5fd503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a912a92f2baec4aad32ca4c7f43fd0a') in 0,017110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000337 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs/PanzerSchreck_Rocket_prefab.prefab
+  artifactKey: Guid(349d9ea0a71fe9847928b578fe6cbeb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs/PanzerSchreck_Rocket_prefab.prefab using Guid(349d9ea0a71fe9847928b578fe6cbeb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8128e1bdbaa936b8cfe1b45242ed18d5') in 0,013479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000183 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs/Rocket_Panzerfaust_Prefab.prefab
+  artifactKey: Guid(13d39d4baa6c4434ab53b65650eef99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs/Rocket_Panzerfaust_Prefab.prefab using Guid(13d39d4baa6c4434ab53b65650eef99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81a0239b93ab2ac146d7ab0845d8a12') in 0,018369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000236 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs/MG42_prefab.prefab
+  artifactKey: Guid(054335e07c04b8d458511eab58e8980b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs/MG42_prefab.prefab using Guid(054335e07c04b8d458511eab58e8980b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555beb6562f62f8fa22d8b8e70744f94') in 0,012888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000128 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs/STG44_bullet_prefab.prefab
+  artifactKey: Guid(5b7ac25e66fa815489d4647d38242623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs/STG44_bullet_prefab.prefab using Guid(5b7ac25e66fa815489d4647d38242623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4002ff5c4e4b24af8d9a6524827d0fe') in 0,017011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000205 seconds.
+  path: Assets/WW2_German_soilders/Bullet_prefabs/MP40_prefab.prefab
+  artifactKey: Guid(3543da0c1c9019849979f6eedd0209e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Bullet_prefabs/MP40_prefab.prefab using Guid(3543da0c1c9019849979f6eedd0209e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468543f4c552a3475d1e638ff1f45f77') in 0,012055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,414982 seconds.
+  path: Assets/WW2_German_soilders/Materials
+  artifactKey: Guid(1d29298a71ec66e41b2268e5cbcf227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Materials using Guid(1d29298a71ec66e41b2268e5cbcf227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a1e0b3371172e2fe1bb411d9727638') in 0,006824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,094126 seconds.
+  path: Assets/WW2_German_soilders/Materials/Leafes.mat
+  artifactKey: Guid(035b9b4dc384dff4a8573b919ba97b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Materials/Leafes.mat using Guid(035b9b4dc384dff4a8573b919ba97b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ccf682bd8356499e923b340775aa95') in 0,024833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000252 seconds.
+  path: Assets/WW2_German_soilders/Materials/Test_terrain.mat
+  artifactKey: Guid(11d493363ffb12140aa6c365c4ca89b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Materials/Test_terrain.mat using Guid(11d493363ffb12140aa6c365c4ca89b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e014c3de524ae4ef511958f070bc9a8') in 0,014856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000212 seconds.
+  path: Assets/WW2_German_soilders/Materials/Wood.mat
+  artifactKey: Guid(58054f93d693f5346ad5a6d69cdaf468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Materials/Wood.mat using Guid(58054f93d693f5346ad5a6d69cdaf468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180c6dfd16f3b76c57ed1230cf438de0') in 0,008306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,822620 seconds.
+  path: Assets/WW2_German_soilders/Soilders
+  artifactKey: Guid(7c03c767a03efdc4496fc254b1c8adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders using Guid(7c03c767a03efdc4496fc254b1c8adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90832c77eea77797c7bfb5f36e64823') in 0,002881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,188282 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders
+  artifactKey: Guid(4b88876293473ee4f8986633594e0cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders using Guid(4b88876293473ee4f8986633594e0cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7041924bbcd011980e0f1b692bd8db') in 0,010620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,078204 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A_hands.mask
+  artifactKey: Guid(0fac1c1e8dbc98f4bac9bc0a61b5ccf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A_hands.mask using Guid(0fac1c1e8dbc98f4bac9bc0a61b5ccf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19aafbd16a9e00481076883d3e7eb809') in 0,013271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000593 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/wehrmacht_C_hands.mask
+  artifactKey: Guid(1ce26b6f080b5444394418f81dc4d1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/wehrmacht_C_hands.mask using Guid(1ce26b6f080b5444394418f81dc4d1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86084c86e316d21c1e74ab2f04510e78') in 0,007863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000344 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Soilder_merge_hands_wehrmacht_C.mask
+  artifactKey: Guid(fe01f494eabc94c46a2709bf26229562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Soilder_merge_hands_wehrmacht_C.mask using Guid(fe01f494eabc94c46a2709bf26229562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a434e549ce4dd71942b86941a04938d') in 0,012278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000257 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/wehrmacht_A_hands.mask
+  artifactKey: Guid(fbb794d18ee2baf429d5917c77ec3054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/wehrmacht_A_hands.mask using Guid(fbb794d18ee2baf429d5917c77ec3054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b3ede99fb2b74189b97df0b322fa8f') in 0,003308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000108 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_B_merge_hands.mask
+  artifactKey: Guid(d25d03b70576d704ba8464e5e8376596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_B_merge_hands.mask using Guid(d25d03b70576d704ba8464e5e8376596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbaf226242548b85821de313bc5a8300') in 0,002977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000141 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Soilder_merge_hands_wehrrmacht_B.mask
+  artifactKey: Guid(53eaefaabba24f8499386024d21d8159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Soilder_merge_hands_wehrrmacht_B.mask using Guid(53eaefaabba24f8499386024d21d8159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c8069934c91e4f93556d31e26c5982') in 0,004587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000117 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Soilder_merge_hands_wehrmacht_A.mask
+  artifactKey: Guid(c7fc2aa25f43d1a4a84b704c1ba2ccb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Soilder_merge_hands_wehrmacht_A.mask using Guid(c7fc2aa25f43d1a4a84b704c1ba2ccb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '646a5a16c34b52007a9a87736bedf5cd') in 0,003390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000117 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/wehrmacht_B_hands.mask
+  artifactKey: Guid(b174d25ae7fdaa3459125ad2dc5205fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/wehrmacht_B_hands.mask using Guid(b174d25ae7fdaa3459125ad2dc5205fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc8e6de683d7f09d5fa923c157c8f61') in 0,002699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000275 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_B_hands.mask
+  artifactKey: Guid(b2fcf533b7580414185dba5c41d22afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_B_hands.mask using Guid(b2fcf533b7580414185dba5c41d22afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a908935884d0d1d106297a773f51ad6c') in 0,003104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000260 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A_merge_hands.mask
+  artifactKey: Guid(f840887cae088a347972b47059565764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A_merge_hands.mask using Guid(f840887cae088a347972b47059565764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c1d5805032d6559f1c8c92c8c167b0') in 0,002947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35,721129 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A
+  artifactKey: Guid(ec35a1167019e5948a7fff10897117e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A using Guid(ec35a1167019e5948a7fff10897117e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61994f715b8f173c933754b5a97127e6') in 0,005534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,104378 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/SchutzStaffel_A_Prefab.prefab
+  artifactKey: Guid(4bc1a69d8733fc049baca07c8bee0cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/SchutzStaffel_A_Prefab.prefab using Guid(4bc1a69d8733fc049baca07c8bee0cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb5eb3924da82989dee01c2080a9f53') in 0,051750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6,551613 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/SchutzStaffel_a.controller
+  artifactKey: Guid(87e0a5af1400a8045af34447d3e1e89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/SchutzStaffel_a.controller using Guid(87e0a5af1400a8045af34447d3e1e89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84112c740f7bf5ef9ab6c3eadb661d8c') in 0,015986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,407801 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures
+  artifactKey: Guid(156943265c5eb1a49bf4ddbcc23ae52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures using Guid(156943265c5eb1a49bf4ddbcc23ae52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd23c505ee534907545e91f7b224ae5d') in 0,005606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,525899 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/SchutzStaffel_hat.png
+  artifactKey: Guid(14952942c7d4c17428bd75fb805819ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/SchutzStaffel_hat.png using Guid(14952942c7d4c17428bd75fb805819ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533cad83e2acaf802e5122a37b4f96b2') in 0,016397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000247 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/Schutzstaffel_jacket.png
+  artifactKey: Guid(649d671106bb4bb49bf0ce40c7c0d12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/Schutzstaffel_jacket.png using Guid(649d671106bb4bb49bf0ce40c7c0d12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd827260c12ab7b6cf741e08eea3a1966') in 0,016326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000258 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/SchutzStaffel_throusers.png
+  artifactKey: Guid(fa382900dfc80b049ad0af5cea84c2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/SchutzStaffel_throusers.png using Guid(fa382900dfc80b049ad0af5cea84c2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8434a19d1f34b4e81aa4c6ad2820bcd') in 0,012476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000203 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/SchutzStaffel_skin.png
+  artifactKey: Guid(b01eb054fd8a04d4e885bcf6e48518db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/textures/SchutzStaffel_skin.png using Guid(b01eb054fd8a04d4e885bcf6e48518db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e16706ee4f83a055447763890529d97') in 0,012458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10,532407 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials
+  artifactKey: Guid(b204bd331350d3a4f9232690b88b5ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials using Guid(b204bd331350d3a4f9232690b88b5ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba2ee2c3c9d7be87c4f7bd7aca689612') in 0,005260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,063130 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/Schutzstaffel_A.mat
+  artifactKey: Guid(8c51e20a3a24dc34eaa80ae6f91b3963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/Schutzstaffel_A.mat using Guid(8c51e20a3a24dc34eaa80ae6f91b3963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d50e1d7d9c9ab9187a042783d8f925') in 0,010892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000170 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/Schutzstaffel_jacket.mat
+  artifactKey: Guid(26c03df72b6b35c4b8861a02e08beea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/Schutzstaffel_jacket.mat using Guid(26c03df72b6b35c4b8861a02e08beea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8533043265b6a59fdb5f8cfff6b8993b') in 0,013875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000175 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/SchutzStaffel_skin.mat
+  artifactKey: Guid(0e5ecc875238ffe4e9deace1beb2d626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/SchutzStaffel_skin.mat using Guid(0e5ecc875238ffe4e9deace1beb2d626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af4402efdf321fde34a6a84d07895d2') in 0,013250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000197 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/SchutzStaffel_hat.mat
+  artifactKey: Guid(9fa60a04cb262244498423620974c285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/SchutzStaffel_hat.mat using Guid(9fa60a04cb262244498423620974c285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8596a8cddc98e73573b9cf24af16d2d') in 0,022993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000109 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/SchutzStaffel_throusers.mat
+  artifactKey: Guid(7ab7fb2d66b31394b98b2730e73aabdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/SchutzStaffel_A/Materials/SchutzStaffel_throusers.mat using Guid(7ab7fb2d66b31394b98b2730e73aabdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553822b5b4d0a323688cc7168cb657da') in 0,014403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,977986 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b
+  artifactKey: Guid(50a2636f360bef1428f6da7a196df963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b using Guid(50a2636f360bef1428f6da7a196df963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5754f747a96c717fecc73f2985268b12') in 0,002684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,123341 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(50bb8ddc112af9940abeabee2a8d9935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/SchutzStaffel_B_Prefab.prefab using Guid(50bb8ddc112af9940abeabee2a8d9935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41edeb6354b98c611aecbb835b55c7a3') in 0,059038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,042231 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/SchutzStaffel_b.controller
+  artifactKey: Guid(5238ef25fe02892469f20768a8c36a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/SchutzStaffel_b.controller using Guid(5238ef25fe02892469f20768a8c36a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529f0f5bf07cda2a2663ff3b34d5fba0') in 0,031791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,305964 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B
+  artifactKey: Guid(68f64c339301ba844b378e5d2adb08ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B using Guid(68f64c339301ba844b378e5d2adb08ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba168aae0d5a245d204a17864826d518') in 0,010413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,060708 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8ec98872cbc84d866a734abd84c130') in 0,036237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,326493 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures
+  artifactKey: Guid(67da0574398f8484eb559656057e919f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures using Guid(67da0574398f8484eb559656057e919f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72dc3e919cca9e950748960b1a762a92') in 0,005017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,108059 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Helmet_Wehrmacht_A.png
+  artifactKey: Guid(81b3db960e3ce5b45ad72e3464a2f284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Helmet_Wehrmacht_A.png using Guid(81b3db960e3ce5b45ad72e3464a2f284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eddbce1101842c3de65017c64622597') in 0,012009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000155 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Throusers_Wehrmacht_A.png
+  artifactKey: Guid(fb4e6b0d316973c46bce5bafd54ca6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Throusers_Wehrmacht_A.png using Guid(fb4e6b0d316973c46bce5bafd54ca6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d579563c9915dae2ac0f91f09f2231d') in 0,017455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000210 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Wehrmacht_B_jacket.png
+  artifactKey: Guid(e263c6cdd0a553141917996f84271e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Wehrmacht_B_jacket.png using Guid(e263c6cdd0a553141917996f84271e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c305a0f611734a946c02b124278f8cfb') in 0,013097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000299 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Wehrmacht_A_skin.png
+  artifactKey: Guid(20c9f82e83cb4c5488feb572ff08e190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/textures/Wehrmacht_A_skin.png using Guid(20c9f82e83cb4c5488feb572ff08e190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4675f7e09f4aee68658467252c96eaf4') in 0,013260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,588961 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/mesh
+  artifactKey: Guid(927b4354c3f415e42972060418c63e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/mesh using Guid(927b4354c3f415e42972060418c63e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4a622f1e7a440d9d2aa79fe9d795a3') in 0,006566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,130263 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/mesh/Wehrmacht_soilder_B.fbx
+  artifactKey: Guid(86cecc50967b26d4693b7e59e3815120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/mesh/Wehrmacht_soilder_B.fbx using Guid(86cecc50967b26d4693b7e59e3815120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '111d8eda967222d96144625dbce5a015') in 0,475214 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,002874 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1,012 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1012ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (847ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (378ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70,9 MB.
+System memory in use after: 70,9 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2126.
+Total: 4,144591 ms (FindLiveObjects: 0,147685 ms CreateObjectMapping: 0,043622 ms MarkObjects: 3,893868 ms  DeleteObjects: 0,058394 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 115,357053 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_C
+  artifactKey: Guid(7facaa8f49a21884aace4034707ba5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_C using Guid(7facaa8f49a21884aace4034707ba5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1cbc34b395665e023a005acde4a293') in 0,009460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,072025 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_C/Wehrmacht_C_Prefab.prefab
+  artifactKey: Guid(dd241e6708f6ae94aa577e722c70a485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_C/Wehrmacht_C_Prefab.prefab using Guid(dd241e6708f6ae94aa577e722c70a485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '570008be661dd0e3768d5af4889a137e') in 0,085833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20,459314 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_A
+  artifactKey: Guid(8f1460f4a4f4fe84da1cc57a73b73665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_A using Guid(8f1460f4a4f4fe84da1cc57a73b73665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e7325172c1b3dae70c2710d18714b12') in 0,006598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,077960 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_A/Wehrmacht_A_prefab.prefab
+  artifactKey: Guid(efa840fd7e7ebba42b0fa611ba1eef80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_A/Wehrmacht_A_prefab.prefab using Guid(efa840fd7e7ebba42b0fa611ba1eef80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295a89bda585c18ceb422b88d4705747') in 0,036007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 123,095362 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures
+  artifactKey: Guid(0be7d392596a3694493f8182731a06ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures using Guid(0be7d392596a3694493f8182731a06ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84978a666a6ee987cff7eb06bf7a1ad') in 0,002472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,078428 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/Helmet_schutzstaffel.png
+  artifactKey: Guid(d6765440b63920c4bb07a55bc4bdccb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/Helmet_schutzstaffel.png using Guid(d6765440b63920c4bb07a55bc4bdccb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb768f47634bfaadc60fe5fb5b750b1') in 0,012341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000283 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/SchutzStaffel_skin.png
+  artifactKey: Guid(943267c28d7a22e4884d724821c26130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/SchutzStaffel_skin.png using Guid(943267c28d7a22e4884d724821c26130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c335cb61abebd2015eea5171bb662f') in 0,005438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000242 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/SchutzStaffel_throusers.png
+  artifactKey: Guid(f2aa1e816685f534eb6e5a3c9ac390e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/SchutzStaffel_throusers.png using Guid(f2aa1e816685f534eb6e5a3c9ac390e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a2c6fe3fc826f995054696e7f45f43') in 0,005120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000252 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/Schutzstaffel_jacket.png
+  artifactKey: Guid(919349a5515dd044b9c91b23815d6537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/textures/Schutzstaffel_jacket.png using Guid(919349a5515dd044b9c91b23815d6537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039608384cfc678374a772d9a28093e2') in 0,005423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,928483 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh
+  artifactKey: Guid(bed662edd2acad54b8e86e532ce24ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh using Guid(bed662edd2acad54b8e86e532ce24ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f9259852d28610f37cd87279c5d296') in 0,002764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,096594 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/SchutzStaffel_B.fbx
+  artifactKey: Guid(d4a1a4a4b01e5f74b898ca905ae50664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/SchutzStaffel_B.fbx using Guid(d4a1a4a4b01e5f74b898ca905ae50664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d22c9c4a5d702e086ee62995711e038') in 0,144949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,531082 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials
+  artifactKey: Guid(8f2597eb7336dd74caf5fd09d109f6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials using Guid(8f2597eb7336dd74caf5fd09d109f6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0115c4f5c9fb036d0a66f1ab4848c0fc') in 0,002219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,131985 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullet_magazine.001.mat
+  artifactKey: Guid(8faaf03114a5e4121b132763f931be4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullet_magazine.001.mat using Guid(8faaf03114a5e4121b132763f931be4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14bfa4f7e13a2e37a27277b9ffbcc604') in 0,016850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000207 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullet_magazine.mat
+  artifactKey: Guid(cd8ff1a76b9cb4ccbab0b0609d8edd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullet_magazine.mat using Guid(cd8ff1a76b9cb4ccbab0b0609d8edd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e225e2bac1548c15962779eea73074') in 0,006736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000199 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullets_magazine.001.mat
+  artifactKey: Guid(5046fd62e449941879fddc747dafeaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullets_magazine.001.mat using Guid(5046fd62e449941879fddc747dafeaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb02a20de8e650392c5c8882f0937e04') in 0,010101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000231 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullets.mat
+  artifactKey: Guid(068ac6624916f42b18ce27f1469c1ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullets.mat using Guid(068ac6624916f42b18ce27f1469c1ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0140a43810f27a81a70f62ee6014449') in 0,020757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000106 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.mat
+  artifactKey: Guid(3621c61bac89042f79eecfee6b9903e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.mat using Guid(3621c61bac89042f79eecfee6b9903e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c427a55aab29abcb9d9c54083bb56125') in 0,007611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000152 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Skin.mat
+  artifactKey: Guid(4790e6daada875b46ac8ff05194642e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Skin.mat using Guid(4790e6daada875b46ac8ff05194642e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129940d2e3b54d1ee321b36162887e17') in 0,008343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000233 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.006.mat
+  artifactKey: Guid(f544467e8068c48079ff7d4b2f634421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.006.mat using Guid(f544467e8068c48079ff7d4b2f634421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f7b8a85100dcbd652333ba4bdc70c7') in 0,007799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000257 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Schutzstaffel_jacket.mat
+  artifactKey: Guid(f6912f18d350a47f48689b8b0590754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Schutzstaffel_jacket.mat using Guid(f6912f18d350a47f48689b8b0590754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad071267badeaf8c376328e0ba3289f') in 0,015801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000239 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/helmet.mat
+  artifactKey: Guid(587e2feaf3c6e3f45be904942949c465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/helmet.mat using Guid(587e2feaf3c6e3f45be904942949c465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8b925b5c174c64a5d3cc643f3bc736') in 0,009126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000191 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.001.mat
+  artifactKey: Guid(84cf6cb39654f400fa7b72f715286a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.001.mat using Guid(84cf6cb39654f400fa7b72f715286a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f927e9158bfad9390cdf5bb400ece526') in 0,009384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000218 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.002.mat
+  artifactKey: Guid(4cb7077ee50d342c1b3988a3ea8c594d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.002.mat using Guid(4cb7077ee50d342c1b3988a3ea8c594d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931a3ddf6f97f8fbfac59383d8e03ca8') in 0,011243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000210 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.005.mat
+  artifactKey: Guid(b09063806f316458aac8c6de73dd115b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.005.mat using Guid(b09063806f316458aac8c6de73dd115b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb287903fae15b41081df8ebaaf61e8f') in 0,014313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000202 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Rocket_reload.mat
+  artifactKey: Guid(11b057afbd77149d09b737b4974ff19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Rocket_reload.mat using Guid(11b057afbd77149d09b737b4974ff19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f9c18b2b979ce192f344419eb3f34ed') in 0,012407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000278 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/PanzerFaust_texture.mat
+  artifactKey: Guid(7bf6bde9170fc44a1bc880d145952538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/PanzerFaust_texture.mat using Guid(7bf6bde9170fc44a1bc880d145952538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec705c7629cb7adf0d119353fe567ba') in 0,015498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000309 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.003.mat
+  artifactKey: Guid(5be0b2a86465846d0bfb0a81979facf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Main.003.mat using Guid(5be0b2a86465846d0bfb0a81979facf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f05de464d42dec40217053a3cb9aa76') in 0,012600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000253 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/SchutzStaffel_throusers.mat
+  artifactKey: Guid(5ac0538c986784d3d8e05b6f05ff0d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/SchutzStaffel_throusers.mat using Guid(5ac0538c986784d3d8e05b6f05ff0d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b48dfd46cb8ce5d753b64110d1949eb6') in 0,011336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000163 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullets_magazine.mat
+  artifactKey: Guid(60cf01ac09bec479dbc26b578d9c8be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Bullets_magazine.mat using Guid(60cf01ac09bec479dbc26b578d9c8be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d5476db293c11079b36a49ef841b56') in 0,007125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000208 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Jacket.mat
+  artifactKey: Guid(138532913d5b0f848aaf296b24f7f4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Jacket.mat using Guid(138532913d5b0f848aaf296b24f7f4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036cabea4b2bdd5f48d9792d6f0185a8') in 0,011205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000230 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Material.001.mat
+  artifactKey: Guid(5f7de400c56c943b893a6f4c772477aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Material.001.mat using Guid(5f7de400c56c943b893a6f4c772477aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b10950dc0967c9dbd2606540fa5bef0') in 0,011663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000231 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Schutzstaffel_b_helmet.mat
+  artifactKey: Guid(fb2711e899a58472089a71e290ba7039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Schutzstaffel_b_helmet.mat using Guid(fb2711e899a58472089a71e290ba7039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7fd9d5b024b8cd1c8500ae7f9d5b2f') in 0,013188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000179 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Schutzstaffel_B.mat
+  artifactKey: Guid(f2f94ebcfa76044189f399883bcf1eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Schutzstaffel_B.mat using Guid(f2f94ebcfa76044189f399883bcf1eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5402a22d212064240b8facc3fee8f2ab') in 0,013794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000274 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Throusers.mat
+  artifactKey: Guid(04fddc26b78333f4fb639b889cf0eee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/mesh/Materials/Throusers.mat using Guid(04fddc26b78333f4fb639b889cf0eee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f626657abf1681445bca0c09a9db81') in 0,013353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29,149602 seconds.
+  path: Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/soilder_show.cs
+  artifactKey: Guid(d5427b5a626e3164da625968491c1b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Demo_scene/Test_stuff_for_the_scene/soilder_show.cs using Guid(d5427b5a626e3164da625968491c1b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11adc4b0fe132c768df8f5cac8915da3') in 0,007567 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003272 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0,952 seconds
+Domain Reload Profiling:
+	ReloadAssembly (952ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (780ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (235ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (339ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71,4 MB.
+System memory in use after: 71,5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2130.
+Total: 4,136722 ms (FindLiveObjects: 0,160016 ms CreateObjectMapping: 0,044544 ms MarkObjects: 3,901024 ms  DeleteObjects: 0,030241 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 273,551841 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbfab8ce1c9d95eabd0b259605ea078') in 0,076863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,803589 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9658e897981a3e950ee79262a92507f') in 0,031429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3,417512 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794fc5bea5f3388a6720e668fed6e11e') in 0,032224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,464398 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d083bee1c071aac6ebbf6311abff45b') in 0,025286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34,695657 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34b1b3c7287352c75edc2bf689e3f0f') in 0,028576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,110194 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c786de87b2d38adc53d09a692885a25a') in 0,025746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50,531741 seconds.
+  path: Assets/Prefabs/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/wehrmacht_b_prefab.prefab using Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5463650d933c82e8d490b3df83a0d72') in 0,139836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000296 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9df498a9973ae2909f96360ef3efeee') in 0,022500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000260 seconds.
+  path: Assets/Prefabs/OptionsManager.prefab
+  artifactKey: Guid(c84ceb45bd26e33368042d9fefe9e3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/OptionsManager.prefab using Guid(c84ceb45bd26e33368042d9fefe9e3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c154920599cadc7a99e7f3e470ac53') in 0,007252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,198682 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(a0114c1a961a91ba4b89afcf2610958a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(a0114c1a961a91ba4b89afcf2610958a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0413dc5073c2e81b472307e10666ec') in 0,005847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8,204077 seconds.
+  path: Assets/Prefabs/Soldier
+  artifactKey: Guid(ffb0f1b472182cc358258947d08bc618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldier using Guid(ffb0f1b472182cc358258947d08bc618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0940d4ede93e3205a3f956f6698bee6') in 0,005060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,277957 seconds.
+  path: Assets/Prefabs/Soldiers
+  artifactKey: Guid(ffb0f1b472182cc358258947d08bc618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers using Guid(ffb0f1b472182cc358258947d08bc618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fee2d1f0d0c28d72e3397d39633ae43') in 0,005832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9,858681 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Wehrmacht_B/wehrmacht_b_prefab.prefab using Guid(6fd37bc403f0bd54588916227b3cd53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c4b619a108c109a024c19f9b97b521') in 0,027071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,763792 seconds.
+  path: Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(50bb8ddc112af9940abeabee2a8d9935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2_German_soilders/Soilders/FBX_soilders/Schutzstaffel_b/SchutzStaffel_B_Prefab.prefab using Guid(50bb8ddc112af9940abeabee2a8d9935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9869fce707193e044577956ec6bdd575') in 0,022212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28,968053 seconds.
+  path: Assets/Prefabs/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73af3cba046cca180dc95fa968940b10') in 0,029056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26,506365 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c0d5bd9e1fc5175876fe146bd7890a') in 0,002424 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,004973 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1,025 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1026ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (850ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (264ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (356ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72,3 MB.
+System memory in use after: 72,3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2134.
+Total: 4,080439 ms (FindLiveObjects: 0,138213 ms CreateObjectMapping: 0,041763 ms MarkObjects: 3,867631 ms  DeleteObjects: 0,031702 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 145,029639 seconds.
+  path: Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab using Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(39c4176627df34b92ab648feba982dea) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab from editor
+Resuming Guid(39c4176627df34b92ab648feba982dea) Importer(-1,00000000000000000000000000000000) -> 0000003f0000803fffff7f3f0000803f 
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Requesting import of Guid(39c4176627df34b92ab648feba982dea) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab from editor
+Resuming Guid(39c4176627df34b92ab648feba982dea) Importer(-1,00000000000000000000000000000000) -> 0000003f0000803fffff7f3f0000803f 
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '00000000000000000000000000000000') in 0,085928 seconds  code(4) message(Build asset version error: )
+  ERROR: Build asset version error: 
+========================================================================
+Received Import Request.
+  Time since last request: 4,267460 seconds.
+  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c2b9542bb4a2bf61b677fffdb08a785') in 0,075261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000239 seconds.
+  path: Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab using Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd63924dc3b41414b4479735379bdbb') in 0,028021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,342225 seconds.
+  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279b9813acc7f60ca4e477950b9e118e') in 0,027154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60,000355 seconds.
+  path: Assets/Prefabs/Weapon Effects/HitEffect.prefab
+  artifactKey: Guid(a5e1e2c4d2cd81f4abed6272a2b8187a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon Effects/HitEffect.prefab using Guid(a5e1e2c4d2cd81f4abed6272a2b8187a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e517b6e27a6552cb56f0b6ee807408') in 1,325796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000289 seconds.
+  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa854924e0a45f2fc880ddbd6ef7deb') in 0,022106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000284 seconds.
+  path: Assets/Prefabs/Weapon Effects/Hot Trail.png
+  artifactKey: Guid(740d6b4108d95c74f8589167c75a6a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon Effects/Hot Trail.png using Guid(740d6b4108d95c74f8589167c75a6a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bdef65b40fe1e96da963171d5f9d9f') in 0,009339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000193 seconds.
+  path: Assets/Prefabs/Weapon Effects/Hot Trail.mat
+  artifactKey: Guid(476aff1c990deed408034e650422291d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon Effects/Hot Trail.mat using Guid(476aff1c990deed408034e650422291d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdfb0afe75e2356ca7f0c9cae34fc57') in 0,359931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000298 seconds.
+  path: Assets/Prefabs/Weapon Effects/MuzzleFlash01.prefab
+  artifactKey: Guid(ad2ab49d0a2a17148bd51c93d977bdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon Effects/MuzzleFlash01.prefab using Guid(ad2ab49d0a2a17148bd51c93d977bdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad412a972739179a60e46c210b99307') in 0,059037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000228 seconds.
+  path: Assets/Prefabs/Weapon Effects/Hot Trail.prefab
+  artifactKey: Guid(43559d27d223bf340b413fde1315c256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon Effects/Hot Trail.prefab using Guid(43559d27d223bf340b413fde1315c256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689cc4d3c1b0c33886e35a7a8950906d') in 0,006356 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003594 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1,021 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1021ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (858ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (262ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (377ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144,0 MB.
+System memory in use after: 144,0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2140.
+Total: 4,300320 ms (FindLiveObjects: 0,138150 ms CreateObjectMapping: 0,047780 ms MarkObjects: 4,078414 ms  DeleteObjects: 0,035120 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6,397956 seconds.
+  path: Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab using Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8242deeff3a8d68219c5504b90a4bcf') in 0,065741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,902032 seconds.
+  path: Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab using Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b602fc6dc35537f4bd827581b6e4ab') in 0,024081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,596715 seconds.
+  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ae1b0c1441ac8e6e2ba7015856c9b1') in 0,025064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,999282 seconds.
+  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac73525dd7eb5c84e0f1cf7e3c89c7c') in 0,023770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,435428 seconds.
+  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d5dc2622966e4ba8c50f6a19c3937f') in 0,025203 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,004151 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0,996 seconds
+Domain Reload Profiling:
+	ReloadAssembly (997ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (810ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (362ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144,0 MB.
+System memory in use after: 144,1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2144.
+Total: 4,188103 ms (FindLiveObjects: 0,163891 ms CreateObjectMapping: 0,046520 ms MarkObjects: 3,946765 ms  DeleteObjects: 0,030081 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 60,990215 seconds.
+  path: Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab using Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7016cfa63f735810f56acf4e13fadf') in 0,072691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17,131856 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196e78ec2720ba5566a0d03e14181301') in 0,023881 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003764 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0,983 seconds
+Domain Reload Profiling:
+	ReloadAssembly (984ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (822ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (365ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144,0 MB.
+System memory in use after: 144,1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2148.
+Total: 4,190916 ms (FindLiveObjects: 0,137977 ms CreateObjectMapping: 0,047222 ms MarkObjects: 3,974748 ms  DeleteObjects: 0,030073 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 56,368868 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f0d8cb78ec8008cf2f8f037de19b30') in 0,050044 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,004244 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0,940 seconds
+Domain Reload Profiling:
+	ReloadAssembly (941ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (783ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (340ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144,0 MB.
+System memory in use after: 144,1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2151.
+Total: 4,084024 ms (FindLiveObjects: 0,158789 ms CreateObjectMapping: 0,039692 ms MarkObjects: 3,856029 ms  DeleteObjects: 0,028760 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003529 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0,994 seconds
+Domain Reload Profiling:
+	ReloadAssembly (995ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (837ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (360ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144,0 MB.
+System memory in use after: 144,1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2154.
+Total: 4,141888 ms (FindLiveObjects: 0,133414 ms CreateObjectMapping: 0,040365 ms MarkObjects: 3,937106 ms  DeleteObjects: 0,030157 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 145,215432 seconds.
+  path: Assets/Prefabs/Weapon Effects
+  artifactKey: Guid(3ac812e9588e0a1fc9e69b79b96827f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapon Effects using Guid(3ac812e9588e0a1fc9e69b79b96827f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c89505134dbbc9c7276b086e69f4388') in 0,005272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,326352 seconds.
+  path: Assets/Prefabs/UI
+  artifactKey: Guid(6263fe688a2727641a37dfcf75e46dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI using Guid(6263fe688a2727641a37dfcf75e46dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb8eb1acd332c0d13381b7c083099d7') in 0,002637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,131658 seconds.
+  path: Assets/Prefabs/UI/Canvas.prefab
+  artifactKey: Guid(4a2434aec308bcc509cea55337c76b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Canvas.prefab using Guid(4a2434aec308bcc509cea55337c76b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5448affe74ee701eb1c67cbc5e9169d') in 0,115564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000240 seconds.
+  path: Assets/Prefabs/UI/Opciones.prefab
+  artifactKey: Guid(e58bc0760b8635948b09269d6d7305de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Opciones.prefab using Guid(e58bc0760b8635948b09269d6d7305de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0feed39a1208f9d26a428f925016a2') in 0,020584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000243 seconds.
+  path: Assets/Prefabs/UI/CrossHair.prefab
+  artifactKey: Guid(fdf9f3218689bab428222eeaa025b724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/CrossHair.prefab using Guid(fdf9f3218689bab428222eeaa025b724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b5ba10c8ca8dde0b5f636376c1fa9c3') in 0,004148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31,330834 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(df3601a8e047f0cffab9770ac0be6771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(df3601a8e047f0cffab9770ac0be6771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42395f3f07e03d4b7dd48f8758c91a7d') in 0,001926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,164302 seconds.
+  path: Assets/Scripts/LevelProgress.cs
+  artifactKey: Guid(5ecffe76279a241349f0b5d3df1a760d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LevelProgress.cs using Guid(5ecffe76279a241349f0b5d3df1a760d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bb164d7724cec392065e44d401137a') in 0,001593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,439092 seconds.
+  path: Assets/Scripts/OptionsController.cs
+  artifactKey: Guid(dbf5ffe8caf7cdc41bbbb1c6913ff5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/OptionsController.cs using Guid(dbf5ffe8caf7cdc41bbbb1c6913ff5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c1984c2cc95435047233701de18aed') in 0,002433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,527716 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(7b5a8f796b328bb389730dff31db9664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(7b5a8f796b328bb389730dff31db9664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e4bc4fb20aaeb69140ea27bf224bb8') in 0,003057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2,908001 seconds.
+  path: Assets/Scripts/WeaponController.cs
+  artifactKey: Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/WeaponController.cs using Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5308592e1c2dc87d1db513dd3976bba7') in 0,002509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1,121916 seconds.
+  path: Assets/Scripts/WeaponManager.cs
+  artifactKey: Guid(2162cb3356ad79e5695d3a30ec0787f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/WeaponManager.cs using Guid(2162cb3356ad79e5695d3a30ec0787f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc93f3e8824e009c823ea176d4881e3') in 0,002162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 112,915176 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e6c213328070e0fb7662d8e99a5bd4') in 0,002437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16,418226 seconds.
+  path: Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab
+  artifactKey: Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/wehrmacht_b_prefab.prefab using Guid(39c4176627df34b92ab648feba982dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a9baa00baeabb0fe1ecd078c7d49ac') in 0,054723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5,492864 seconds.
+  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
+  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436321845e3ee9745dfcbac2a3a6b132') in 0,026316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15,728948 seconds.
+  path: Assets/Prefabs/Buildings
+  artifactKey: Guid(37d2189187ffb4007a0ca641e7bc4359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings using Guid(37d2189187ffb4007a0ca641e7bc4359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c32f5cb92d252c7761797056904c35') in 0,002347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,108618 seconds.
+  path: Assets/Prefabs/Buildings/B1.prefab
+  artifactKey: Guid(b899b4ca7aec4ab46a90ccb21da5cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/B1.prefab using Guid(b899b4ca7aec4ab46a90ccb21da5cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4c5b0221acf42b74f1aaaf37e83cc9') in 0,066032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000270 seconds.
+  path: Assets/Prefabs/Buildings/Ramp.prefab
+  artifactKey: Guid(02736b13b1163f1419bdcba9f12dda15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Ramp.prefab using Guid(02736b13b1163f1419bdcba9f12dda15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502aa178c8d4a3b50b189a40299e440d') in 0,016844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000334 seconds.
+  path: Assets/Prefabs/Buildings/B3.prefab
+  artifactKey: Guid(3f5b0d562a0aa814983e524d822c2795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/B3.prefab using Guid(3f5b0d562a0aa814983e524d822c2795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783a904e3241e4185ff457ef6a16fc29') in 0,020179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000273 seconds.
+  path: Assets/Prefabs/Buildings/B2.prefab
+  artifactKey: Guid(0635d3d15ee127a4c8b98071c3bafa88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/B2.prefab using Guid(0635d3d15ee127a4c8b98071c3bafa88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40f98495d517c2d89ec883fe8a2377b') in 0,080838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37,758966 seconds.
+  path: Assets/Prefabs/Buildings/B1.prefab
+  artifactKey: Guid(b899b4ca7aec4ab46a90ccb21da5cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/B1.prefab using Guid(b899b4ca7aec4ab46a90ccb21da5cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd178e1ba9159dad4a1cfef77be829ce9') in 0,136636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,154400 seconds.
+  path: Assets/Prefabs/Buildings/B2.prefab
+  artifactKey: Guid(0635d3d15ee127a4c8b98071c3bafa88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/B2.prefab using Guid(0635d3d15ee127a4c8b98071c3bafa88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd39032a19156f2589074254fec6da3') in 0,019840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,139846 seconds.
+  path: Assets/Prefabs/Buildings/B3.prefab
+  artifactKey: Guid(3f5b0d562a0aa814983e524d822c2795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/B3.prefab using Guid(3f5b0d562a0aa814983e524d822c2795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6273d4cf208ab59f622616f91b421500') in 0,015911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,086949 seconds.
+  path: Assets/Prefabs/Buildings/Ramp.prefab
+  artifactKey: Guid(02736b13b1163f1419bdcba9f12dda15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Ramp.prefab using Guid(02736b13b1163f1419bdcba9f12dda15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ebe7334befd6895fcde2f6fd0821d81') in 0,010103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000719 seconds.
+  path: Assets/Prefabs/Buildings/B1.prefab
+  artifactKey: Guid(b899b4ca7aec4ab46a90ccb21da5cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/B1.prefab using Guid(b899b4ca7aec4ab46a90ccb21da5cc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed79a03cb0f38ff2ab3cc0dec1158018') in 0,123251 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003369 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0,994 seconds
+Domain Reload Profiling:
+	ReloadAssembly (994ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (838ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (368ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144,4 MB.
+System memory in use after: 144,5 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2161.
+Total: 4,577384 ms (FindLiveObjects: 0,145911 ms CreateObjectMapping: 0,047975 ms MarkObjects: 4,307138 ms  DeleteObjects: 0,074986 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 69,998171 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22cf7bc30fd4bf14e3954b2e7d3d13bd') in 0,052946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4,150182 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26030e3466afb1aa1cab7e80474df270') in 0,017239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40,383496 seconds.
+  path: Assets/Prefabs/Guns/ar1.prefab
+  artifactKey: Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar1.prefab using Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c0d16b6a1d69aedd70ed47423b96ad') in 0,049687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000309 seconds.
+  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab Variant.prefab
+  artifactKey: Guid(9412a988f55e913c7b026821856195d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab Variant.prefab using Guid(9412a988f55e913c7b026821856195d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29113cdf2dbb630f4ce7413d06cd7375') in 0,018942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000339 seconds.
+  path: Assets/Prefabs/Guns/smg1.prefab
+  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71eb8f1798ed12bd35d4602fa27dc4d5') in 0,017031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000272 seconds.
+  path: Assets/Prefabs/Guns/pistol1.prefab
+  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2bb6f2ed3af851ac4f23bc71c5f1ad4') in 0,018404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000329 seconds.
+  path: Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab
+  artifactKey: Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab using Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab89db382c98eecf16dac89258f393b') in 0,017098 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,003187 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+[Auto Package] : Couldn't find the packages list. Be sure there is a file called PackageImportList in your project
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+SNAP.PackageChecker:CheckPackage () (at Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs:40)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /home/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:154)
+
+(Filename: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker/PackageChecker.cs Line: 40)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1,006 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1007ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (841ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (362ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0,39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1612 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144,4 MB.
+System memory in use after: 144,5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2165.
+Total: 4,284927 ms (FindLiveObjects: 0,140895 ms CreateObjectMapping: 0,047722 ms MarkObjects: 4,035629 ms  DeleteObjects: 0,059737 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12,476293 seconds.
+  path: Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab
+  artifactKey: Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab using Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c0bffd69c3a3318fe52471a3afeee8') in 0,064586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8,413628 seconds.
+  path: Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab
+  artifactKey: Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab using Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54f68a6ecb4c1b98b0ee737ca1ffabe') in 0,018141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34,798494 seconds.
+  path: Assets/Prefabs/Guns
+  artifactKey: Guid(bb3a0e5dd0744ff2f81b27f6c03d04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns using Guid(bb3a0e5dd0744ff2f81b27f6c03d04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0613b6d75158a3c3fb1a5aa804d1fcd0') in 0,002612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,031520 seconds.
+  path: Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab
+  artifactKey: Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab using Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #7 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #8 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #9 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #10 asio::detail::task_io_service::run(std::error_code&)
+ #11 asio::io_service::run()
+ #12 IOService::Run(bool)
+ #13 RunAssetImporterV2()
+ #14 Application::InitializeProject()
+ #15 InitializeUnity(void*)
+ #16 g_source_get_time
+ #17 g_main_context_dispatch
+ #18 g_main_context_dispatch
+ #19 g_main_loop_run
+ #20 gtk_main
+ #21 main
+ #22 __libc_start_main
+ #23 _start
+
+Requesting import of Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab from editor
+Resuming Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(-1,00000000000000000000000000000000) -> 0000003f0000803fffff7f3f0000803f 
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6>(AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+ #9 asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::error_code const&, unsigned long)
+ #10 asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&)
+ #11 asio::detail::task_io_service::run(std::error_code&)
+ #12 asio::io_service::run()
+ #13 IOService::Run(bool)
+ #14 RunAssetImporterV2()
+ #15 Application::InitializeProject()
+ #16 InitializeUnity(void*)
+ #17 g_source_get_time
+ #18 g_main_context_dispatch
+ #19 g_main_context_dispatch
+ #20 g_main_loop_run
+ #21 gtk_main
+ #22 main
+ #23 __libc_start_main
+ #24 _start
+
+Requesting import of Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab from editor
+Resuming Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(-1,00000000000000000000000000000000) -> 0000003f0000803fffff7f3f0000803f 
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeDependencies != nullptr'
+Assertion failed on expression: 'unsafeMetaInfo != nullptr'
+Assertion failed on expression: 'safeMetaInfo != nullptr'
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: 'c40c463a09bbb9f40ae6b55c9d95e632') in 0,043862 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
