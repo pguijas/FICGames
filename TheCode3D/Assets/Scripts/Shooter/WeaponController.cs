@@ -68,6 +68,10 @@ public class WeaponController : MonoBehaviour{
         EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
     }
 
+    private void OnEnable(){
+        EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
+    }
+
 
     public bool IsAutomatic() {
         return isAutomatic;
@@ -81,13 +85,11 @@ public class WeaponController : MonoBehaviour{
             Vector3 direction = GetDirection();
             // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
             if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
-                TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
-                StartCoroutine(SpawnTrail(trail, hit));
+                StartCoroutine(SpawnTrail(hit));
                 LastShootTime = Time.time;
             // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
             } else{
-                TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
-                StartCoroutine(SpawnTrail(trail, direction));
+                StartCoroutine(SpawnTrail(direction));
                 LastShootTime = Time.time;
             }
             currentMag -= 1;
@@ -121,37 +123,39 @@ public class WeaponController : MonoBehaviour{
     }
 
     // Spawnear el trail desde el origen al punto de impacto
-    private IEnumerator SpawnTrail(TrailRenderer Trail, RaycastHit Hit) {
+    private IEnumerator SpawnTrail(RaycastHit hit) {
         float time = 0;
-        Vector3 startPosition = Trail.transform.position;
-        float distance = Hit.distance;
+        TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
+        Vector3 startPosition = trail.transform.position;
+        float distance = hit.distance;
         // un impacto q este a BulletSpeed m -> 1 segundo
         // distancia/velocidad = tiempo
         // spawneamos la bala un determinado tiempo
         while (time < distance/BulletSpeed) {
-            Trail.transform.position = Vector3.Lerp(startPosition, Hit.point, time);
-            time += Time.deltaTime;
+            trail.transform.position = Vector3.Lerp(startPosition, hit.point, time);
+            time += BulletSpeed*Time.deltaTime/distance;
             yield return null;
         }
-        Trail.transform.position = Hit.point;
-        Instantiate(ImpactParticleSystem, Hit.point, Quaternion.LookRotation(Hit.normal));
-        Destroy(Trail.gameObject, Trail.time);
+        trail.transform.position = hit.point;
+        Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(trail.gameObject, trail.time);
     }
 
     // Spawnear el trail desde el origen una determinada distancia hacia delante
     // para dar sensación de disparo hasta el infinito
-    private IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 direction) {
+    private IEnumerator SpawnTrail(Vector3 direction) {
         float time = 0;
-        Vector3 startPosition = Trail.transform.position;
+        TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
+        Vector3 startPosition = trail.transform.position;
         Vector3 endPosition = startPosition + direction * 100;
         float distance = Vector3.Distance(startPosition, endPosition);
         while (time < distance/BulletSpeed) {
-            Trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
-            time += Time.deltaTime;
+            trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
+            time += BulletSpeed*Time.deltaTime/distance;
             yield return null;
         }
-        Trail.transform.position = endPosition;
-        Destroy(Trail.gameObject, Trail.time);
+        trail.transform.position = endPosition;
+        Destroy(trail.gameObject, trail.time);
     }
 
 

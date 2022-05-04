@@ -7,11 +7,7 @@ public class Hud : MonoBehaviour{
     public TMP_Text totalBullets;
 
     private void Start(){
-        EventManager.instance.UpdateBulletsEvent.AddListener(UpdateBullets);
-    }
-
-    private void OnDisable(){
-        EventManager.instance.UpdateBulletsEvent.RemoveListener(UpdateBullets);
+        EventManager.instance.UpdateBulletsEvent.AddListener(UpdateBullets); // No necesario disable puesto que el hud se desactiva al salir de la escena
     }
 
     public void UpdateBullets(int current, int total){
