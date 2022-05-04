@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Node DB
   m_EditorClassIdentifier: 
   DataDB: {fileID: 11400000, guid: 3dda23f4316b46f41b091f7c2e692df2, type: 2}
-  NextID: 47
+  NextID: 48
   Nodes:
   - ID: 0
     Type: 1

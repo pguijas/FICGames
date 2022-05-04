@@ -1,0 +1,1230 @@
+Unity Editor version:    2020.3.33f1 (915a7af8b0d5)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.3.1 (Build 21E258)
+Darwin version:          21.4.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59599
+Successfully changed project path to: /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D
+/Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 46.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Assets
+GfxDevice: creating device client; threaded=0
+2022-05-04 12:39:01.100 Unity[16658:673135] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2022-05-04 12:39:01.100 Unity[16658:673135] Metal devices available: 1
+2022-05-04 12:39:01.100 Unity[16658:673135] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2022-05-04 12:39:01.101 Unity[16658:673135] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 640
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56658
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003467 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 43.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.002 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1002ms)
+		BeginReloadAssembly (341ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (577ms)
+			LoadAssemblies (359ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (213ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (118ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007151 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.308 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1309ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1081ms)
+			LoadAssemblies (241ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (334ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (333ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (256ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.015569 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.050118 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Initializing Unity extensions:
+2022-05-04 12:39:06.829 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003206920 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-05-04 12:39:06.833 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003261ab0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1698 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 275.0 MB.
+System memory in use after: 274.7 MB.
+
+Unloading 101 unused Assets to reduce memory usage. Loaded Objects now: 2195.
+Total: 3.703765 ms (FindLiveObjects: 0.153809 ms CreateObjectMapping: 0.063660 ms MarkObjects: 3.246728 ms  DeleteObjects: 0.238694 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Imports
+  artifactKey: Guid(763e774c4106c486d9eced7ccd6536db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports using Guid(763e774c4106c486d9eced7ccd6536db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af53bd45e31a86c4bced8f92cbaf5000') in 0.003929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets
+  artifactKey: Guid(34411d161ceada44292f5cedb669ab0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets using Guid(34411d161ceada44292f5cedb669ab0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e2c8b86819deaa07602019e6a10422') in 0.001016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/AssetStoreOriginals
+  artifactKey: Guid(3f815f43dbf4f0c4bb4d0e74cb4fbe8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals using Guid(3f815f43dbf4f0c4bb4d0e74cb4fbe8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8d8f3b01f4fa4e55fc4c764f8f30dd') in 0.000851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.784414 seconds.
+  path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts
+  artifactKey: Guid(be7ae7fe806296f4c9dca1c8c47562d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts using Guid(be7ae7fe806296f4c9dca1c8c47562d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847dceee109fd5d6767aadf80f0ea295') in 0.002136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.900775 seconds.
+  path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor
+  artifactKey: Guid(f52fe71ce8dbfe6489253f2e825a7460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor using Guid(f52fe71ce8dbfe6489253f2e825a7460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568f637985eeaefbedf4cff99c8aec08') in 0.002292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.635968 seconds.
+  path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker
+  artifactKey: Guid(54787618cdfe30944b448d0acd452b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/Scripts/Editor/PackageChecker using Guid(54787618cdfe30944b448d0acd452b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56beec47c6fd42cb6604f13fa90f8171') in 0.001064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.567714 seconds.
+  path: Assets/Ground textures pack
+  artifactKey: Guid(06153f24e085a3c44bb93a365dd2defc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ground textures pack using Guid(06153f24e085a3c44bb93a365dd2defc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b91868be997c6f869a67c236a1ff977') in 0.002226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.752606 seconds.
+  path: Assets/GLASSOFCOINS - FPS low poly fps
+  artifactKey: Guid(7b0e95e0d7f9547b6a567d83f6fed32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GLASSOFCOINS - FPS low poly fps using Guid(7b0e95e0d7f9547b6a567d83f6fed32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e0c12af812397b2a91d139d349721c') in 0.002221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.780676 seconds.
+  path: Assets/LowPolyWater_Pack
+  artifactKey: Guid(00833b5e3fc73b04b8018babe51bd74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyWater_Pack using Guid(00833b5e3fc73b04b8018babe51bd74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce41eca552a7e965cd562f755622921d') in 0.001076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.642934 seconds.
+  path: Assets/PolygonPi
+  artifactKey: Guid(9e074154f64fc22438425261ed17cded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPi using Guid(9e074154f64fc22438425261ed17cded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9612cebde741e3d6ee725911fbd548ce') in 0.002234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.171099 seconds.
+  path: Assets/Low Poly Pack - Environment Lite
+  artifactKey: Guid(a7610188b7c295e4585d788a28ad7533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Pack - Environment Lite using Guid(a7610188b7c295e4585d788a28ad7533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a65d1788ffbc424ef88d3bb76b716e3') in 0.001661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.155220 seconds.
+  path: Assets/POLYGON city pack
+  artifactKey: Guid(0a1358d5b30d38e4e8c3128399712fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON city pack using Guid(0a1358d5b30d38e4e8c3128399712fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603b70a9108874c4e5862ef853426f98') in 0.001871 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002822 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:39:54.851 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000032012d0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.251 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1252ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1038ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (415ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (350ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 273.7 MB.
+System memory in use after: 273.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2199.
+Total: 2.954755 ms (FindLiveObjects: 0.144105 ms CreateObjectMapping: 0.058927 ms MarkObjects: 2.723219 ms  DeleteObjects: 0.027622 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19.876959 seconds.
+  path: Assets/BOXOPHOBIC
+  artifactKey: Guid(6581f08f7f1f6be44a1ca9e7dfbcbeba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BOXOPHOBIC using Guid(6581f08f7f1f6be44a1ca9e7dfbcbeba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51b4bcbfaa4cf9602d1056148454c476') in 0.005321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.174323 seconds.
+  path: Assets/Quantum Tek
+  artifactKey: Guid(1bd6016f899203a4ba85f20d74f078cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quantum Tek using Guid(1bd6016f899203a4ba85f20d74f078cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6f57cdbd6b09cc0f2bfe9126a3e44a') in 0.001252 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001979 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:40:16.925 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003205570 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.379 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1380ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1157ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (385ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (376ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 273.9 MB.
+System memory in use after: 274.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2202.
+Total: 2.916543 ms (FindLiveObjects: 0.140293 ms CreateObjectMapping: 0.052104 ms MarkObjects: 2.703236 ms  DeleteObjects: 0.020065 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7.303959 seconds.
+  path: Assets/Dialogos
+  artifactKey: Guid(0cba8b5bdb2a13149b94e1d5b49b193a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dialogos using Guid(0cba8b5bdb2a13149b94e1d5b49b193a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc406736e4d09d6d196a789c4b7eb771') in 0.005383 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002098 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:40:25.896 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003231b20 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.286 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1287ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1063ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (368ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (371ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (255ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 274.0 MB.
+System memory in use after: 274.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2205.
+Total: 5.167500 ms (FindLiveObjects: 0.157736 ms CreateObjectMapping: 0.090377 ms MarkObjects: 4.891640 ms  DeleteObjects: 0.026554 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001137 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:40:30.966 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000322f720 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.276 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1276ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (1060ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (425ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (346ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 274.2 MB.
+System memory in use after: 274.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2208.
+Total: 2.775154 ms (FindLiveObjects: 0.139523 ms CreateObjectMapping: 0.054378 ms MarkObjects: 2.561343 ms  DeleteObjects: 0.019343 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11.560882 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b4cbde9565bf190136f1148817e1ea') in 0.003580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.980002 seconds.
+  path: Assets/Wand and Circles
+  artifactKey: Guid(7dc4ee27a81e33747aeb65bc75076678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wand and Circles using Guid(7dc4ee27a81e33747aeb65bc75076678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251768aa46dbb525f878005b85f91476') in 0.001211 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001930 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:40:45.751 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003223b80 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.186 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1187ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (982ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (363ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (345ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 274.4 MB.
+System memory in use after: 274.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2211.
+Total: 2.919543 ms (FindLiveObjects: 0.139565 ms CreateObjectMapping: 0.053318 ms MarkObjects: 2.652463 ms  DeleteObjects: 0.073367 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13.368039 seconds.
+  path: Assets/Imports/Low Poly Water
+  artifactKey: Guid(0b32364367c5403418d30f29d0e007ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Low Poly Water using Guid(0b32364367c5403418d30f29d0e007ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d5e3e1006da083fcd017c19b21e47f') in 0.005496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.581709 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel
+  artifactKey: Guid(9a4f92ed7641a42eb9d5737d5911b1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel using Guid(9a4f92ed7641a42eb9d5737d5911b1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2a81b8c5786acaab327e543de18087') in 0.002905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.032765 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo
+  artifactKey: Guid(c41e33f051b4d46d3a875c2a39546103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo using Guid(c41e33f051b4d46d3a875c2a39546103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b49ca1a7dc55bb184fc183df66a6c2') in 0.001216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.725382 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/Enemy Marker.asset
+  artifactKey: Guid(65475a720cfb446a68d2b2612af53698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/Enemy Marker.asset using Guid(65475a720cfb446a68d2b2612af53698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2028ecf59b63ebee8a592fd517db57c') in 0.390354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/World Center Marker.asset
+  artifactKey: Guid(535b4dae04db645918cb3be29d6e59b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/World Center Marker.asset using Guid(535b4dae04db645918cb3be29d6e59b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2f73ef016a74dc56f93980f6068f13') in 0.002536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/Player Marker.asset
+  artifactKey: Guid(19559c3d141a34bc8a8098d14d64edac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/Player Marker.asset using Guid(19559c3d141a34bc8a8098d14d64edac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e906f43e62614be20450a4b0f137ec79') in 0.003390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.698120 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/2D Map Demo.unity
+  artifactKey: Guid(ed0c30e8f8482438780125d37ea6d5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/2D Map Demo.unity using Guid(ed0c30e8f8482438780125d37ea6d5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9963dffec1805f5608a8051cbe3cd078') in 0.002853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.085577 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/2D Minimap Demo.unity
+  artifactKey: Guid(63d456a5b307344d1a4fb4500cae2594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/2D Minimap Demo.unity using Guid(63d456a5b307344d1a4fb4500cae2594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2731f2c1fdc42c4074e40526d44a39') in 0.002603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.128037 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Minimap Demo.unity
+  artifactKey: Guid(74fb8399517d042938f174a8f08c4f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Minimap Demo.unity using Guid(74fb8399517d042938f174a8f08c4f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed5b6c20a747ecba6b097c53980f2b1') in 0.003033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.654836 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Masked Compass Demo.unity
+  artifactKey: Guid(70b8f72c8ae6b4db5bfe72dcd4e32a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Masked Compass Demo.unity using Guid(70b8f72c8ae6b4db5bfe72dcd4e32a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc280e991649091cbc357a3b380609c9') in 0.002281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.412776 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Map Demo.unity
+  artifactKey: Guid(f1b4d3ced2df84859a169e62cdb8a110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Map Demo.unity using Guid(f1b4d3ced2df84859a169e62cdb8a110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e120bd1e34e33eefd0ccf5ddba1b105b') in 0.002497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.924922 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Compass Demo.unity
+  artifactKey: Guid(80954cd57c8624639ba6565f792aa361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Compass Demo.unity using Guid(80954cd57c8624639ba6565f792aa361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe75effea61a893163c6a387c45682d1') in 0.002262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.403872 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/QT_Minimap2DDemo.cs
+  artifactKey: Guid(d4d18c57b60fb497eb8ccad70fe454d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/QT_Minimap2DDemo.cs using Guid(d4d18c57b60fb497eb8ccad70fe454d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6234e372101783b10e3241ce7a373a') in 0.258494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.893075 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/QT_Minimap3DDemo.cs
+  artifactKey: Guid(8289c35c30cc746e6a2caaa353504be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/QT_Minimap3DDemo.cs using Guid(8289c35c30cc746e6a2caaa353504be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b3ee1d4c72b65d8a7778fbe02e591d') in 0.004568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.630658 seconds.
+  path: Assets/Prefabs/UI/DialogCanvas.prefab
+  artifactKey: Guid(98b097a88a99b4b1687ac28ee29eee69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/DialogCanvas.prefab using Guid(98b097a88a99b4b1687ac28ee29eee69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4772b97c5588816bbec05780c44bac5') in 0.216293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.752834 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4e1568c3f5be4ac773d38379cf4ea2') in 0.009529 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001449 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:43:33.876 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003222b50 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.103 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1103ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (929ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (322ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 287.1 MB.
+System memory in use after: 287.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2214.
+Total: 3.041928 ms (FindLiveObjects: 0.150104 ms CreateObjectMapping: 0.059320 ms MarkObjects: 2.811057 ms  DeleteObjects: 0.020465 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 61.264079 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381961b8974167ed73f8295634a01453') in 0.040669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.412508 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d88887ca692fda63c6e3b9701c7ba39') in 0.006428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.947835 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d4717ad9074b5fe0750b4a52be112f9') in 0.008080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.869487 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f5a277c612d743fac42efd0b71c33ea') in 0.006338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.278928 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6249488263fb75f6fd443dc826225397') in 0.004962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.749135 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd86950dbefc3b239614022aedae372') in 0.007593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.286010 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45fb58950c431c55042eb3faae8792c0') in 0.005501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.883478 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a460529d224f726a78d173f2c92643d') in 0.006676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.197416 seconds.
+  path: Assets/Scenes/Level0.unity
+  artifactKey: Guid(9bc6007aee8b2cc4e9581705513d4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level0.unity using Guid(9bc6007aee8b2cc4e9581705513d4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef672c67269e7242b2878852358975f') in 0.002624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.894751 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f59c78ca1fff1bcd235367838fe6510') in 0.006028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.623903 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205300d91592bd14a46740d19897ad53') in 0.006280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.876621 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2ce5f4333ee1e87dcb05e0e79330ac') in 0.005502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.871482 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6c80843e79836ab305cf0f310c8707') in 0.006163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.423506 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491a6ba29bd4b99709719d5fa1b15be7') in 0.006061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.500165 seconds.
+  path: Assets/Prefabs/UI/Minimap.prefab
+  artifactKey: Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Minimap.prefab using Guid(487379dbbc82741f79c6c2b86893e18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c997c5f014e8c29a18cc124b0514d1') in 0.005054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.333370 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Minimap Demo.unity
+  artifactKey: Guid(74fb8399517d042938f174a8f08c4f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Minimap Demo.unity using Guid(74fb8399517d042938f174a8f08c4f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e901b3c13338c9b74b883b1d3ec5bffc') in 0.003449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.140950 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites
+  artifactKey: Guid(b4b7a9c8dbc4b4d9fb9314d57f03d654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites using Guid(b4b7a9c8dbc4b4d9fb9314d57f03d654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f4179da8052314fbfd3f5d7c65dea5') in 0.002568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.048339 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Compass Bar Frame.png
+  artifactKey: Guid(428c12a6143514d3592b305f62e7b776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Compass Bar Frame.png using Guid(428c12a6143514d3592b305f62e7b776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99fa544e69273d99d1a24c91c2014759') in 0.377147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap Border.png
+  artifactKey: Guid(3facdbc0d23cd498d940c995fe90390d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap Border.png using Guid(3facdbc0d23cd498d940c995fe90390d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b484aa5d8a59e338c9989e43050e476c') in 0.014601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Zoom Out.png
+  artifactKey: Guid(2f62bd296ef3b4ed7a9f4243bcc68807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Zoom Out.png using Guid(2f62bd296ef3b4ed7a9f4243bcc68807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76155eeafd0166169910f9ba2a1fe5dc') in 0.016044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Player Marker.png
+  artifactKey: Guid(2e166ad92c4ab4ee6861f06a3b7b3a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Player Marker.png using Guid(2e166ad92c4ab4ee6861f06a3b7b3a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216eec2af634bdb59d919e1dc99a9a44') in 0.029906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap Square.png
+  artifactKey: Guid(92d32ad2dab0b4cc9813425311ea6ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap Square.png using Guid(92d32ad2dab0b4cc9813425311ea6ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7803db51e6958b174b5ed2d80e96c92') in 0.028333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Compass Bar.png
+  artifactKey: Guid(cdf3a8489c5fe4509b70206a9629beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Compass Bar.png using Guid(cdf3a8489c5fe4509b70206a9629beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59b39ae8e05e9bca579e97c251c2ca8') in 0.028385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap Border Square.png
+  artifactKey: Guid(31b103466bd894b699ad2ef79f1dbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap Border Square.png using Guid(31b103466bd894b699ad2ef79f1dbb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d04c7d7d4aadbc71880b7041e43ca8') in 0.028114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap.png
+  artifactKey: Guid(dd5dc20671d9440c6a63124bb2d4674f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Minimap.png using Guid(dd5dc20671d9440c6a63124bb2d4674f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98141206e2c6f8f1c8f3b53ab84d46f') in 0.029484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Enemy Marker.png
+  artifactKey: Guid(2e9e5d3067590485f9addb0a8f8b708c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Enemy Marker.png using Guid(2e9e5d3067590485f9addb0a8f8b708c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab90f33a36bbdd39a5dd6f1a9de443d') in 0.030723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Zoom In.png
+  artifactKey: Guid(b5f2d200fbfa944b99c92e328634306e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Sprites/Zoom In.png using Guid(b5f2d200fbfa944b99c92e328634306e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005d02655d29d67267bc6affda982faf') in 0.030389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.960280 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Scripts
+  artifactKey: Guid(228e0f354f3de4622ac5d23aed8896e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Scripts using Guid(228e0f354f3de4622ac5d23aed8896e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e78d1e6e6aff0f8d7104f19e62754c') in 0.002185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.423841 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_CompassBar.cs
+  artifactKey: Guid(58657cd69b1ba420f9d17743edc98b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_CompassBar.cs using Guid(58657cd69b1ba420f9d17743edc98b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7fd5fb3621569e234adb9e0303216d') in 0.005662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.877608 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_Map.cs
+  artifactKey: Guid(c06eb8f30228a48d1b06a255e078f604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_Map.cs using Guid(c06eb8f30228a48d1b06a255e078f604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1265e89ef049c74d0e0d5d5b9e0674') in 0.005690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.770238 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_MapMarker.cs
+  artifactKey: Guid(dbc9e73bb730748a483878b58c8e2027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_MapMarker.cs using Guid(dbc9e73bb730748a483878b58c8e2027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9059a48b74ec5d4197329dc42bce223') in 0.004953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.831488 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_MapMarkerData.cs
+  artifactKey: Guid(3c01bb4ac490640c5a1f78e61c3dddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_MapMarkerData.cs using Guid(3c01bb4ac490640c5a1f78e61c3dddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d7dc550d40ab2ca778cfef9a89b448b') in 0.004019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.995152 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_MapObject.cs
+  artifactKey: Guid(8cd079535c66d444285c085774f3b43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_MapObject.cs using Guid(8cd079535c66d444285c085774f3b43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b78f9888e0ec19999f58c943b0d2ef') in 0.005523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.407726 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_Minimap.cs
+  artifactKey: Guid(6856afad6e6f1486cad52a4ff05ab1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Scripts/QT_Minimap.cs using Guid(6856afad6e6f1486cad52a4ff05ab1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e69f816c9fa57deab6946a48e500d4') in 0.007194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.491230 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46f8b267b66110b0b2c0ec723ad280f') in 0.028426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.894874 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbc649dfd173dd804f62996d477cbaa') in 0.027638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.777610 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0854784e9816c14c843a9b8b4b1c5038') in 0.023765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.501603 seconds.
+  path: Assets/Scenes/Level0.unity
+  artifactKey: Guid(9bc6007aee8b2cc4e9581705513d4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level0.unity using Guid(9bc6007aee8b2cc4e9581705513d4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992a673094e98adaa1df3fabd61b90c4') in 0.003073 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001107 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:52:22.175 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003218620 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.198 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1198ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1024ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (337ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (419ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (298ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 291.8 MB.
+System memory in use after: 291.9 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2224.
+Total: 2.883296 ms (FindLiveObjects: 0.143946 ms CreateObjectMapping: 0.057402 ms MarkObjects: 2.661800 ms  DeleteObjects: 0.019287 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001833 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:53:39.112 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003277170 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.130 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1130ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (956ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (323ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (354ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 292.0 MB.
+System memory in use after: 292.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2227.
+Total: 2.783663 ms (FindLiveObjects: 0.146461 ms CreateObjectMapping: 0.059143 ms MarkObjects: 2.558126 ms  DeleteObjects: 0.019250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 235.111345 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Compass Bar.prefab
+  artifactKey: Guid(12d241b7ed6ca4761afd3d7267bdeb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Compass Bar.prefab using Guid(12d241b7ed6ca4761afd3d7267bdeb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77480b1d9f21788318de5bfaf9ac828') in 0.050890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Minimap.prefab
+  artifactKey: Guid(8a9cd580d201347eaa6645dcbd8f38ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Minimap.prefab using Guid(8a9cd580d201347eaa6645dcbd8f38ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f415c2b9c810aacc6bb003a6ea855edf') in 0.020187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Minimap Square Variant.prefab
+  artifactKey: Guid(afb854658e8b4448f9b7e1f46c9f2181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Minimap Square Variant.prefab using Guid(afb854658e8b4448f9b7e1f46c9f2181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '230d63b9071d2d3fd03cf3d306e73471') in 0.010195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Map.prefab
+  artifactKey: Guid(35d1aae8c94654ab4aa04bd93cecaea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Map.prefab using Guid(35d1aae8c94654ab4aa04bd93cecaea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd175d66888738a29dc3d5e56b3df382f') in 0.006979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Marker.prefab
+  artifactKey: Guid(4e797ceaee6b14310b0af14c0ca77cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Prefabs/Marker.prefab using Guid(4e797ceaee6b14310b0af14c0ca77cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06089dc27a4fd85b01821b51d1af4a34') in 0.007216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.500062 seconds.
+  path: Assets/Scenes/Level0.unity
+  artifactKey: Guid(9bc6007aee8b2cc4e9581705513d4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level0.unity using Guid(9bc6007aee8b2cc4e9581705513d4908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33075b94009bacc93eb8e94a2004ee53') in 0.002168 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001941 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:56:28.035 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003218c40 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.170 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1170ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (999ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (375ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 292.1 MB.
+System memory in use after: 292.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2230.
+Total: 2.845804 ms (FindLiveObjects: 0.154793 ms CreateObjectMapping: 0.069538 ms MarkObjects: 2.600757 ms  DeleteObjects: 0.020012 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002463 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-04 12:57:35.183 Unity[16658:673135] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000321afb0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.205 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1206ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1021ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (393ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 292.3 MB.
+System memory in use after: 292.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2233.
+Total: 2.781651 ms (FindLiveObjects: 0.144454 ms CreateObjectMapping: 0.056366 ms MarkObjects: 2.560385 ms  DeleteObjects: 0.019742 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 140.780272 seconds.
+  path: Assets/Prefabs/UI/Demo Canvas.prefab
+  artifactKey: Guid(7c7b1a3963afd4a9e8e1a6137a8ec5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Demo Canvas.prefab using Guid(7c7b1a3963afd4a9e8e1a6137a8ec5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ec6147283f3f3b3c19f0f24ffb4802') in 0.039802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.623547 seconds.
+  path: Assets/Prefabs/Demo Canvas (1).prefab
+  artifactKey: Guid(d7521ac8609a24a83945398071871a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Demo Canvas (1).prefab using Guid(d7521ac8609a24a83945398071871a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4166377148870c0eb871f38b59904e') in 0.008410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.327603 seconds.
+  path: Assets/Prefabs/MapCanvas.prefab
+  artifactKey: Guid(d7521ac8609a24a83945398071871a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapCanvas.prefab using Guid(d7521ac8609a24a83945398071871a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdf365869e00018eafd156674a259e5') in 0.009315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.318759 seconds.
+  path: Assets/Prefabs/UI/Demo Canvas.prefab
+  artifactKey: Guid(7c7b1a3963afd4a9e8e1a6137a8ec5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Demo Canvas.prefab using Guid(7c7b1a3963afd4a9e8e1a6137a8ec5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7eb932e7546e60c9757a054a2db335') in 0.007548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.285084 seconds.
+  path: Assets/Prefabs/UI/MapCanvas.prefab
+  artifactKey: Guid(7c7b1a3963afd4a9e8e1a6137a8ec5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/MapCanvas.prefab using Guid(7c7b1a3963afd4a9e8e1a6137a8ec5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88315d5eef4b0f7ed9fccda39b95406') in 0.009298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.021762 seconds.
+  path: Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Minimap Demo.unity
+  artifactKey: Guid(74fb8399517d042938f174a8f08c4f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Quantum Tek/Quantum Travel/Demo/3D Minimap Demo.unity using Guid(74fb8399517d042938f174a8f08c4f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e88b0c6fcaeeb11790286f9eaa18d58a') in 0.002241 seconds 
