@@ -15,7 +15,6 @@ public class CrossHair : MonoBehaviour {
     }
 
     private void Update() {
-        Debug.Log(isMoving());
         if (isMoving())
             currentSize = Mathf.Lerp(currentSize, maxSize, Time.deltaTime * speed);
         else 

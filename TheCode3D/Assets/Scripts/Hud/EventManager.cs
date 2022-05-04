@@ -10,7 +10,6 @@ public class EventManager : MonoBehaviour{
 
     public static EventManager instance;
     private void Awake(){
-        Debug.Log("EventManager.Awake()");
         if (instance == null){
             instance = this;
         }

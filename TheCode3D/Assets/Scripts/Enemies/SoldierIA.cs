@@ -8,6 +8,10 @@ public class SoldierIA : MonoBehaviour {
     
     [SerializeField]
     public Animator anim;
+    [SerializeField]
+    public float health = 100f;
+    [SerializeField]
+    public PlayerController player;
 
     private GameObject MP40;
     private GameObject STG44;
@@ -21,11 +25,27 @@ public class SoldierIA : MonoBehaviour {
             GameObject WeaponPath = GameObject.Find(gameObject.name + "/SchutzStaffel_B");
             STG44 = WeaponPath.transform.Find("STG44").gameObject;
         }
+        anim.SetInteger("Status_walk", 0);
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         
+    }
+
+
+    public void TakeDamage(float damage) {
+        if (health - damage <= 0) {
+            health = 0;
+            Die();
+        } else {
+            health -= damage;
+        }
+        anim.SetInteger("Status_walk", 1);
+    }
+
+
+    private void Die() {
+        Destroy(gameObject);
     }
 }

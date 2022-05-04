@@ -6,11 +6,8 @@ TagManager:
   tags:
   - crosshair
   - schutzstaffel_b
-  - schutzstaffel_a
-  - wehrmacht_c
   - wehrmacht_b
-  - wehrmacht_a
-  - way_point
+  - Rute1
   layers:
   - Default
   - TransparentFX

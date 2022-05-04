@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 4984240189922884510}
   - component: {fileID: 4961877564396185886}
   - component: {fileID: 3350694670485420313}
+  - component: {fileID: 3820611818511659945}
   m_Layer: 6
   m_Name: Throusers
   m_TagString: Untagged
@@ -437,6 +438,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3ae5a5e68b34a284d9bc013892d8bd25, type: 3}
+--- !u!114 &3820611818511659945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989173312637917596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475010f4bfb9a7a8993c14f7087bcb49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soldier: {fileID: 4989834659469721288}
 --- !u!1 &4989176829039854670
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +825,7 @@ GameObject:
   - component: {fileID: 4986630869471733564}
   - component: {fileID: 4959551916483025696}
   - component: {fileID: 4060183198610197382}
+  - component: {fileID: 1668159340550026844}
   m_Layer: 6
   m_Name: Jacket
   m_TagString: Untagged
@@ -929,6 +944,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300022, guid: 86cecc50967b26d4693b7e59e3815120, type: 3}
+--- !u!114 &1668159340550026844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989341578191939120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475010f4bfb9a7a8993c14f7087bcb49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soldier: {fileID: 4989834659469721288}
 --- !u!1 &4989348365613501932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1528,7 @@ GameObject:
   - component: {fileID: 4983973926280402436}
   - component: {fileID: 4959090454399659818}
   - component: {fileID: 4065504969494602776}
+  - component: {fileID: 5468638274581712395}
   m_Layer: 6
   m_Name: Helmet
   m_TagString: Untagged
@@ -1515,7 +1544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4989744086375858914}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0007356042, y: 1.7120178, z: 0.0062148315}
+  m_LocalPosition: {x: 0.0007356042, y: 1.661, z: 0.006}
   m_LocalScale: {x: 102.34256, y: 102.34256, z: 102.34256}
   m_Children: []
   m_Father: {fileID: 4986656907059240694}
@@ -1618,6 +1647,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d4a1a4a4b01e5f74b898ca905ae50664, type: 3}
+--- !u!114 &5468638274581712395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989744086375858914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475010f4bfb9a7a8993c14f7087bcb49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soldier: {fileID: 4989834659469721288}
 --- !u!1 &4989779887814804220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,6 +1671,7 @@ GameObject:
   - component: {fileID: 4986884265755408598}
   - component: {fileID: 4962238925134119850}
   - component: {fileID: 192928948367520967}
+  - component: {fileID: 4869555967495813498}
   m_Layer: 6
   m_Name: Wehrmacht_soilder_b
   m_TagString: Untagged
@@ -1747,6 +1790,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300020, guid: 86cecc50967b26d4693b7e59e3815120, type: 3}
+--- !u!114 &4869555967495813498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989779887814804220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475010f4bfb9a7a8993c14f7087bcb49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soldier: {fileID: 4989834659469721288}
 --- !u!1 &4989834659469721288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,6 +1813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4986656907059240694}
   - component: {fileID: 4929725042849278018}
+  - component: {fileID: 3117227215759529238}
   m_Layer: 6
   m_Name: Wehrmacht_soilder_B
   m_TagString: Untagged
@@ -1803,6 +1860,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3117227215759529238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989834659469721288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcfb45c247b49475bb4a1d91b9f46c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 4929725042849278018}
+  health: 100
+  player: {fileID: 6207614380543033460, guid: 78e8779cc6d2d6c9ba15f31b11055485, type: 3}
 --- !u!1 &4989879434447030646
 GameObject:
   m_ObjectHideFlags: 0

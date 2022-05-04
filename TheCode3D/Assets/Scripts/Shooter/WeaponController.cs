@@ -19,6 +19,8 @@ public class WeaponController : MonoBehaviour{
     
     [Header ("Gun Settings")]
     [SerializeField]
+    public float Damage = 30f;
+    [SerializeField]
     public int MagSize = 30;
     [SerializeField]
     public int currentMag = 30;
@@ -137,7 +139,13 @@ public class WeaponController : MonoBehaviour{
             yield return null;
         }
         trail.transform.position = hit.point;
-        Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+        SoldierPart soldier = hit.transform.GetComponent<SoldierPart>();
+        if (soldier != null)
+            soldier.DoDamage(Damage);
+        else
+            Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+        if (hit.rigidbody != null)
+            hit.rigidbody.AddForce(-hit.normal * 60f);
         Destroy(trail.gameObject, trail.time);
     }
 

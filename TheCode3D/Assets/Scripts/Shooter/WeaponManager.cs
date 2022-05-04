@@ -63,19 +63,21 @@ public class WeaponManager : MonoBehaviour {
                 if (!activeWeapon.IsAnimPlaying("Run"))
                     activeWeapon.Shoot();
             } else {
-                // Si no estamos apuntando, corremos
-                if (Input.GetButton("Sprint") && !activeWeapon.IsAiming()) 
-                    activeWeapon.Sprint();
-                else if (Input.GetButtonUp("Sprint")) 
-                    activeWeapon.Idle();
+                // Lógica de recarga
+                // No se puede recargar mientras se corre
+                if (Input.GetButtonDown("Reload")) {
+                    if (activeWeapon.IsSprinting())
+                        activeWeapon.Idle();
+                    activeWeapon.Reload();
+                } else { 
+                    // Si no estamos apuntando ni recargando podemos correr
+                    if (Input.GetButton("Sprint") && !activeWeapon.IsAiming()) 
+                        activeWeapon.Sprint();
+                    else if (Input.GetButtonUp("Sprint")) 
+                        activeWeapon.Idle();
+                }
             }
-            // Lógica de recarga
-            // No se puede recargar mientras se corre
-            if (Input.GetButtonDown("Reload")) {
-                if (activeWeapon.IsSprinting())
-                    activeWeapon.Idle();
-                activeWeapon.Reload();
-            }
+            
         } else {
             // Si está recargando, no se puede apuntar
             if (activeWeapon.IsAiming())
