@@ -547,6 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootSound: {fileID: -5372696837531288911}
   reloadSound: {fileID: 0}
+  dropeableModel: {fileID: 6095498958147014204, guid: c3420869c69274425af9d7a110c1410e, type: 3}
   ShootingSystem: {fileID: 5477741152151534619}
   BulletSpawnPoint: {fileID: 5677872373995097429}
   ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}

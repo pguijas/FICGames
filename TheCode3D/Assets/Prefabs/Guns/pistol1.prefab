@@ -431,71 +431,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &1155389975408530764
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581535351469026166}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 4e98271e1c60ef549b3240179519b7bf, type: 3}
-  m_Controller: {fileID: 9100000, guid: c053bf2f5de21f28e975d6f9936f81c2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-7355828171552280561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581535351469026166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roationDelay: 5
---- !u!114 &7072345867609906556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581535351469026166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootSound: {fileID: 727203437690357008}
-  reloadSound: {fileID: 4213019304813303636}
-  ShootingSystem: {fileID: 8419710409859459073}
-  BulletSpawnPoint: {fileID: 8509499111427823951}
-  ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
-  BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
-  Damage: 50
-  MagSize: 7
-  currentMag: 7
-  bullets: 3000
-  isAutomatic: 0
-  ShootDelay: 0.6
-  recoilForce: 3
-  RecoilCorrection: 2
-  BulletSpeed: 280
-  aimcorrection: {x: -0.315, y: 0.2, z: -0.5}
-  AddBulletSpread: 1
-  BulletSpreadVariance: {x: 0.02, y: 0.02, z: 0.02}
-  Mask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!82 &4213019304813303636
 AudioSource:
   m_ObjectHideFlags: 0
@@ -592,6 +527,72 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1155389975408530764
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581535351469026166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 4e98271e1c60ef549b3240179519b7bf, type: 3}
+  m_Controller: {fileID: 9100000, guid: c053bf2f5de21f28e975d6f9936f81c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-7355828171552280561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581535351469026166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ded1fb62470c4f8bd3a309742dc16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roationDelay: 5
+--- !u!114 &7072345867609906556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581535351469026166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84693e1c3a0f4c886b70356cda7f3d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootSound: {fileID: 727203437690357008}
+  reloadSound: {fileID: 4213019304813303636}
+  dropeableModel: {fileID: 9139639222008029847, guid: f61ccd0e348a547249065e7d2855e002, type: 3}
+  ShootingSystem: {fileID: 8419710409859459073}
+  BulletSpawnPoint: {fileID: 8509499111427823951}
+  ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
+  BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
+  Damage: 50
+  MagSize: 7
+  currentMag: 7
+  bullets: 3000
+  isAutomatic: 0
+  ShootDelay: 0.6
+  recoilForce: 3
+  RecoilCorrection: 2
+  BulletSpeed: 280
+  aimcorrection: {x: -0.315, y: 0.2, z: -0.5}
+  AddBulletSpread: 1
+  BulletSpreadVariance: {x: 0.02, y: 0.02, z: 0.02}
+  Mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &8509717610612356443
 PrefabInstance:
   m_ObjectHideFlags: 0

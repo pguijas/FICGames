@@ -110,7 +110,7 @@ public class OptionsController : MonoBehaviour{
     public void ChangeSens(float value){
         PlayerPrefs.SetFloat("sensibility", value);
         if (playerController != null)
-            Debug.Log("(sin hacer) Sensibility: " + value);
+            playerController.GetComponent<PlayerController>().rotationSensibility = 100f + value * 1000f;
     }
 
 }

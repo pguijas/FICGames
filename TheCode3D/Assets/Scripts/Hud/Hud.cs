@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Hud : MonoBehaviour{
 
     public TMP_Text currentBullets;
     public TMP_Text totalBullets;
+    public Image imageGun;
+    public Sprite[] sprites = new Sprite[3];
 
     private void Start(){
         EventManager.instance.UpdateBulletsEvent.AddListener(UpdateBullets); // No necesario disable puesto que el hud se desactiva al salir de la escena
+        Debug.Log("Hud Inicializado");
     }
 
-    public void UpdateBullets(int current, int total){
+    public void UpdateBullets(int gun, int current, int total){
+        // Gun 
+        imageGun.sprite = sprites[gun];
+ 
         // Current
         if (current == -1)
             currentBullets.text = "--";

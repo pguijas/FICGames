@@ -3710,6 +3710,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentBullets: {fileID: 5917762801939274211}
   totalBullets: {fileID: 5707766268924685707}
+  imageGun: {fileID: 292474636014099888}
+  sprites:
+  - {fileID: 21300000, guid: d8c6146f7c0484392ab37b8c39d553a5, type: 3}
+  - {fileID: 21300000, guid: 1f778bc94d8464ce0b0859af480681de, type: 3}
+  - {fileID: 21300000, guid: 4b1f981f50bc743619245760098739fe, type: 3}
 --- !u!1 &4521324545146393681
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [Serializable]
-public class Int2Event : UnityEvent<int, int> { }
+public class Int2Event : UnityEvent<int, int, int> { }
 
 public class EventManager : MonoBehaviour{
     #region Singleton

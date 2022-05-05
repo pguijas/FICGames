@@ -10,6 +10,9 @@ public class WeaponController : MonoBehaviour{
     public AudioSource shootSound;
     public AudioSource reloadSound;
 
+    [Header ("Model Dopeable")]
+    [SerializeField]
+    public GameObject dropeableModel;
     [Header ("Weapon Animations")]
     [SerializeField]
     private ParticleSystem ShootingSystem;
@@ -21,6 +24,8 @@ public class WeaponController : MonoBehaviour{
     private TrailRenderer BulletTrail;
     
     [Header ("Gun Settings")]
+    [SerializeField]
+    public int typegun = 1;
     [SerializeField]
     public float Damage = 30f;
     [SerializeField]
@@ -63,18 +68,18 @@ public class WeaponController : MonoBehaviour{
     private bool isSprinting = false;
 
 
-    private void start(){
+    private void Start(){
         originPosition = transform.localPosition;
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
     }
 
 
     private void Awake(){
         animator = GetComponent<Animator>();
-        EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
     }
 
     private void OnEnable(){
-        EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
     }
 
 
@@ -100,7 +105,7 @@ public class WeaponController : MonoBehaviour{
             }
             currentMag -= 1;
             //Actualizamos Hud
-            EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
+            EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
             // Fuerza de retroceso en el arma
             AddRecoil();
         } else if (currentMag == 0)
@@ -190,7 +195,7 @@ public class WeaponController : MonoBehaviour{
             return;
         reloadSound.Play();
         animator.SetTrigger("Reload");
-        EventManager.instance.UpdateBulletsEvent.Invoke(-1,bullets);
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,-1,bullets);
         isReloading = true;
         StartCoroutine(AfterReload());
     }
@@ -201,17 +206,12 @@ public class WeaponController : MonoBehaviour{
         currentMag = MagSize;
         bullets -= MagSize;
         isReloading = false;
-        EventManager.instance.UpdateBulletsEvent.Invoke(currentMag,bullets);
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
     }
 
     public bool IsReloading() {
         return isReloading;
     }
-
-    public void Hide() {
-        animator.SetTrigger("Hide");
-    }
-
 
     public void Aim() {
         if (!isAiming){
@@ -256,5 +256,12 @@ public class WeaponController : MonoBehaviour{
 
     public bool IsSprinting() {
         return isSprinting;
+    }
+
+    public void Drop() {
+        GameObject drop = Instantiate(dropeableModel, transform.position, Quaternion.identity); 
+        drop.GetComponent<Rigidbody>().AddForce(GameObject.FindWithTag("Player").transform.forward * 10f, ForceMode.Impulse);
+        drop.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up * 10f, ForceMode.Impulse);
+
     }
 }
