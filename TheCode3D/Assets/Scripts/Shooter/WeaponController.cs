@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class WeaponController : MonoBehaviour{
     //esta parte de aqui esta basatnte mal -> arreglarla 
     // REVISAR LOS NOMBRES DE LAS VARIABLES (empiezan mayúsculas)
-    
+
+    public AudioSource shootSound;
+    public AudioSource reloadSound;
+
     [Header ("Weapon Animations")]
     [SerializeField]
     private ParticleSystem ShootingSystem;
@@ -84,6 +87,7 @@ public class WeaponController : MonoBehaviour{
         if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
             //animator.SetBool("Shooting", true);
             ShootingSystem.Play();
+            shootSound.Play();
             Vector3 direction = GetDirection();
             // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
             if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
@@ -184,6 +188,7 @@ public class WeaponController : MonoBehaviour{
     public void Reload() {
         if (isReloading == true || currentMag == MagSize || bullets == 0)
             return;
+        reloadSound.Play();
         animator.SetTrigger("Reload");
         EventManager.instance.UpdateBulletsEvent.Invoke(-1,bullets);
         isReloading = true;

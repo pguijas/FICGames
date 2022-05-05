@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1564,6 +1564,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fbdccb55fd15bc4f92646bd818aca51, type: 3}
+--- !u!1001 &287281808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1232985234865612004, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232985234865612004, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 440af95f4c0b2464b9dd6c6ddcc7ec39, type: 3}
+    - target: {fileID: 1232985234865612004, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232985234865612004, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232985234865612004, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232985234865612004, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 393.2921
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 261.8976
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8988.753
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652481, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372703579606652511, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7681bc2f501d4a141b0aeaf96fc16dff, type: 3}
 --- !u!1001 &299606045
 PrefabInstance:
   m_ObjectHideFlags: 0
