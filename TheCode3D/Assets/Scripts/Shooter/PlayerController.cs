@@ -9,9 +9,10 @@ public class PlayerController : MonoBehaviour {
     public Camera playerCamera;
     [Header ("Physics")]
     public float gravityScale = -40f;
-    [Header ("Movement")]
+    [Header ("Player Settings")]
     public float walkSpeed = 5f;
     public float runSpeed = 20f;
+    public float health = 100f;
     public float rotationSensibility = 1000f;
     public float jumpHeight = 1.9f;
 
@@ -61,5 +62,20 @@ public class PlayerController : MonoBehaviour {
 
     public void StopSprint() {
         run = false;
+    }
+
+    public void TakeDamage(float damage) {
+        if (health - damage <= 0) {
+            health = 0;
+            Die();
+        } else {
+            health -= damage;
+            Debug.Log("Player health: " + health);
+        }
+    }
+
+
+    private void Die() {
+        Debug.Log("You died");
     }
 }

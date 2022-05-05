@@ -561,6 +561,7 @@ MonoBehaviour:
   BulletSpawnPoint: {fileID: 7695333682539450570}
   ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
   BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
+  typegun: 1
   Damage: 60
   MagSize: 30
   currentMag: 30
@@ -575,4 +576,4 @@ MonoBehaviour:
   BulletSpreadVariance: {x: 0.08, y: 0.08, z: 0.08}
   Mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 192

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7460481922710686411}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: DefaultParentSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6207614380543033460}
   - component: {fileID: 633651395098053359}
   - component: {fileID: 4695156602840825816}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   gravityScale: -60
   walkSpeed: 5
   runSpeed: 10
+  health: 100
   rotationSensibility: 500
   jumpHeight: 3
 --- !u!114 &633651395098053359
@@ -144,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2333700207944776147}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: WeaponParentSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6366985840857495729}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: AimParentSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +207,7 @@ GameObject:
   - component: {fileID: 2225201482483316392}
   - component: {fileID: 2532398515450853262}
   - component: {fileID: 5032899811551915987}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: WeaponCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +290,7 @@ GameObject:
   - component: {fileID: 4365478961936742899}
   - component: {fileID: 4293349001939547053}
   - component: {fileID: 1999038954552086643}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -372,7 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2037784076092854113}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: FirstPersonSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}

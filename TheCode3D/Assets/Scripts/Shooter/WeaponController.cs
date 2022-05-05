@@ -193,7 +193,7 @@ public class WeaponController : MonoBehaviour{
     public void Reload() {
         if (isReloading == true || currentMag == MagSize || bullets == 0)
             return;
-        reloadSound.Play();
+        //reloadSound.Play();
         animator.SetTrigger("Reload");
         EventManager.instance.UpdateBulletsEvent.Invoke(typegun,-1,bullets);
         isReloading = true;

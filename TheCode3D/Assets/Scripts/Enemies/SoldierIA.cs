@@ -11,6 +11,8 @@ public class SoldierIA : MonoBehaviour {
     [SerializeField]
     public float health = 100f;
     [SerializeField]
+    public EnemyWeaponController weapon;
+    [SerializeField]
     public PlayerController player;
 
     private GameObject MP40;
@@ -30,7 +32,8 @@ public class SoldierIA : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+            weapon.Shoot();
     }
 
 
@@ -40,8 +43,9 @@ public class SoldierIA : MonoBehaviour {
             Die();
         } else {
             health -= damage;
+            anim.SetInteger("Status_walk", 2);
+            anim.SetInteger("Status_stg44", 2);
         }
-        anim.SetInteger("Status_walk", 1);
     }
 
 
