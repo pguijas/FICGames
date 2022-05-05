@@ -22,4 +22,6 @@ public class EventManager : MonoBehaviour{
 
     public Int2Event UpdateBulletsEvent = new Int2Event();
 
+    public UnityEvent DialogEndEvent = new UnityEvent();
+
 }

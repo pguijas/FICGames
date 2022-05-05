@@ -10,9 +10,15 @@ public class Hud : MonoBehaviour{
     public Sprite[] sprites = new Sprite[3];
 
     private void Start(){
-        EventManager.instance.UpdateBulletsEvent.AddListener(UpdateBullets); // No necesario disable puesto que el hud se desactiva al salir de la escena
+        EventManager.instance.UpdateBulletsEvent.AddListener(UpdateBullets);
         Debug.Log("Hud Inicializado");
     }
+
+
+    void OnDisable(){
+        EventManager.instance.UpdateBulletsEvent.RemoveListener(UpdateBullets);
+    }
+    
 
     public void UpdateBullets(int gun, int current, int total){
         // Gun 

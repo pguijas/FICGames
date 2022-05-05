@@ -22,7 +22,8 @@ public class MyDialog : MonoBehaviour{
         private void Update(){
             // Don't do anything if the conversation is over
             if (ended){
-                gameObject.SetActive(false); //Chapucilla
+                gameObject.SetActive(false); 
+                EventManager.instance.DialogEndEvent.Invoke();
                 return;
             }
             // Check if the space key is pressed and the current message is not a choice

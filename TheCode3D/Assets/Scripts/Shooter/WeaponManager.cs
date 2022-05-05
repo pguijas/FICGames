@@ -118,6 +118,7 @@ public class WeaponManager : MonoBehaviour {
             }
         }
     }
+    
 
     private void DropWeapon() {
         weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
