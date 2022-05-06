@@ -11,6 +11,7 @@ public class GameStatus : MonoBehaviour{
     public GameObject loose;
     public GameObject dialogAtEnd;
     public QT_Map minimap;
+    public AudioManager audioManager;
 
     void Start(){   
         if (dialogLevel | dialogAtEnd != null)
@@ -47,6 +48,8 @@ public class GameStatus : MonoBehaviour{
     public void Win(){
         ActiveCursorAndPause();
         win.SetActive(true);
+        audioManager.Stop("Theme");
+        audioManager.Play("Victory");
         PlayerPrefs.SetInt("level", level+1);
         Debug.Log("You win!");
     }   
@@ -55,6 +58,8 @@ public class GameStatus : MonoBehaviour{
         if (life <= 0){
             ActiveCursorAndPause();
             loose.SetActive(true);
+            audioManager.Stop("Theme");
+            audioManager.Play("GameOver");
             Debug.Log("You lose!");
         }
     }   

@@ -5,7 +5,9 @@ using UnityEngine;
 public class InGamePause : MonoBehaviour{
 
     public static bool GameInPause = false; //esto es interesante para el audio, pero no se si realmente lo necesitaremos
+    public static bool Win = false;
     public GameObject pauseMenu;
+    public AudioManager audioManager;
 
     void Update(){
         if (Input.GetKeyDown(KeyCode.Escape)){ //hardcodeada la tecla
@@ -21,6 +23,11 @@ public class InGamePause : MonoBehaviour{
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         GameInPause = false;
+        audioManager.Stop("Pause");
+        if (!Win)
+            audioManager.Play("Theme");
+        else
+            audioManager.Play("Victory");
     }
 
     public void Pause(){
@@ -28,6 +35,12 @@ public class InGamePause : MonoBehaviour{
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         GameInPause = true;
+        audioManager.Pause("Theme");
+        if (audioManager.isPlaying("Victory")) {
+            audioManager.Pause("Victory");
+            Win = true;
+        }
+        audioManager.Play("Pause");
     }
 
 
