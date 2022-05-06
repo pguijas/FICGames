@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// no se puede dropar, solo se puede recoger
 
 public class WeaponManager : MonoBehaviour {
 
     [Header ("Weapons")]
     [SerializeField]
-    public List<WeaponController> startingWeapons = new List<WeaponController>();
+    public WeaponController[] startingWeapons = new WeaponController[2];
     [Header ("Positions")]
     [SerializeField]
     public Transform weaponParentSocket;
@@ -17,22 +17,19 @@ public class WeaponManager : MonoBehaviour {
     [SerializeField]
     public Transform aimingPosition;
     
-    private int activeWeaponIndex = -1;
-    private WeaponController[] weaponSlots = new WeaponController[5];
+    private int activeWeaponIndex = 0;
+    private WeaponController[] weaponSlots = new WeaponController[2];
 
 
-    void Start() {
+    private void Start() {
+        // Agregar armas iniciales
         foreach (WeaponController startingWeapon in startingWeapons)
             AddWeapon(startingWeapon);
-        // eliminar estas dos líneas para aparecer sin armas
-        activeWeaponIndex = 0;
+        // Activamos arma
         weaponSlots[activeWeaponIndex].gameObject.SetActive(true);
     }
 
-    
-
-    // Update is called once per frame
-    void Update() {
+    private void Update() {
         if (activeWeaponIndex != -1) {
             WeaponController activeWeapon = weaponSlots[activeWeaponIndex];
             // Números para cambiar de arma
@@ -40,16 +37,8 @@ public class WeaponManager : MonoBehaviour {
                 SwitchWeapon(0);
             else if (Input.GetKeyDown(KeyCode.Alpha2))
                 SwitchWeapon(1);
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-                SwitchWeapon(2);
-            else if (Input.GetKeyDown(KeyCode.Alpha4))
-                SwitchWeapon(3);
-            else if (Input.GetKeyDown(KeyCode.Alpha5))
-                SwitchWeapon(4);
-            else if (Input.GetKeyDown(KeyCode.Q))
-                DropWeapon();
+          
             
-
             if (!activeWeapon.IsReloading()) {
                 // Lógica de apuntado
                 // Si estamos corriendo, paramos y apuntamos
@@ -91,7 +80,40 @@ public class WeaponManager : MonoBehaviour {
     }
 
 
-    // Al cambiar de arma meter una sleep para Hide y luego sacar el nuevo arma
+
+    // Inicializar armas
+    private bool AddWeapon(WeaponController p_weaponPrefab) {
+        // Ponermos la posición actual como la default
+        weaponParentSocket.position = defaultWeaponPosition.position;
+        for (int i = 0; i<weaponSlots.Length; i++) {
+            // Para cada arma, la instanciamos, la desactivamos y la añadimos al array de armas
+            if (weaponSlots[i] == null) {
+                WeaponController weaponClone = Instantiate(p_weaponPrefab, weaponParentSocket);
+                weaponClone.gameObject.SetActive(false);
+                weaponSlots[i] = weaponClone;
+                activeWeaponIndex=i; // arreglar para qeu al pillar un nuevo arma, se active cambie a ella
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
+    public void PickWeapon(WeaponController p_weaponPrefab) {
+        // Ponermos la posición actual como la default
+        weaponParentSocket.position = defaultWeaponPosition.position;
+        if (weaponSlots[activeWeaponIndex]==null) 
+            weaponSlots[0] = Instantiate(p_weaponPrefab, weaponParentSocket);
+        else {
+            // Tratamos de introducirla en un slot vacío
+            if (!AddWeapon(p_weaponPrefab)) {   
+                weaponSlots[activeWeaponIndex].Drop();
+                weaponSlots[activeWeaponIndex] = Instantiate(p_weaponPrefab, weaponParentSocket);
+            }
+        }
+    }
+
+
     private void SwitchWeapon(int p_weaponIndex) {
         if (p_weaponIndex != activeWeaponIndex && p_weaponIndex >= 0) {
             if (weaponSlots[p_weaponIndex] != null) {
@@ -104,34 +126,4 @@ public class WeaponManager : MonoBehaviour {
         }
     }
 
-    // Inicializar armas
-    public void AddWeapon(WeaponController p_weaponPrefab) {
-        // Ponermos la posición actual como la default
-        weaponParentSocket.position = defaultWeaponPosition.position;
-        for (int i = 0; i<weaponSlots.Length; i++) {
-            // Para cada arma, la instanciamos, la desactivamos y la añadimos al array de armas
-            if (weaponSlots[i] == null) {
-                WeaponController weaponClone = Instantiate(p_weaponPrefab, weaponParentSocket);
-                weaponClone.gameObject.SetActive(false);
-                weaponSlots[i] = weaponClone;
-                return;
-            }
-        }
-    }
-    
-
-    private void DropWeapon() {
-        weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
-        weaponSlots[activeWeaponIndex].Drop();
-        Destroy(weaponSlots[activeWeaponIndex]);
-        weaponSlots[activeWeaponIndex] = null;
-        activeWeaponIndex = -1;
-
-        for (int i = 0; i<weaponSlots.Length; i++) {
-            if (weaponSlots[i] != null) {
-                SwitchWeapon(i);
-                return;
-            }
-        }
-    }
 }

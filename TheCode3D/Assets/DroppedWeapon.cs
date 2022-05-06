@@ -15,14 +15,14 @@ public class DroppedWeapon : MonoBehaviour{
         player = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update(){
         Vector3 distanceToPlayer = GameObject.FindWithTag("Player").transform.position - transform.position;
-
+        // Si se esta lo suficiente cerca se podrá pickear el arma
         if (distanceToPlayer.magnitude < distance){
             GameObject.FindWithTag("short_text").GetComponent<TextMeshProUGUI>().text = "Press E to pick up the weapon";
+            //Pick
             if (Input.GetKeyDown(KeyCode.E)){
-                player.GetComponent<WeaponManager>().AddWeapon(weaponPrefab);
+                player.GetComponent<WeaponManager>().PickWeapon(weaponPrefab);
                 GameObject.FindWithTag("short_text").GetComponent<TextMeshProUGUI>().text = "";
                 Destroy(gameObject);
             }
@@ -32,5 +32,10 @@ public class DroppedWeapon : MonoBehaviour{
         else{
             GameObject.FindWithTag("short_text").GetComponent<TextMeshProUGUI>().text = "";
         }
+    }
+
+    public void SetBullets(int mag, int totalBullets){
+        weaponPrefab.currentMag = mag;
+        weaponPrefab.bullets = totalBullets;
     }
 }

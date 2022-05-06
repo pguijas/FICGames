@@ -259,9 +259,12 @@ public class WeaponController : MonoBehaviour{
     }
 
     public void Drop() {
+        // Actualizamos las balas en el objeto a dropear
+        dropeableModel.GetComponent<DroppedWeapon>().SetBullets(currentMag,bullets);
+        // Drop
         GameObject drop = Instantiate(dropeableModel, transform.position, Quaternion.identity); 
         drop.GetComponent<Rigidbody>().AddForce(GameObject.FindWithTag("Player").transform.forward * 10f, ForceMode.Impulse);
         drop.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up * 10f, ForceMode.Impulse);
-
+        Destroy(gameObject);
     }
 }
