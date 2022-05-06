@@ -11,6 +11,10 @@ public class SceneTransicioner : MonoBehaviour{
         SceneManager.LoadScene(level);
     }
 
+    public void RestartCurrentScene(){
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+    }
 
     public void Exit(){
         Application.Quit();

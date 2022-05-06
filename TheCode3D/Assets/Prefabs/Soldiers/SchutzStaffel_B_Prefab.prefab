@@ -1049,6 +1049,7 @@ GameObject:
   - component: {fileID: 776683576231885003}
   - component: {fileID: 9115645762314531320}
   - component: {fileID: 8990414525083270403}
+  - component: {fileID: 6045799298110976398}
   m_Layer: 6
   m_Name: SchutzStaffel_B
   m_TagString: Untagged
@@ -1133,6 +1134,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6045799298110976398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833685586832455107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd079535c66d444285c085774f3b43f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data: {fileID: 11400000, guid: 65475a720cfb446a68d2b2612af53698, type: 2}
 --- !u!1 &833689573989657493
 GameObject:
   m_ObjectHideFlags: 0

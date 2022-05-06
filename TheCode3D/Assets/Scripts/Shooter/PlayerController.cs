@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
     CharacterController characterController;
 
     private void Awake() {
+        Time.timeScale = 1f;
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -67,15 +68,12 @@ public class PlayerController : MonoBehaviour {
     public void TakeDamage(float damage) {
         if (health - damage <= 0) {
             health = 0;
-            Die();
         } else {
             health -= damage;
             Debug.Log("Player health: " + health);
         }
+        EventManager.instance.UpdateLifeEvent.Invoke(health);
+
     }
 
-
-    private void Die() {
-        Debug.Log("You died");
-    }
 }

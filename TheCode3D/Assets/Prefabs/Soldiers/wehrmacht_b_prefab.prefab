@@ -1814,6 +1814,7 @@ GameObject:
   - component: {fileID: 4986656907059240694}
   - component: {fileID: 4929725042849278018}
   - component: {fileID: 3117227215759529238}
+  - component: {fileID: 4691965399533069966}
   m_Layer: 6
   m_Name: Wehrmacht_soilder_B
   m_TagString: Untagged
@@ -1874,7 +1875,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 4929725042849278018}
   health: 100
+  weapon: {fileID: 0}
   player: {fileID: 6207614380543033460, guid: 78e8779cc6d2d6c9ba15f31b11055485, type: 3}
+--- !u!114 &4691965399533069966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989834659469721288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd079535c66d444285c085774f3b43f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data: {fileID: 11400000, guid: 65475a720cfb446a68d2b2612af53698, type: 2}
 --- !u!1 &4989879434447030646
 GameObject:
   m_ObjectHideFlags: 0

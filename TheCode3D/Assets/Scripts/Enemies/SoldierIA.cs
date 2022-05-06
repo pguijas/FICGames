@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using QuantumTek.QuantumTravel;
 
 
+[RequireComponent(typeof(QT_MapObject))]
 public class SoldierIA : MonoBehaviour {
     
     [SerializeField]
@@ -17,6 +19,10 @@ public class SoldierIA : MonoBehaviour {
 
     private GameObject MP40;
     private GameObject STG44;
+
+    private bool notifyed = false;
+
+
     // Start is called before the first frame update
     void Start() {
         if (gameObject.tag == "wehrmacht_b") {
@@ -28,10 +34,17 @@ public class SoldierIA : MonoBehaviour {
             STG44 = WeaponPath.transform.Find("STG44").gameObject;
         }
         anim.SetInteger("Status_walk", 0);
+        // Notify Game Status
+        Debug.Log(gameObject.GetComponent<QT_MapObject>());
+
     }
 
     // Update is called once per frame
     void Update() {
+        if (!notifyed){
+            EventManager.instance.NewSoldierEvent.Invoke(gameObject.GetComponent<QT_MapObject>());
+            notifyed = true;
+        }
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
             weapon.Shoot();
     }
@@ -50,6 +63,7 @@ public class SoldierIA : MonoBehaviour {
 
 
     private void Die() {
+        EventManager.instance.DeadSoldierEvent.Invoke(gameObject.GetComponent<QT_MapObject>());
         Destroy(gameObject);
     }
 }
