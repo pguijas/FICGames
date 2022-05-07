@@ -24,10 +24,13 @@ public class PlayerController : MonoBehaviour {
 
     private void Awake() {
         Time.timeScale = 1f;
-        characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
+        characterController = GetComponent<CharacterController>();
     }
 
+    private void Start(){
+        
+    }
     private void Update() {
         Look();
         Move();

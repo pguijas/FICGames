@@ -12,10 +12,16 @@ public class GameStatus : MonoBehaviour{
     public GameObject dialogAtEnd;
     public QT_Map minimap;
     public AudioManager audioManager;
+    private bool dialogDone = true;
 
     void Start(){   
-        if (dialogLevel | dialogAtEnd != null)
-            EventManager.instance.DialogEndEvent.AddListener(Win); 
+        if (dialogLevel | dialogAtEnd != null){
+            dialogDone = false;
+            EventManager.instance.DialogEndEvent.AddListener(Dialog); 
+            // Nos aseguramos de que el diálogo esté desactivado
+            if (dialogAtEnd != null)
+                dialogAtEnd.SetActive(false);
+        }
         EventManager.instance.UpdateLifeEvent.AddListener(Loose);
         EventManager.instance.NewSoldierEvent.AddListener(NewSoldier);
         EventManager.instance.DeadSoldierEvent.AddListener(DeadSoldier);
@@ -25,6 +31,12 @@ public class GameStatus : MonoBehaviour{
     void OnDisable(){
         if (dialogLevel)
             EventManager.instance.DialogEndEvent.RemoveListener(Win); 
+    }
+
+
+    public void Dialog(){
+        dialogDone = true;
+        Win();
     }
 
     public void NewSoldier(QT_MapObject soldier){
@@ -43,15 +55,29 @@ public class GameStatus : MonoBehaviour{
                 break;
             }
         }
+
+        // Si no quedan soldados, ganamos
+        if (minimap.Markers.Count == 0){
+            Win();
+        }
     }
 
     public void Win(){
-        ActiveCursorAndPause();
-        win.SetActive(true);
-        audioManager.Stop("Theme");
-        audioManager.Play("Victory");
-        PlayerPrefs.SetInt("level", level+1);
-        Debug.Log("You win!");
+        if (dialogDone){
+            // Victoria
+            ActiveCursorAndPause();
+            win.SetActive(true);
+            audioManager.Stop("Theme");
+            audioManager.Play("Victory");
+            if (PlayerPrefs.GetInt("level",-1) < level+1)
+                PlayerPrefs.SetInt("level", level+1);
+            Debug.Log("You win!");
+        } else {
+            // Para los niveles con diálogo al final
+            if (dialogAtEnd != null){
+                dialogAtEnd.SetActive(true);
+            }
+        }
     }   
 
     public void Loose(float life){

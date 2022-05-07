@@ -10,7 +10,8 @@ public class InGamePause : MonoBehaviour{
     public AudioManager audioManager;
 
     void Update(){
-        if (Input.GetKeyDown(KeyCode.Escape)){ //hardcodeada la tecla
+        // Al pulsar ESC
+        if (Input.GetKeyDown(KeyCode.Escape)){ 
             if (GameInPause)
                 Resume();
             else
@@ -42,7 +43,5 @@ public class InGamePause : MonoBehaviour{
         }
         audioManager.Play("Pause");
     }
-
-
 
 }

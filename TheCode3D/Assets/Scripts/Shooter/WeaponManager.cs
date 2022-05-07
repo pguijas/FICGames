@@ -82,7 +82,7 @@ public class WeaponManager : MonoBehaviour {
 
 
     // Inicializar armas
-    private bool AddWeapon(WeaponController p_weaponPrefab) {
+    private int AddWeapon(WeaponController p_weaponPrefab) {
         // Ponermos la posición actual como la default
         weaponParentSocket.position = defaultWeaponPosition.position;
         for (int i = 0; i<weaponSlots.Length; i++) {
@@ -91,11 +91,10 @@ public class WeaponManager : MonoBehaviour {
                 WeaponController weaponClone = Instantiate(p_weaponPrefab, weaponParentSocket);
                 weaponClone.gameObject.SetActive(false);
                 weaponSlots[i] = weaponClone;
-                activeWeaponIndex=i; // arreglar para qeu al pillar un nuevo arma, se active cambie a ella
-                return true;
+                return i;
             }
         }
-        return false;
+        return -1;
     }
     
     
@@ -106,7 +105,10 @@ public class WeaponManager : MonoBehaviour {
             weaponSlots[0] = Instantiate(p_weaponPrefab, weaponParentSocket);
         else {
             // Tratamos de introducirla en un slot vacío
-            if (!AddWeapon(p_weaponPrefab)) {   
+            int slot = AddWeapon(p_weaponPrefab);
+            if (slot != -1) {
+                SwitchWeapon(slot);
+            } else {   
                 weaponSlots[activeWeaponIndex].Drop();
                 weaponSlots[activeWeaponIndex] = Instantiate(p_weaponPrefab, weaponParentSocket);
             }
