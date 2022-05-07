@@ -11,7 +11,6 @@ public class Hud : MonoBehaviour{
 
     private void Start(){
         EventManager.instance.UpdateBulletsEvent.AddListener(UpdateBullets);
-        Debug.Log("Hud Inicializado");
     }
 
 

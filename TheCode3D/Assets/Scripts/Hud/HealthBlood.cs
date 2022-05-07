@@ -5,13 +5,13 @@ using UnityEngine.UI;
 public class HealthBlood : MonoBehaviour{
 
     private Image bloodimg;
-    private float maxHealth = 100f;
+    private float maxHealth;
 
 
     private void Start(){
         EventManager.instance.UpdateLifeEvent.AddListener(UpdateBlood);
         bloodimg = GetComponent<Image>();
-        Debug.Log("Blood Inicializado");
+        maxHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().health;
     }
 
 

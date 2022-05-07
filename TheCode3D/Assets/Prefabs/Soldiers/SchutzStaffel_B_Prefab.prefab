@@ -1111,7 +1111,14 @@ MonoBehaviour:
   anim: {fileID: 776683576231885003}
   health: 100
   weapon: {fileID: 7938877530094888010}
-  player: {fileID: 6207614380543033460, guid: 78e8779cc6d2d6c9ba15f31b11055485, type: 3}
+  radius: 50
+  angle: 145
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!195 &8990414525083270403
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2308,13 +2315,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
---- !u!4 &7180280245738374981 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
-  m_PrefabInstance: {fileID: 7181620282677439313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &7019555522244326923 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  m_PrefabInstance: {fileID: 7181620282677439313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7180280245738374981 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
   m_PrefabInstance: {fileID: 7181620282677439313}
   m_PrefabAsset: {fileID: 0}

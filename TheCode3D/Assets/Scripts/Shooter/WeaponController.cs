@@ -88,28 +88,36 @@ public class WeaponController : MonoBehaviour{
     }
 
 
-    public void Shoot(){
+    public void Shoot() {
         if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
-            //animator.SetBool("Shooting", true);
-            ShootingSystem.Play();
-            shootSound.Play();
-            Vector3 direction = GetDirection();
-            // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
-            if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
-                StartCoroutine(SpawnTrail(hit));
-                LastShootTime = Time.time;
-            // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
-            } else{
-                StartCoroutine(SpawnTrail(direction));
-                LastShootTime = Time.time;
-            }
-            currentMag -= 1;
-            //Actualizamos Hud
-            EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
-            // Fuerza de retroceso en el arma
-            AddRecoil();
+            StartCoroutine(ShootCorroutine());
         } else if (currentMag == 0)
             Reload();
+    }
+
+    // cambiar a sphere cast + raycast
+    private IEnumerator ShootCorroutine(){
+        //animator.SetBool("Shooting", true);
+        ShootingSystem.Play();
+        shootSound.Play();
+        Vector3 direction = GetDirection();
+
+        //Collider[] rangeChecks = Physics.OverlapSphere(transform.position, 90, Mask);
+        //if (rangeChecks.Length != 0) {
+        // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
+        if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
+            StartCoroutine(SpawnTrail(hit));
+        // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia 
+        } else {
+            StartCoroutine(SpawnTrail(direction));
+        }
+        LastShootTime = Time.time;
+        currentMag -= 1;
+        //Actualizamos Hud
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
+        // Fuerza de retroceso en el arma
+        AddRecoil();
+        yield return null;
     }
 
 
@@ -145,7 +153,7 @@ public class WeaponController : MonoBehaviour{
         while (time < distance/BulletSpeed) {
             trail.transform.position = Vector3.Lerp(startPosition, hit.point, time);
             time += BulletSpeed*Time.deltaTime/distance;
-            yield return null;
+            yield return null;   
         }
         trail.transform.position = hit.point;
         SoldierPart soldier = hit.transform.GetComponent<SoldierPart>();
@@ -169,7 +177,7 @@ public class WeaponController : MonoBehaviour{
         while (time < distance/BulletSpeed) {
             trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
             time += BulletSpeed*Time.deltaTime/distance;
-            yield return null;
+            yield return null;   
         }
         trail.transform.position = endPosition;
         Destroy(trail.gameObject, trail.time);

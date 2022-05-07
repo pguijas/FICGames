@@ -25,7 +25,6 @@ public class GameStatus : MonoBehaviour{
         EventManager.instance.UpdateLifeEvent.AddListener(Loose);
         EventManager.instance.NewSoldierEvent.AddListener(NewSoldier);
         EventManager.instance.DeadSoldierEvent.AddListener(DeadSoldier);
-        Debug.Log("GameStatus Inicializado");
     }   
 
     void OnDisable(){
@@ -82,11 +81,11 @@ public class GameStatus : MonoBehaviour{
 
     public void Loose(float life){
         if (life <= 0){
-            ActiveCursorAndPause();
+            /*ActiveCursorAndPause();
             loose.SetActive(true);
             audioManager.Stop("Theme");
             audioManager.Play("GameOver");
-            Debug.Log("You lose!");
+            */Debug.Log("You lose!");
         }
     }   
 

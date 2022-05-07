@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
     [Header ("Player Settings")]
     public float walkSpeed = 5f;
     public float runSpeed = 20f;
-    public float health = 100f;
+    public float health = 100000000000000f;
     public float rotationSensibility = 1000f;
     public float jumpHeight = 1.9f;
 
@@ -69,12 +69,10 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void TakeDamage(float damage) {
-        if (health - damage <= 0) {
+        if (health - damage <= 0)
             health = 0;
-        } else {
+        else 
             health -= damage;
-            Debug.Log("Player health: " + health);
-        }
         EventManager.instance.UpdateLifeEvent.Invoke(health);
 
     }

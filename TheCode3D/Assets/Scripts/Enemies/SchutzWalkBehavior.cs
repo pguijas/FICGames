@@ -7,7 +7,6 @@ public class SchutzWalkBehavior : StateMachineBehaviour {
     
     private List<Transform> waypoints = new List<Transform>();
     private NavMeshAgent agent;
-    private Transform player;
 
     private int currentWayPoint = 0;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -17,7 +16,7 @@ public class SchutzWalkBehavior : StateMachineBehaviour {
             waypoints.Add(t);
         agent = animator.GetComponent<NavMeshAgent>();
         agent.SetDestination(waypoints[currentWayPoint].position);
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        Debug.Log("walking");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -29,9 +28,6 @@ public class SchutzWalkBehavior : StateMachineBehaviour {
             } else 
                 currentWayPoint++;
             agent.SetDestination(waypoints[currentWayPoint].position);
-        float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance < 10)
-            animator.SetInteger("Status_walk", 2);
     }   
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

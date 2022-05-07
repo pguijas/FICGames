@@ -55,6 +55,7 @@ public class EnemyWeaponController : MonoBehaviour {
 
     public void Shoot(){
         if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
+            Debug.Log("Shooting");
             //animator.SetBool("Shooting", true);
             ShootingSystem.Play();
             //shootSound.Play();

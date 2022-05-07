@@ -11,15 +11,12 @@ public class SchutzAttackingBehaviour : StateMachineBehaviour {
         agent = animator.GetComponent<NavMeshAgent>();
         agent.speed = 0f;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        animator.SetInteger("Status_stg44", 2);
+        Debug.Log("attacking");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         animator.transform.LookAt(new Vector3(player.position.x, player.position.y-1.5f, player.position.z));
-        float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance > 10000)
-            animator.SetInteger("Status_walk", 2);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
