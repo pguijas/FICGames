@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour {
     [Header ("Player Settings")]
     public float walkSpeed = 5f;
     public float runSpeed = 20f;
-    public float health = 100000000000000f;
+    public float maxHealth = 100f;
+    public float health = 100f;
     public float rotationSensibility = 1000f;
     public float jumpHeight = 1.9f;
 
@@ -28,9 +29,11 @@ public class PlayerController : MonoBehaviour {
         characterController = GetComponent<CharacterController>();
     }
 
-    private void Start(){
-        
+    public void SetMaxHealth(){
+        health = maxHealth;
+        EventManager.instance.UpdateLifeEvent.Invoke(health);
     }
+
     private void Update() {
         Look();
         Move();

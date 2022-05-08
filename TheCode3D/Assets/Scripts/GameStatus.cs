@@ -81,11 +81,11 @@ public class GameStatus : MonoBehaviour{
 
     public void Loose(float life){
         if (life <= 0){
-            /*ActiveCursorAndPause();
+            ActiveCursorAndPause();
             loose.SetActive(true);
             audioManager.Stop("Theme");
             audioManager.Play("GameOver");
-            */Debug.Log("You lose!");
+            Debug.Log("You lose!");
         }
     }   
 

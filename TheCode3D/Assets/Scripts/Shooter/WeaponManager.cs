@@ -12,10 +12,6 @@ public class WeaponManager : MonoBehaviour {
     [Header ("Positions")]
     [SerializeField]
     public Transform weaponParentSocket;
-    [SerializeField]
-    public Transform defaultWeaponPosition;
-    [SerializeField]
-    public Transform aimingPosition;
     
     private int activeWeaponIndex = 0;
     private WeaponController[] weaponSlots = new WeaponController[2];
@@ -84,7 +80,6 @@ public class WeaponManager : MonoBehaviour {
     // Inicializar armas
     private int AddWeapon(WeaponController p_weaponPrefab) {
         // Ponermos la posición actual como la default
-        weaponParentSocket.position = defaultWeaponPosition.position;
         for (int i = 0; i<weaponSlots.Length; i++) {
             // Para cada arma, la instanciamos, la desactivamos y la añadimos al array de armas
             if (weaponSlots[i] == null) {
@@ -100,7 +95,6 @@ public class WeaponManager : MonoBehaviour {
     
     public void PickWeapon(WeaponController p_weaponPrefab) {
         // Ponermos la posición actual como la default
-        weaponParentSocket.position = defaultWeaponPosition.position;
         if (weaponSlots[activeWeaponIndex]==null) 
             weaponSlots[0] = Instantiate(p_weaponPrefab, weaponParentSocket);
         else {
@@ -121,11 +115,15 @@ public class WeaponManager : MonoBehaviour {
             if (weaponSlots[p_weaponIndex] != null) {
                 if (activeWeaponIndex != -1)
                     weaponSlots[activeWeaponIndex].gameObject.SetActive(false);
-                weaponParentSocket.position = defaultWeaponPosition.position;
                 weaponSlots[p_weaponIndex].gameObject.SetActive(true);
                 activeWeaponIndex = p_weaponIndex;
             }
         }
+    }
+
+    public void SetMaxAmmo(){
+        foreach (WeaponController weapon in weaponSlots)
+            weapon.SetMaxAmmo();
     }
 
 }

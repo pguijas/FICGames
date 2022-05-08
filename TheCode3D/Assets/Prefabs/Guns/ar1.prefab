@@ -569,7 +569,8 @@ MonoBehaviour:
   Damage: 120
   MagSize: 30
   currentMag: 30
-  bullets: 3000
+  maxbullets: 60
+  bullets: 30
   isAutomatic: 1
   ShootDelay: 0.3
   recoilForce: 4

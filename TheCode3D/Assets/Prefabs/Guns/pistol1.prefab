@@ -581,8 +581,9 @@ MonoBehaviour:
   typegun: 0
   Damage: 50
   MagSize: 7
-  currentMag: 6
-  bullets: 3000
+  currentMag: 7
+  maxbullets: 14
+  bullets: 7
   isAutomatic: 0
   ShootDelay: 0.6
   recoilForce: 3

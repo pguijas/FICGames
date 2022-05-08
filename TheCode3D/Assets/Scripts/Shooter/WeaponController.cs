@@ -33,6 +33,7 @@ public class WeaponController : MonoBehaviour{
     [SerializeField]
     public int currentMag = 30;
     [SerializeField]
+    public int maxbullets = 3000;
     public int bullets = 3000;
     [SerializeField]
     private bool isAutomatic = true;
@@ -85,6 +86,11 @@ public class WeaponController : MonoBehaviour{
 
     public bool IsAutomatic() {
         return isAutomatic;
+    }
+
+    public void SetMaxAmmo() {
+        bullets = maxbullets;
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
     }
 
 
