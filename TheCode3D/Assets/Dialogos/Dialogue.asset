@@ -19,11 +19,8 @@ MonoBehaviour:
   - ID: 27
     Name: Level1
     FirstMessage: 29
-  - ID: 38
-    Name: Level2
-    FirstMessage: 40
   - ID: 42
-    Name: Fin
+    Name: Level2
     FirstMessage: 43
   Speakers:
   - ID: 1
@@ -40,9 +37,6 @@ MonoBehaviour:
     Icon: {fileID: 0}
   - ID: 33
     Name: Instrucciones
-    Icon: {fileID: 0}
-  - ID: 39
-    Name: Intrucciones
     Icon: {fileID: 0}
   - ID: 41
     Name: Anacleto
@@ -61,7 +55,7 @@ MonoBehaviour:
     SpeakerName: Instrucciones
     PreviousMessage: 2
     NextMessage: 5
-    MessageText: Presiona espacio para empezar la historia.
+    MessageText: Presiona ENTER para empezar la historia.
     Clip: {fileID: 0}
   - ID: 5
     Speaker: 4
@@ -220,17 +214,17 @@ MonoBehaviour:
     Speaker: 33
     SpeakerName: Instrucciones
     PreviousMessage: 32
-    NextMessage: 35
+    NextMessage: 48
     MessageText: Pulsa 'R' para recargar y usa el click derecho e izquierdo para
       apuntar y disparar.
     Clip: {fileID: 0}
   - ID: 35
     Speaker: 33
     SpeakerName: Instrucciones
-    PreviousMessage: 34
+    PreviousMessage: 48
     NextMessage: 36
-    MessageText: "A lo largo del mapa te encontrar\xE1s con cajas de munici\xF3n
-      y salud,"
+    MessageText: "tambi\xE9n podr\xE1s coger armas del suelo aproxim\xE1ndote y pulsando
+      la tecla 'E',"
     Clip: {fileID: 0}
   - ID: 36
     Speaker: 33
@@ -238,13 +232,6 @@ MonoBehaviour:
     PreviousMessage: 35
     NextMessage: -1
     MessageText: "pero ten cuidado, est\xE1n bien vigiladas."
-    Clip: {fileID: 0}
-  - ID: 40
-    Speaker: 39
-    SpeakerName: Intrucciones
-    PreviousMessage: -1
-    NextMessage: -1
-    MessageText: '-'
     Clip: {fileID: 0}
   - ID: 43
     Speaker: 41
@@ -274,5 +261,13 @@ MonoBehaviour:
     PreviousMessage: 45
     NextMessage: -1
     MessageText: Esto no debe volver a suceder...
+    Clip: {fileID: 0}
+  - ID: 48
+    Speaker: 33
+    SpeakerName: Instrucciones
+    PreviousMessage: 34
+    NextMessage: 35
+    MessageText: "A lo largo del mapa te encontrar\xE1s con cajas de munici\xF3n
+      y salud,"
     Clip: {fileID: 0}
   Choices: []
