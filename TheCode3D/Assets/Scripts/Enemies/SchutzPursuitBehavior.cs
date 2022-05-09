@@ -11,18 +11,18 @@ public class SchutzPursuitBehavior : StateMachineBehaviour {
         agent = animator.GetComponent<NavMeshAgent>();
         agent.speed = 7.5f;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        Debug.Log("vOY A POR TI");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         agent.SetDestination(player.position);
         float distance = Vector3.Distance(player.position, animator.transform.position);
+        if (distance < 30f)
+            animator.SetInteger("Status_walk", 3);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        animator.SetInteger("Status_walk", 0);
         agent.SetDestination(agent.transform.position);
     }
 

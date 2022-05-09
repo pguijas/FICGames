@@ -7,8 +7,8 @@ public class SchutzWalkBehavior : StateMachineBehaviour {
     
     private List<Transform> waypoints = new List<Transform>();
     private NavMeshAgent agent;
-
     private int currentWayPoint = 0;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         Transform wayPointsObject = GameObject.FindGameObjectWithTag("Rute1").transform;
@@ -16,7 +16,7 @@ public class SchutzWalkBehavior : StateMachineBehaviour {
             waypoints.Add(t);
         agent = animator.GetComponent<NavMeshAgent>();
         agent.SetDestination(waypoints[currentWayPoint].position);
-        Debug.Log("walking");
+        agent.speed = 3.5f;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

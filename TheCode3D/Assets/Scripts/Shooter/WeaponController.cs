@@ -58,6 +58,9 @@ public class WeaponController : MonoBehaviour{
     
     [SerializeField]
     private LayerMask Mask;
+    [SerializeField]
+    private LayerMask shootingMask;
+    private int shootingLayer = 9;
     
     private Animator animator;
     private float LastShootTime;
@@ -107,13 +110,45 @@ public class WeaponController : MonoBehaviour{
         ShootingSystem.Play();
         shootSound.Play();
         Vector3 direction = GetDirection();
-
-        //Collider[] rangeChecks = Physics.OverlapSphere(transform.position, 90, Mask);
-        //if (rangeChecks.Length != 0) {
-        // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
+/*
+        // Trazamos un Spherecast para detectar colisiones y los añadimos a la capa shooting
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, 500, Mask);
+        LayerMask[] layers = new LayerMask[rangeChecks.Length];
+        if (rangeChecks.Length != 0) {
+            for (int i = 0; i < rangeChecks.Length; i++) {
+                layers[i] = rangeChecks[i].gameObject.layer;
+                rangeChecks[i].gameObject.layer = shootingLayer;
+            }
+            Debug.Log("Colision");
+            /*for (int i = 0; i < rangeChecks.Length; i++) {
+                GameObject target = rangeChecks[i].gameObject;
+                Vector3 directionToTarget = (GameObject.FindWithTag("MainCamera").transform.position - target.position).normalized;
+                if (Vector3.Angle(GameObject.FindWithTag("MainCamera").transform.forward, directionToTarget) < 60 / 2) {
+                    Debug.Log(target.layer);
+                    target.layer = shootingLayer;
+                }
+            }*//*
+            Collider[] r = Physics.OverlapSphere(transform.position, 10, shootingLayer);
+            if (r.Length != 0) {
+                for (int i = 0; i < r.Length; i++) 
+                    Debug.Log(r[i].gameObject.layer);
+            }
+            // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
+            if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, shootingLayer)){
+                Debug.Log(hit.collider.gameObject.name);
+                Debug.DrawRay(BulletSpawnPoint.position, direction, Color.green, 10);
+                Debug.Log("Raycast");
+                StartCoroutine(SpawnTrail(hit));
+            } else {
+                StartCoroutine(SpawnTrail(direction));
+            }
+            for (int i = 0; i < rangeChecks.Length; i++) {
+                rangeChecks[i].gameObject.layer = layers[i];
+            }
+            // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
+        }*/
         if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
-            StartCoroutine(SpawnTrail(hit));
-        // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia 
+                StartCoroutine(SpawnTrail(hit));
         } else {
             StartCoroutine(SpawnTrail(direction));
         }
@@ -165,8 +200,9 @@ public class WeaponController : MonoBehaviour{
         SoldierPart soldier = hit.transform.GetComponent<SoldierPart>();
         if (soldier != null)
             soldier.DoDamage(Damage);
-        else
+        else {
             Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+        }
         if (hit.rigidbody != null)
             hit.rigidbody.AddForce(-hit.normal * 60f);
         Destroy(trail.gameObject, trail.time);

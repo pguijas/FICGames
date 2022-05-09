@@ -595,6 +595,9 @@ MonoBehaviour:
   Mask:
     serializedVersion: 2
     m_Bits: 192
+  shootingLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1001 &8509717610612356443
 PrefabInstance:
   m_ObjectHideFlags: 0

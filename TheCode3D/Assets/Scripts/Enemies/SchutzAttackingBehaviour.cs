@@ -11,12 +11,11 @@ public class SchutzAttackingBehaviour : StateMachineBehaviour {
         agent = animator.GetComponent<NavMeshAgent>();
         agent.speed = 0f;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        Debug.Log("attacking");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        animator.transform.LookAt(new Vector3(player.position.x, player.position.y-1.5f, player.position.z));
+        animator.transform.LookAt(new Vector3(player.position.x-0.5f, player.position.y-1.5f, player.position.z));
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

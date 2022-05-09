@@ -1207,3 +1207,263 @@ C# parse time         : 239ms
 candidates check time : 37ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 5/8/2022 7:26:41 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 55.194ms
+moved types parse time: 39ms
+candidates parse time : 1ms
+C# parse time         : 177ms
+candidates check time : 46ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 8:36:16 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 88.892ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 191ms
+candidates check time : 44ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 8:36:25 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 81.622ms
+moved types parse time: 46ms
+candidates parse time : 1ms
+C# parse time         : 201ms
+candidates check time : 51ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 9:10:09 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 107.389ms
+moved types parse time: 45ms
+candidates parse time : 1ms
+C# parse time         : 219ms
+candidates check time : 45ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 9:19:31 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 67.694ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 192ms
+candidates check time : 54ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 9:25:31 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 65.043ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 188ms
+candidates check time : 48ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 11:47:48 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 85.134ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 185ms
+candidates check time : 28ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 11:53:33 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 56.463ms
+moved types parse time: 41ms
+candidates parse time : 1ms
+C# parse time         : 166ms
+candidates check time : 28ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/8/2022 11:55:15 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 58.274ms
+moved types parse time: 45ms
+candidates parse time : 1ms
+C# parse time         : 173ms
+candidates check time : 28ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:00:32 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 63.315ms
+moved types parse time: 41ms
+candidates parse time : 1ms
+C# parse time         : 194ms
+candidates check time : 57ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:03:07 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 57.298ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 180ms
+candidates check time : 58ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:08:23 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 58.1ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 183ms
+candidates check time : 57ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:08:47 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 57.312ms
+moved types parse time: 40ms
+candidates parse time : 1ms
+C# parse time         : 177ms
+candidates check time : 58ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:09:11 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 58.978ms
+moved types parse time: 41ms
+candidates parse time : 1ms
+C# parse time         : 184ms
+candidates check time : 59ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:10:11 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 59.262ms
+moved types parse time: 40ms
+candidates parse time : 1ms
+C# parse time         : 180ms
+candidates check time : 60ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:10:42 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 57.938ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 181ms
+candidates check time : 52ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:11:32 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 57.67ms
+moved types parse time: 41ms
+candidates parse time : 1ms
+C# parse time         : 184ms
+candidates check time : 44ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:44:17 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 63.734ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 160ms
+candidates check time : 29ms
+console write time    : 4ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:44:46 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 63.991ms
+moved types parse time: 41ms
+candidates parse time : 1ms
+C# parse time         : 164ms
+candidates check time : 26ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 1:29:16 AM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 120.807ms
+moved types parse time: 44ms
+candidates parse time : 1ms
+C# parse time         : 207ms
+candidates check time : 39ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:11:01 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 96.882ms
+moved types parse time: 41ms
+candidates parse time : 1ms
+C# parse time         : 190ms
+candidates check time : 36ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:41:54 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 59.624ms
+moved types parse time: 39ms
+candidates parse time : 1ms
+C# parse time         : 173ms
+candidates check time : 35ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:44:41 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 58.557ms
+moved types parse time: 39ms
+candidates parse time : 1ms
+C# parse time         : 173ms
+candidates check time : 41ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 12:44:52 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 58.217ms
+moved types parse time: 40ms
+candidates parse time : 1ms
+C# parse time         : 180ms
+candidates check time : 37ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 5:38:52 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 96.849ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 188ms
+candidates check time : 37ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 5/9/2022 5:47:38 PM : Starting /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 63.869ms
+moved types parse time: 40ms
+candidates parse time : 0ms
+C# parse time         : 171ms
+candidates check time : 34ms
+console write time    : 0ms
+

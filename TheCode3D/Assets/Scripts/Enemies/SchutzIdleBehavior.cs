@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SchutzIdleBehavior : StateMachineBehaviour {
-
+    private NavMeshAgent agent;
     private float timer;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+        agent = animator.GetComponent<NavMeshAgent>();
         timer = 0;
+        agent.speed = 0;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+        Debug.Log("Idle");
         timer += Time.deltaTime;
-        if (timer > 10)
+        if (timer > 5)
             animator.SetInteger("Status_walk", 1);
     }
 

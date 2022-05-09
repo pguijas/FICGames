@@ -122,8 +122,10 @@ public class WeaponManager : MonoBehaviour {
     }
 
     public void SetMaxAmmo(){
-        foreach (WeaponController weapon in weaponSlots)
-            weapon.SetMaxAmmo();
+        foreach (WeaponController weapon in weaponSlots) {
+            if (weapon != null) 
+                weapon.SetMaxAmmo();
+        }
     }
 
 }

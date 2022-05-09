@@ -8,9 +8,6 @@ TagManager:
   - schutzstaffel_b
   - wehrmacht_b
   - Rute1
-  - schutzstaffel_a
-  - wehrmacht_c
-  - wehrmacht_a
   - short_text
   layers:
   - Default
@@ -22,7 +19,7 @@ TagManager:
   - Enemies
   - Obstacles
   - Player
-  - 
+  - Shooting
   - 
   - 
   - 

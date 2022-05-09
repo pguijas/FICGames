@@ -9,16 +9,12 @@ public class EnemyWeaponController : MonoBehaviour {
     [Header ("Gun Settings")]
     [SerializeField]
     public float Damage = 10f;
-    [SerializeField]
-    public int MagSize = 30;
-    [SerializeField]
-    public int currentMag = 30;
-    [SerializeField]
-    public int bullets = 3000;
 
     [Header ("Weapon Animations")]
     [SerializeField]
     private ParticleSystem ShootingSystem;
+    [SerializeField]
+    public AudioSource shootSound;
     [SerializeField]
     private Transform BulletSpawnPoint;
     [SerializeField]
@@ -53,35 +49,31 @@ public class EnemyWeaponController : MonoBehaviour {
     }
 
 
-    public void Shoot(){
-        if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
-            Debug.Log("Shooting");
+    public void Shoot(float distanceToTarget) {
+        float conversion = distanceToTarget / 50;
+        if ((LastShootTime + ShootDelay + conversion) < Time.time) {
             //animator.SetBool("Shooting", true);
             ShootingSystem.Play();
-            //shootSound.Play();
-            Vector3 direction = transform.TransformDirection(GetDirection()) * 10;
-            Debug.DrawRay(new Vector3(BulletSpawnPoint.position.x, BulletSpawnPoint.position.y, BulletSpawnPoint.position.z), direction, Color.green);
+            shootSound.Play();
+            Vector3 direction = transform.TransformDirection(GetDirection(conversion)) * 10;
             // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
-            if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
+            if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask)) {
                 StartCoroutine(SpawnTrail(hit));
-                LastShootTime = Time.time;
             // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
-            } else{
+            } else {
                 StartCoroutine(SpawnTrail(direction));
-                LastShootTime = Time.time;
             }
-            currentMag -= 1;
-        } else if (currentMag == 0)
-            Reload();
+            LastShootTime = Time.time;
+        }
     }
     
     // Aleatorizar el vector que indica la direccion de disparo (bullet spread)
-    private Vector3 GetDirection() {
+    private Vector3 GetDirection(float distance) {
         Vector3 direction = transform.forward;
         direction += new Vector3(
-            Random.Range(-BulletSpreadVariance.x, BulletSpreadVariance.x),
-            Random.Range(-BulletSpreadVariance.y, BulletSpreadVariance.y),
-            Random.Range(-BulletSpreadVariance.z, BulletSpreadVariance.z)
+            Random.Range(-(BulletSpreadVariance.x/distance), (BulletSpreadVariance.x/distance)),
+            Random.Range(-(BulletSpreadVariance.y/distance), (BulletSpreadVariance.y/distance)),
+            Random.Range(-(BulletSpreadVariance.z/distance), (BulletSpreadVariance.z/distance))
         );
         direction.Normalize();
         return direction;
@@ -96,7 +88,7 @@ public class EnemyWeaponController : MonoBehaviour {
         // un impacto q este a BulletSpeed m -> 1 segundo
         // distancia/velocidad = tiempo
         // spawneamos la bala un determinado tiempo
-        while (time < 1000*distance/BulletSpeed) {
+        while (time < distance/BulletSpeed) {
             trail.transform.position = Vector3.Lerp(startPosition, hit.point, time);
             time += BulletSpeed*Time.deltaTime/distance;
             yield return null;
@@ -107,8 +99,6 @@ public class EnemyWeaponController : MonoBehaviour {
             player.TakeDamage(Damage);
         else
             Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
-        if (hit.rigidbody != null)
-            hit.rigidbody.AddForce(-hit.normal * 60f);
         Destroy(trail.gameObject, trail.time);
     }
 
@@ -128,13 +118,4 @@ public class EnemyWeaponController : MonoBehaviour {
         trail.transform.position = endPosition;
         Destroy(trail.gameObject, trail.time);
     }
-
-
-    public void Reload() {
-        if (isReloading == true || currentMag == MagSize || bullets == 0)
-            return;
-        //reloadSound.Play();
-        currentMag = 30;
-    }
-
 }
