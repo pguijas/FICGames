@@ -16,7 +16,7 @@ public class GameStatus : MonoBehaviour{
     public AudioManager audioManager;
 
     void Start(){
-        audioManager = GameObject.Find("Levels_AudioManager").GetComponent<AudioManager>();
+        audioManager = AudioManager.instance;
         if (dialogLevel | dialogAtEnd != null){
             dialogDone = false;
             EventManager.instance.DialogEndEvent.AddListener(Dialog); 

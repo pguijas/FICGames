@@ -11,7 +11,7 @@ public class InGamePause : MonoBehaviour{
     public AudioManager audioManager; 
 
     void Awake(){
-        audioManager = GameObject.Find("Levels_AudioManager").GetComponent<AudioManager>();
+        audioManager = AudioManager.instance;
     }
 
         void Update(){
