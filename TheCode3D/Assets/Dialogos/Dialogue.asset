@@ -223,15 +223,16 @@ MonoBehaviour:
     SpeakerName: Instrucciones
     PreviousMessage: 48
     NextMessage: 36
-    MessageText: Tambien encontraras algunas cajas con municion  y otras con curaciones,
-      buscalas bien, pueden estar escondidas.
+    MessageText: "tambi\xE9n podr\xE1s coger armas tiradas aproximandote y pulsando
+      la tecla 'E'."
     Clip: {fileID: 0}
   - ID: 36
     Speaker: 33
     SpeakerName: Instrucciones
     PreviousMessage: 35
-    NextMessage: -1
-    MessageText: Utiliza bien las balas, ya que escasean.
+    NextMessage: 49
+    MessageText: "Puedes ver la posici\xF3n de los enemigos a trav\xE9s del minimapa
+      de la esquina superior."
     Clip: {fileID: 0}
   - ID: 43
     Speaker: 41
@@ -267,6 +268,23 @@ MonoBehaviour:
     SpeakerName: Instrucciones
     PreviousMessage: 34
     NextMessage: 35
-    MessageText: "A lo largo del mapa te encontrar\xE1s nuevas armas que podras utilizar.\t"
+    MessageText: "A lo largo del mapa te encontrar\xE1s con cajas de munici\xF3n
+      y salud que podras recoger acerc\xE1ndote,"
+    Clip: {fileID: 0}
+  - ID: 49
+    Speaker: 33
+    SpeakerName: Instrucciones
+    PreviousMessage: 36
+    NextMessage: 50
+    MessageText: "Estos tienen un rango de visi\xF3n, por lo que puedes acercarte
+      sigilosamente a ellos por la espalda sin ser detectado."
+    Clip: {fileID: 0}
+  - ID: 50
+    Speaker: 33
+    SpeakerName: Instrucciones
+    PreviousMessage: 49
+    NextMessage: -1
+    MessageText: "Una vez mates a todos los enemigos podr\xE1s pasar al siguiente
+      nivel."
     Clip: {fileID: 0}
   Choices: []

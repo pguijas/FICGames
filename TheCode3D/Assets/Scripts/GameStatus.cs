@@ -11,10 +11,12 @@ public class GameStatus : MonoBehaviour{
     public GameObject loose;
     public GameObject dialogAtEnd;
     public QT_Map minimap;
-    public AudioManager audioManager;
     private bool dialogDone = true;
+    [HideInInspector]
+    public AudioManager audioManager;
 
-    void Start(){   
+    void Start(){
+        audioManager = GameObject.Find("Levels_AudioManager").GetComponent<AudioManager>();
         if (dialogLevel | dialogAtEnd != null){
             dialogDone = false;
             EventManager.instance.DialogEndEvent.AddListener(Dialog); 

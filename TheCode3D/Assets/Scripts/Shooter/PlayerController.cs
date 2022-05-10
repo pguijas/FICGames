@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     public float health = 100f;
     public float rotationSensibility = 1000f;
     public float jumpHeight = 1.9f;
+    public AudioSource damage_sound;
 
     private bool run = false;
     private float cameraVerticalAngle;
@@ -76,6 +77,8 @@ public class PlayerController : MonoBehaviour {
             health = 0;
         else 
             health -= damage;
+        if (damage_sound != null)
+            damage_sound.Play();
         EventManager.instance.UpdateLifeEvent.Invoke(health);
 
     }

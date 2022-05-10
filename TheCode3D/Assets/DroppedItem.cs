@@ -6,7 +6,8 @@ using TMPro;
 public class DroppedItem : MonoBehaviour{
 
     public bool toogleLife_Ammo = true;
-    public float distance=3;    
+    public float distance=3;
+    public AudioSource pickup_sound;
     private GameObject player;
     private GameObject short_text;
     
@@ -40,11 +41,13 @@ public class DroppedItem : MonoBehaviour{
         yield return new WaitForSeconds(1); // Espera 1 segundo.
 
         short_text.GetComponent<TextMeshProUGUI>().text = "";
+        if (pickup_sound != null)
+            pickup_sound.Play();
         Destroy(gameObject);
     }
 
     private void Heal(){
-        player.GetComponent<PlayerController>().SetMaxHealth();
+        player.GetComponent<PlayerController>().SetMaxHealth(); 
     }
 
     private void Ammo(){

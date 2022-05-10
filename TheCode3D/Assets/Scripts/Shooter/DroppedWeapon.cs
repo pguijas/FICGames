@@ -9,6 +9,7 @@ public class DroppedWeapon : MonoBehaviour{
     [SerializeField]
     public float distance=4;
     public WeaponController weaponPrefab;
+    public AudioSource pickup_sound;
     private bool txtVisualized = false;
     private GameObject player;
     private GameObject short_text;
@@ -33,6 +34,8 @@ public class DroppedWeapon : MonoBehaviour{
                 if (txtVisualized){
                     player.GetComponent<WeaponManager>().PickWeapon(weaponPrefab);
                     short_text.GetComponent<TextMeshProUGUI>().text = "";
+                    if (pickup_sound != null)
+                        pickup_sound.Play();
                     Destroy(gameObject);
                 }
             }

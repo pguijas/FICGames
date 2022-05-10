@@ -7,11 +7,16 @@ public class InGamePause : MonoBehaviour{
     public static bool GameInPause = false; //esto es interesante para el audio, pero no se si realmente lo necesitaremos
     public static bool Win = false;
     public GameObject pauseMenu;
-    public AudioManager audioManager;
+    [HideInInspector]
+    public AudioManager audioManager; 
 
-    void Update(){
+    void Awake(){
+        audioManager = GameObject.Find("Levels_AudioManager").GetComponent<AudioManager>();
+    }
+
+        void Update(){
         // Al pulsar ESC
-        if (Input.GetKeyDown(KeyCode.Escape)){ 
+        if (Input.GetKeyDown(KeyCode.Escape)){
             if (GameInPause)
                 Resume();
             else

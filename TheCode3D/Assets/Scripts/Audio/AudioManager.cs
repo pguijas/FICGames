@@ -10,10 +10,15 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     // Se copian todos los parametros de cada AudioSource del array sounds
-    void Awake()
-    {
-        foreach (Sound s in sounds)
-        {
+    void Awake() {
+        if (instance == null)
+            instance = this;
+        else {
+            Destroy(gameObject);
+            return;
+        }
+        
+        foreach (Sound s in sounds) {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
 
