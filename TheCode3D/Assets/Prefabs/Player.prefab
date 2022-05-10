@@ -117,10 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingWeapons:
   - {fileID: 7072345867609906556, guid: 54e89b6b93df44ae89eb5fa28742c5b8, type: 3}
-  - {fileID: 6984104221774363879, guid: bd5f02057b0f541c48b8ef6e477381f6, type: 3}
-  - {fileID: 4754851337472847420, guid: dc7def5b5db1af380aeac78e31f6bbc4, type: 3}
-  - {fileID: 3464177186398212497, guid: b67af9158b9e5448f80df25019a4dbe6, type: 3}
-  - {fileID: 1512499762477644922, guid: 9412a988f55e913c7b026821856195d2, type: 3}
+  - {fileID: 0}
   weaponParentSocket: {fileID: 7460481922710686411}
 --- !u!114 &4695156602840825816
 MonoBehaviour:

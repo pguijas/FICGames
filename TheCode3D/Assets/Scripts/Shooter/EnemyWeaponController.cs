@@ -37,26 +37,28 @@ public class EnemyWeaponController : MonoBehaviour {
     
     private float LastShootTime;
     private Vector3 originPosition;
+    private PlayerController Player;
 
     // flags
     private bool isReloading = false;
     private bool isAiming = false;
     private bool isSprinting = false;
 
-
     private void Start(){
         originPosition = transform.localPosition;
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
 
     public void Shoot(float distanceToTarget) {
         float conversion = distanceToTarget / 50;
-        if ((LastShootTime + ShootDelay + conversion) < Time.time) {
+        if ((LastShootTime + ShootDelay) < Time.time) {
             //animator.SetBool("Shooting", true);
             ShootingSystem.Play();
             shootSound.Play();
-            Vector3 direction = transform.TransformDirection(GetDirection(conversion)) * 10;
+            Vector3 direction = GetDirection(conversion);
             // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
+            Debug.DrawRay(BulletSpawnPoint.position, direction, Color.red, 1f);
             if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask)) {
                 StartCoroutine(SpawnTrail(hit));
             // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
@@ -69,14 +71,17 @@ public class EnemyWeaponController : MonoBehaviour {
     
     // Aleatorizar el vector que indica la direccion de disparo (bullet spread)
     private Vector3 GetDirection(float distance) {
-        Vector3 direction = transform.forward;
-        direction += new Vector3(
-            Random.Range(-(BulletSpreadVariance.x/distance), (BulletSpreadVariance.x/distance)),
-            Random.Range(-(BulletSpreadVariance.y/distance), (BulletSpreadVariance.y/distance)),
-            Random.Range(-(BulletSpreadVariance.z/distance), (BulletSpreadVariance.z/distance))
-        );
+        Vector3 direction = Player.transform.position - BulletSpawnPoint.position;
+        if (distance < 1) {
+            direction += new Vector3(
+                Random.Range(-(BulletSpreadVariance.x/distance), (BulletSpreadVariance.x/distance)),
+                Random.Range(-(BulletSpreadVariance.y/distance), (BulletSpreadVariance.y/distance)),
+                Random.Range(-(BulletSpreadVariance.z/distance), (BulletSpreadVariance.z/distance))
+            );
+        }
         direction.Normalize();
         return direction;
+
     }
 
     // Spawnear el trail desde el origen al punto de impacto

@@ -34,6 +34,7 @@ public class WeaponController : MonoBehaviour{
     public int currentMag = 30;
     [SerializeField]
     public int maxbullets = 3000;
+    [SerializeField]
     public int bullets = 3000;
     [SerializeField]
     private bool isAutomatic = true;
@@ -110,7 +111,7 @@ public class WeaponController : MonoBehaviour{
         ShootingSystem.Play();
         shootSound.Play();
         Vector3 direction = GetDirection();
-/*
+        /*
         // Trazamos un Spherecast para detectar colisiones y los añadimos a la capa shooting
         Collider[] rangeChecks = Physics.OverlapSphere(transform.position, 500, Mask);
         LayerMask[] layers = new LayerMask[rangeChecks.Length];
@@ -118,26 +119,14 @@ public class WeaponController : MonoBehaviour{
             for (int i = 0; i < rangeChecks.Length; i++) {
                 layers[i] = rangeChecks[i].gameObject.layer;
                 rangeChecks[i].gameObject.layer = shootingLayer;
-            }
-            Debug.Log("Colision");
-            /*for (int i = 0; i < rangeChecks.Length; i++) {
                 GameObject target = rangeChecks[i].gameObject;
                 Vector3 directionToTarget = (GameObject.FindWithTag("MainCamera").transform.position - target.position).normalized;
                 if (Vector3.Angle(GameObject.FindWithTag("MainCamera").transform.forward, directionToTarget) < 60 / 2) {
-                    Debug.Log(target.layer);
                     target.layer = shootingLayer;
                 }
-            }*//*
-            Collider[] r = Physics.OverlapSphere(transform.position, 10, shootingLayer);
-            if (r.Length != 0) {
-                for (int i = 0; i < r.Length; i++) 
-                    Debug.Log(r[i].gameObject.layer);
             }
             // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
-            if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, shootingLayer)){
-                Debug.Log(hit.collider.gameObject.name);
-                Debug.DrawRay(BulletSpawnPoint.position, direction, Color.green, 10);
-                Debug.Log("Raycast");
+            if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, shootingLayer)) {
                 StartCoroutine(SpawnTrail(hit));
             } else {
                 StartCoroutine(SpawnTrail(direction));
@@ -148,7 +137,7 @@ public class WeaponController : MonoBehaviour{
             // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
         }*/
         if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
-                StartCoroutine(SpawnTrail(hit));
+            StartCoroutine(SpawnTrail(hit));
         } else {
             StartCoroutine(SpawnTrail(direction));
         }
@@ -253,8 +242,20 @@ public class WeaponController : MonoBehaviour{
     // esto esta mal, hay que hacerlo con animation events, pero en linux no me funciona
     private IEnumerator AfterReload() {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        currentMag = MagSize;
-        bullets -= MagSize;
+        if (bullets >= MagSize) {
+            int load = MagSize - currentMag%MagSize;
+            bullets -= load;
+            currentMag += load;
+        } else {
+            int tmp = bullets + currentMag;
+            if (tmp > MagSize) {
+                bullets = tmp % MagSize;
+                currentMag = MagSize;
+            } else {
+                currentMag = tmp;
+                bullets = 0;
+            }
+        }
         isReloading = false;
         EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
     }

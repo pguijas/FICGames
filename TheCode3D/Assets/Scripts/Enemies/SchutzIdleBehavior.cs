@@ -15,7 +15,6 @@ public class SchutzIdleBehavior : StateMachineBehaviour {
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        Debug.Log("Idle");
         timer += Time.deltaTime;
         if (timer > 5)
             animator.SetInteger("Status_walk", 1);

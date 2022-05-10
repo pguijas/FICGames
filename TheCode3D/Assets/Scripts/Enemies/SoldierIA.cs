@@ -37,6 +37,7 @@ public class SoldierIA : MonoBehaviour {
     private List<Transform> waypoints = new List<Transform>();
     private IEnumerator coroutine;
     private float distanceToTarget = Mathf.Infinity;
+    private Vector3 directionToTarget = Vector3.zero;
 
     // flags
     private bool notifyed = false;
@@ -59,8 +60,6 @@ public class SoldierIA : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         // Field of View
         StartCoroutine(FieldOfViewRoutine());
-        // Notify Game Status
-        Debug.Log(gameObject.GetComponent<QT_MapObject>());
         AddRoute();
     }
 
@@ -73,10 +72,10 @@ public class SoldierIA : MonoBehaviour {
             notifyed = true;
         }
         if (canSeePlayer) {
-            weapon.Shoot(distanceToTarget);
             if (!shooting) {
-                anim.SetInteger("Status_walk", 3);
-                shooting = true;
+                StartCoroutine(ShootDelay());
+            } else {
+                weapon.Shoot(distanceToTarget);
             }
         } else {
             if (shooting) {
@@ -89,6 +88,13 @@ public class SoldierIA : MonoBehaviour {
                 }
             }
         }
+    }
+
+    private IEnumerator ShootDelay() {
+        yield return new WaitForSeconds(0.5f);
+        anim.SetInteger("Status_walk", 3);
+        shooting = true;
+        weapon.Shoot(distanceToTarget);
     }
 
     private IEnumerator FollowRouteRoutine() {
@@ -115,8 +121,6 @@ public class SoldierIA : MonoBehaviour {
     }
 
     private void AddRoute() {
-        if (agent == null)
-            return;
         foreach (Transform t in wayPointsObject)
             waypoints.Add(t);
         agent = anim.GetComponent<NavMeshAgent>();
@@ -130,7 +134,10 @@ public class SoldierIA : MonoBehaviour {
             StartCoroutine(Die());
         } else {
             health -= damage;
-            anim.SetInteger("Status_walk", 3);
+            if (distanceToTarget < radius)
+                anim.SetInteger("Status_walk", 3);
+            else 
+                anim.SetInteger("Status_walk", 2);
         }
     }
 
@@ -155,14 +162,15 @@ public class SoldierIA : MonoBehaviour {
         Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, playerMask);
         if (rangeChecks.Length != 0) {
             Transform target = rangeChecks[0].transform;
-            Vector3 directionToTarget = (target.position - transform.position).normalized;
+            directionToTarget = (target.position - transform.position).normalized;
             distanceToTarget = Vector3.Distance(transform.position, target.position);
-            if ((Vector3.Angle(transform.forward, directionToTarget) < angle / 2) || distanceToTarget < 40f) {
+            if ((Vector3.Angle(transform.forward, directionToTarget) < angle / 2) || distanceToTarget < radius/2) {
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask))
                     canSeePlayer = true;
                 else {
                     canSeePlayer = false;
-                    anim.SetInteger("Status_walk", 2);
+                    if (distanceToTarget < radius/3)
+                        anim.SetInteger("Status_walk", 2);
                 }
             } else
                 canSeePlayer = false;

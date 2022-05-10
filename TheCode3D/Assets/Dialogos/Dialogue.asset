@@ -215,23 +215,23 @@ MonoBehaviour:
     SpeakerName: Instrucciones
     PreviousMessage: 32
     NextMessage: 48
-    MessageText: Pulsa 'R' para recargar y usa el click derecho e izquierdo para
-      apuntar y disparar.
+    MessageText: Pulsa 'R' para recargar y usa el click derecho para apuntar y el
+      izquierdo para disparar.
     Clip: {fileID: 0}
   - ID: 35
     Speaker: 33
     SpeakerName: Instrucciones
     PreviousMessage: 48
     NextMessage: 36
-    MessageText: "tambi\xE9n podr\xE1s coger armas del suelo aproxim\xE1ndote y pulsando
-      la tecla 'E',"
+    MessageText: Tambien encontraras algunas cajas con municion  y otras con curaciones,
+      buscalas bien, pueden estar escondidas.
     Clip: {fileID: 0}
   - ID: 36
     Speaker: 33
     SpeakerName: Instrucciones
     PreviousMessage: 35
     NextMessage: -1
-    MessageText: "pero ten cuidado, est\xE1n bien vigiladas."
+    MessageText: Utiliza bien las balas, ya que escasean.
     Clip: {fileID: 0}
   - ID: 43
     Speaker: 41
@@ -267,7 +267,6 @@ MonoBehaviour:
     SpeakerName: Instrucciones
     PreviousMessage: 34
     NextMessage: 35
-    MessageText: "A lo largo del mapa te encontrar\xE1s con cajas de munici\xF3n
-      y salud,"
+    MessageText: "A lo largo del mapa te encontrar\xE1s nuevas armas que podras utilizar.\t"
     Clip: {fileID: 0}
   Choices: []

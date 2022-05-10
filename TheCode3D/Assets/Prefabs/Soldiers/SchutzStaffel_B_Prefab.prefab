@@ -1207,7 +1207,7 @@ MonoBehaviour:
   health: 100
   weapon: {fileID: 7938877530094888010}
   radius: 70
-  angle: 145
+  angle: 200
   agent: {fileID: 8990414525083270403}
   wayPointsObject: {fileID: 0}
   playerMask:

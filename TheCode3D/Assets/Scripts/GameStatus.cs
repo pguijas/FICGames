@@ -39,7 +39,6 @@ public class GameStatus : MonoBehaviour{
     }
 
     public void NewSoldier(QT_MapObject soldier){
-        Debug.Log("New Soldier!");
         minimap.AddMarker(soldier,false);
     }
 
@@ -70,7 +69,6 @@ public class GameStatus : MonoBehaviour{
             audioManager.Play("Victory");
             if (PlayerPrefs.GetInt("level",-1) < level+1)
                 PlayerPrefs.SetInt("level", level+1);
-            Debug.Log("You win!");
         } else {
             // Para los niveles con diálogo al final
             if (dialogAtEnd != null){
@@ -80,13 +78,12 @@ public class GameStatus : MonoBehaviour{
     }   
 
     public void Loose(float life){
-        /*if (life <= 0){
+        if (life <= 0){
             ActiveCursorAndPause();
             loose.SetActive(true);
             audioManager.Stop("Theme");
             audioManager.Play("GameOver");
-            Debug.Log("You lose!");
-        }*/
+        }
         return;
     }   
 

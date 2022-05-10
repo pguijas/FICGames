@@ -17,7 +17,7 @@ public class SchutzPursuitBehavior : StateMachineBehaviour {
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         agent.SetDestination(player.position);
         float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance < 30f)
+        if (distance < 50f)
             animator.SetInteger("Status_walk", 3);
     }
 

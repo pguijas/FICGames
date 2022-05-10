@@ -567,10 +567,10 @@ MonoBehaviour:
   BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
   typegun: 1
   Damage: 120
-  MagSize: 30
-  currentMag: 30
-  maxbullets: 60
-  bullets: 30
+  MagSize: 25
+  currentMag: 25
+  maxbullets: 50
+  bullets: 25
   isAutomatic: 1
   ShootDelay: 0.3
   recoilForce: 4
@@ -582,9 +582,9 @@ MonoBehaviour:
   Mask:
     serializedVersion: 2
     m_Bits: 192
-  shootingLayer:
+  shootingMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
 --- !u!114 &6323206910606053214
 MonoBehaviour:
   m_ObjectHideFlags: 0
