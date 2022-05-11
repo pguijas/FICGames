@@ -13,11 +13,9 @@ public class Hud : MonoBehaviour{
         EventManager.instance.UpdateBulletsEvent.AddListener(UpdateBullets);
     }
 
-
     void OnDisable(){
         EventManager.instance.UpdateBulletsEvent.RemoveListener(UpdateBullets);
     }
-    
 
     public void UpdateBullets(int gun, int current, int total){
         // Gun 

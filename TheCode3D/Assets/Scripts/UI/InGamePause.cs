@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class InGamePause : MonoBehaviour{
 
-    public static bool GameInPause = false; //esto es interesante para el audio, pero no se si realmente lo necesitaremos
-    public static bool Win = false;
+    public static bool gameInPause = false;
+    public static bool win = false;
     public GameObject pauseMenu;
     [HideInInspector]
-    public AudioManager audioManager; 
+    private AudioManager audioManager; 
 
-    void Awake(){
+    void Start(){
         audioManager = AudioManager.instance;
     }
 
-        void Update(){
+    void Update(){
         // Al pulsar ESC
         if (Input.GetKeyDown(KeyCode.Escape)){
-            if (GameInPause)
+            if (gameInPause)
                 Resume();
             else
                 Pause();
@@ -28,9 +28,9 @@ public class InGamePause : MonoBehaviour{
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        GameInPause = false;
+        gameInPause = false;
         audioManager.Stop("Pause");
-        if (!Win)
+        if (!win)
             audioManager.Play("Theme");
         else
             audioManager.Play("Victory");
@@ -40,11 +40,11 @@ public class InGamePause : MonoBehaviour{
         Cursor.lockState = CursorLockMode.None;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        GameInPause = true;
+        gameInPause = true;
         audioManager.Pause("Theme");
         if (audioManager.isPlaying("Victory")) {
             audioManager.Pause("Victory");
-            Win = true;
+            win = true;
         }
         audioManager.Play("Pause");
     }

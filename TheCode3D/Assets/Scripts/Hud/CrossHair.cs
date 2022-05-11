@@ -14,6 +14,7 @@ public class CrossHair : MonoBehaviour {
         crossHair = GetComponent<RectTransform>();
     }
 
+    // Actualizamos tamaño del crosshair
     private void Update() {
         if (isMoving())
             currentSize = Mathf.Lerp(currentSize, maxSize, Time.deltaTime * speed);

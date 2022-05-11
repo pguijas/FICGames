@@ -23,11 +23,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-37831
+41037
 Successfully changed project path to: /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D
 /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 39,98 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 37,97 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -47,48 +47,48 @@ L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_
 blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_
 NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_N
 V_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 655247000
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1108027752
 Initialize mono
 Mono path[0] = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56747
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56153
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /home/hector/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,002050 seconds.
+Registered in 0,001921 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 37,74 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 39,36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,575 seconds
+- Completed reload, in  0,581 seconds
 Domain Reload Profiling:
-	ReloadAssembly (575ms)
-		BeginReloadAssembly (50ms)
+	ReloadAssembly (582ms)
+		BeginReloadAssembly (51ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (463ms)
-			LoadAssemblies (49ms)
+		EndReloadAssembly (468ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (145ms)
+			SetupTypeCache (144ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (201ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (205ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (38ms)
+				RefreshPlugins (39ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadAttributes (125ms)
 				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -96,38 +96,38 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,003709 seconds.
+Registered in 0,003619 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,42 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,966 seconds
+- Completed reload, in  0,972 seconds
 Domain Reload Profiling:
-	ReloadAssembly (967ms)
-		BeginReloadAssembly (130ms)
+	ReloadAssembly (973ms)
+		BeginReloadAssembly (128ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (782ms)
-			LoadAssemblies (88ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (792ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (253ms)
+			SetupTypeCache (245ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (309ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (328ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (233ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (253ms)
 				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
@@ -137,14 +137,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,85 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 1710 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,7 MB.
+System memory in use before: 156,8 MB.
 System memory in use after: 156,8 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2169.
-Total: 4,467597 ms (FindLiveObjects: 0,179425 ms CreateObjectMapping: 0,062266 ms MarkObjects: 4,041739 ms  DeleteObjects: 0,183289 ms)
+Total: 4,923906 ms (FindLiveObjects: 0,143698 ms CreateObjectMapping: 0,065956 ms MarkObjects: 4,433118 ms  DeleteObjects: 0,280036 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -156,327 +156,54 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  path: Assets/Prefabs/GameStatus.prefab
-  artifactKey: Guid(7ef71f09941d441c2aef835fb620ad54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameStatus.prefab using Guid(7ef71f09941d441c2aef835fb620ad54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814eba3f43840f37a7d821c628236d6f') in 0,025479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000156 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(78e8779cc6d2d6c9ba15f31b11055485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5cb95273c149faf1c46f32e9d605a3') in 0,013800 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000176 seconds.
-  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab
-  artifactKey: Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_Prefab.prefab using Guid(e47922cb6751292998db8f72ac46e03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83f68cf3ad856d9353955459ed60cf7') in 0,121598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000185 seconds.
-  path: Assets/Prefabs/Soldiers
-  artifactKey: Guid(ffb0f1b472182cc358258947d08bc618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Soldiers using Guid(ffb0f1b472182cc358258947d08bc618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fee2d1f0d0c28d72e3397d39633ae43') in 0,001195 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000140 seconds.
-  path: Assets/Prefabs/Soldiers/SchutzStaffel_B_PrefabLight.prefab
-  artifactKey: Guid(7e53381c35434bc22a7cb08ea60f3678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Soldiers/SchutzStaffel_B_PrefabLight.prefab using Guid(7e53381c35434bc22a7cb08ea60f3678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97595b98a2990ef3fec4412c3e936119') in 0,029792 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000115 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(a0114c1a961a91ba4b89afcf2610958a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(a0114c1a961a91ba4b89afcf2610958a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0413dc5073c2e81b472307e10666ec') in 0,001158 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000094 seconds.
-  path: Assets/Prefabs/Levels_AudioManager.prefab
-  artifactKey: Guid(99c3ddadde974914ca0831c86431d687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Levels_AudioManager.prefab using Guid(99c3ddadde974914ca0831c86431d687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c44cad093e56967d787fb176103cd47') in 0,004484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000143 seconds.
-  path: Assets/Prefabs/OptionsManager.prefab
-  artifactKey: Guid(c84ceb45bd26e33368042d9fefe9e3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/OptionsManager.prefab using Guid(c84ceb45bd26e33368042d9fefe9e3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c154920599cadc7a99e7f3e470ac53') in 0,003600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000243 seconds.
-  path: Assets/Prefabs/AudioManager.prefab
-  artifactKey: Guid(7681bc2f501d4a141b0aeaf96fc16dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AudioManager.prefab using Guid(7681bc2f501d4a141b0aeaf96fc16dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f163f5f8895eebfd47be6f2f63541bd') in 0,003592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000152 seconds.
-  path: Assets/Prefabs/Player (without guns).prefab
-  artifactKey: Guid(6696d953b0cc745f9be263b781254cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player (without guns).prefab using Guid(6696d953b0cc745f9be263b781254cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4c0e11239ed003638ec3be803e1a59') in 0,003493 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0,003408 seconds.
+Registered in 0,003365 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,912 seconds
-Domain Reload Profiling:
-	ReloadAssembly (912ms)
-		BeginReloadAssembly (107ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (751ms)
-			LoadAssemblies (92ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (245ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (291ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (221ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0,42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,4 MB.
-System memory in use after: 156,4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2179.
-Total: 4,164886 ms (FindLiveObjects: 0,165888 ms CreateObjectMapping: 0,048263 ms MarkObjects: 3,917062 ms  DeleteObjects: 0,032847 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 657,545243 seconds.
-  path: Assets/Prefabs/Items
-  artifactKey: Guid(4e1d77b2857a044649fdb708268492cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Items using Guid(4e1d77b2857a044649fdb708268492cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3398cfd5eff7840948c03fa625dbbaa') in 0,004798 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,058448 seconds.
-  path: Assets/Prefabs/Items/Botiquin.prefab
-  artifactKey: Guid(5b2fdcbbb45f14be09ef4371b4369f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Items/Botiquin.prefab using Guid(5b2fdcbbb45f14be09ef4371b4369f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5936ecb86827cad7bbc6981e88d25e90') in 0,066189 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000237 seconds.
-  path: Assets/Prefabs/Items/Municion.prefab
-  artifactKey: Guid(196c2aa349edf405a9a735f1eca481ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Items/Municion.prefab using Guid(196c2aa349edf405a9a735f1eca481ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d018542a4e01f9787215496ad96e7a') in 0,074146 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4,900965 seconds.
-  path: Assets/Prefabs/Guns
-  artifactKey: Guid(bb3a0e5dd0744ff2f81b27f6c03d04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns using Guid(bb3a0e5dd0744ff2f81b27f6c03d04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0613b6d75158a3c3fb1a5aa804d1fcd0') in 0,002656 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,094340 seconds.
-  path: Assets/Prefabs/Guns/ar1.prefab
-  artifactKey: Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/ar1.prefab using Guid(b67af9158b9e5448f80df25019a4dbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '267b1054e4835087a9a38283695546c0') in 0,030829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000242 seconds.
-  path: Assets/Prefabs/Guns/ar2(automatic rifle)_prefab Variant.prefab
-  artifactKey: Guid(9412a988f55e913c7b026821856195d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/ar2(automatic rifle)_prefab Variant.prefab using Guid(9412a988f55e913c7b026821856195d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a566ed297854bc1dcbe3a4ab261e26') in 0,019614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000255 seconds.
-  path: Assets/Prefabs/Guns/smg1.prefab
-  artifactKey: Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/smg1.prefab using Guid(bd5f02057b0f541c48b8ef6e477381f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6c27faa85cac5bd4819ccd39d5e463') in 0,026342 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000266 seconds.
-  path: Assets/Prefabs/Guns/pistol1.prefab
-  artifactKey: Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/pistol1.prefab using Guid(54e89b6b93df44ae89eb5fa28742c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825188b7b31a1233ed8f5ef36bec1f71') in 0,019487 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000292 seconds.
-  path: Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab
-  artifactKey: Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab using Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a60efd74daa0d797990376d772d2c48') in 0,017865 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2,075551 seconds.
-  path: Assets/Prefabs/Guns/Dropeables
-  artifactKey: Guid(5456b59b3ade54d0ab43b093d0715756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/Dropeables using Guid(5456b59b3ade54d0ab43b093d0715756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e8d892ff24fd0f160fdecbb5252deb') in 0,002424 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,113369 seconds.
-  path: Assets/Prefabs/Guns/Dropeables/ar1(automatic rifle).prefab
-  artifactKey: Guid(379d4123f355f4ddfa1f00e1ee2f19bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/Dropeables/ar1(automatic rifle).prefab using Guid(379d4123f355f4ddfa1f00e1ee2f19bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca4566f1807ab9a1c1dc5480b321358') in 0,031595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000506 seconds.
-  path: Assets/Prefabs/Guns/Dropeables/smg2(sub-machine gun).prefab
-  artifactKey: Guid(c3420869c69274425af9d7a110c1410e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/Dropeables/smg2(sub-machine gun).prefab using Guid(c3420869c69274425af9d7a110c1410e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58830599486aa1b5df804d32c198f24') in 0,027371 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000364 seconds.
-  path: Assets/Prefabs/Guns/Dropeables/smg1(sub-machine gun).prefab
-  artifactKey: Guid(7a723b1b44adb4942adacb9855593c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/Dropeables/smg1(sub-machine gun).prefab using Guid(7a723b1b44adb4942adacb9855593c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4bf11d890d09371c568087d10fd3d40') in 0,014401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000299 seconds.
-  path: Assets/Prefabs/Guns/Dropeables/pistol1.prefab
-  artifactKey: Guid(f61ccd0e348a547249065e7d2855e002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/Dropeables/pistol1.prefab using Guid(f61ccd0e348a547249065e7d2855e002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4eb21f1c240b01a13192768adb0671c') in 0,010720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000222 seconds.
-  path: Assets/Prefabs/Guns/Dropeables/ar2(automatic rifle).prefab
-  artifactKey: Guid(19712ea4a161c402699f2f75ac1b6790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/Dropeables/ar2(automatic rifle).prefab using Guid(19712ea4a161c402699f2f75ac1b6790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d60376852ea46e82ccd8d852b064a9') in 0,014533 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 50,987801 seconds.
-  path: Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab
-  artifactKey: Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab using Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb877be199d28c90acbad3afe8822a48') in 0,016509 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003371 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,943 seconds
+- Completed reload, in  0,971 seconds
 Domain Reload Profiling:
-	ReloadAssembly (944ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (972ms)
+		BeginReloadAssembly (106ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (788ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (811ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (263ms)
+			SetupTypeCache (294ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (301ms)
+			SetupLoadedEditorAssemblies (302ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (228ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1,85 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2183.
-Total: 10,927146 ms (FindLiveObjects: 0,630219 ms CreateObjectMapping: 0,192110 ms MarkObjects: 9,970557 ms  DeleteObjects: 0,131185 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003638 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,985 seconds
-Domain Reload Profiling:
-	ReloadAssembly (986ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (836ms)
-			LoadAssemblies (89ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (293ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (311ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (234ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,49 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
+System memory in use before: 154,9 MB.
+System memory in use after: 155,0 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2186.
-Total: 4,701355 ms (FindLiveObjects: 0,242802 ms CreateObjectMapping: 0,066439 ms MarkObjects: 4,331325 ms  DeleteObjects: 0,059725 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2172.
+Total: 4,141413 ms (FindLiveObjects: 0,137051 ms CreateObjectMapping: 0,058847 ms MarkObjects: 3,906507 ms  DeleteObjects: 0,038139 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -489,539 +216,31 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 622,570955 seconds.
-  path: Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab
-  artifactKey: Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/smg2(sub-machine gun)_prefab Variant.prefab using Guid(dc7def5b5db1af380aeac78e31f6bbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f251c34791e1b1c27e3607b02c2cc8') in 0,067072 seconds 
+  path: Assets/Scenes
+  artifactKey: Guid(c65948e8e1c6d134289fc1ec6ee01222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(c65948e8e1c6d134289fc1ec6ee01222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc80437de31fdd3c21b53465fd160d0') in 0,004179 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003211 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,893 seconds
-Domain Reload Profiling:
-	ReloadAssembly (893ms)
-		BeginReloadAssembly (103ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (737ms)
-			LoadAssemblies (82ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (241ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (287ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2190.
-Total: 5,006374 ms (FindLiveObjects: 0,198450 ms CreateObjectMapping: 0,106499 ms MarkObjects: 4,660196 ms  DeleteObjects: 0,040342 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 1,128930 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce9f7696fa85174f348383957c270e1') in 0,002516 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003603 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,909 seconds
-Domain Reload Profiling:
-	ReloadAssembly (910ms)
-		BeginReloadAssembly (103ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (753ms)
-			LoadAssemblies (90ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (256ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (284ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2193.
-Total: 4,395272 ms (FindLiveObjects: 0,140192 ms CreateObjectMapping: 0,049804 ms MarkObjects: 4,168168 ms  DeleteObjects: 0,036276 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 29,979219 seconds.
+  path: Assets/Scenes/level2.unity
+  artifactKey: Guid(b53be339526533344aec9818bbaff74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level2.unity using Guid(b53be339526533344aec9818bbaff74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323c59e6b5e44c3ae45747f6af765a21') in 0,001812 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003875 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,893 seconds
-Domain Reload Profiling:
-	ReloadAssembly (894ms)
-		BeginReloadAssembly (94ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (745ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (290ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (221ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2196.
-Total: 4,240968 ms (FindLiveObjects: 0,161810 ms CreateObjectMapping: 0,046804 ms MarkObjects: 3,993496 ms  DeleteObjects: 0,037713 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 34,173644 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(6ec40681f9d062c4ba22c168a80aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ecd96b0807bada69dff0d946c1c809') in 0,001618 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003740 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,62 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,939 seconds
-Domain Reload Profiling:
-	ReloadAssembly (939ms)
-		BeginReloadAssembly (99ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (784ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (256ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (307ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (230ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2199.
-Total: 4,220482 ms (FindLiveObjects: 0,162710 ms CreateObjectMapping: 0,048759 ms MarkObjects: 3,977432 ms  DeleteObjects: 0,030777 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003736 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,881 seconds
-Domain Reload Profiling:
-	ReloadAssembly (882ms)
-		BeginReloadAssembly (96ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (731ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (242ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (283ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2202.
-Total: 4,509056 ms (FindLiveObjects: 0,163440 ms CreateObjectMapping: 0,053299 ms MarkObjects: 4,248951 ms  DeleteObjects: 0,042271 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,002850 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,906 seconds
-Domain Reload Profiling:
-	ReloadAssembly (906ms)
-		BeginReloadAssembly (95ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (753ms)
-			LoadAssemblies (85ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (300ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (232ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,51 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2205.
-Total: 4,536994 ms (FindLiveObjects: 0,204187 ms CreateObjectMapping: 0,070901 ms MarkObjects: 4,223204 ms  DeleteObjects: 0,037686 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003679 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,893 seconds
-Domain Reload Profiling:
-	ReloadAssembly (894ms)
-		BeginReloadAssembly (96ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (742ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (290ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (222ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2208.
-Total: 4,306243 ms (FindLiveObjects: 0,164611 ms CreateObjectMapping: 0,056361 ms MarkObjects: 4,036545 ms  DeleteObjects: 0,047819 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003319 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,898 seconds
-Domain Reload Profiling:
-	ReloadAssembly (898ms)
-		BeginReloadAssembly (97ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (745ms)
-			LoadAssemblies (86ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (248ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (287ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (218ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2211.
-Total: 4,442978 ms (FindLiveObjects: 0,173898 ms CreateObjectMapping: 0,049473 ms MarkObjects: 4,171117 ms  DeleteObjects: 0,047646 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,003354 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /media/hector/ing_inf/4º/CIIE/Prácticas/3D/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,900 seconds
-Domain Reload Profiling:
-	ReloadAssembly (901ms)
-		BeginReloadAssembly (98ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (747ms)
-			LoadAssemblies (86ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (251ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (287ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (219ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156,5 MB.
-System memory in use after: 156,6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2214.
-Total: 4,240087 ms (FindLiveObjects: 0,151832 ms CreateObjectMapping: 0,050125 ms MarkObjects: 4,005177 ms  DeleteObjects: 0,032214 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 5,590903 seconds.
+  path: Assets/Scenes/level2.unity
+  artifactKey: Guid(b53be339526533344aec9818bbaff74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level2.unity using Guid(b53be339526533344aec9818bbaff74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1949659356298de0c58610fb70a4b4') in 0,004141 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

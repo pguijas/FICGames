@@ -2,14 +2,13 @@ using UnityEngine.Audio;
 using System;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
-{
+public class AudioManager : MonoBehaviour{
 
     public Sound[] sounds;
 
     public static AudioManager instance;
 
-    // Se copian todos los parametros de cada AudioSource del array sounds
+    // Singleton + Initialization of Sounds
     void Awake() {
         if (instance == null)
             instance = this;
@@ -28,50 +27,45 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Se reproduce la m�sica de fondo
-    void Start()
-    {
+    // Se reproduce la música de fondo
+    void Start(){
         Play("Theme");
     }
 
-    public void Play(string name)
-    {
+    // Se reproduce un sonido
+    public void Play(string name){
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
+        if (s == null){
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
         s.source.Play();
     }
 
-    public void Pause(string name)
-    {
+    // Se pausa un sonido
+    public void Pause(string name){
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
+        if (s == null){
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
         s.source.Pause();
     }
 
-    public void Stop(string name)
-    {
+    // Se para un sonido
+    public void Stop(string name){
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
+        if (s == null){
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
         s.source.Stop();
     }
 
-    public bool isPlaying(string name)
-    {
+    // Se checkea si un sonido está reproduciendo
+    public bool isPlaying(string name){
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
+        if (s == null){
             Debug.LogWarning("Sound: " + name + " not found!");
             return false;
         }

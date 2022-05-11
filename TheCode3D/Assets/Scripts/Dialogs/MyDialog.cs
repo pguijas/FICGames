@@ -19,30 +19,30 @@ public class MyDialog : MonoBehaviour{
             SetText();
         }
 
+        // Checkea si si acabo o comprueba la entrada del usuario (next)
         private void Update(){
-            // Don't do anything if the conversation is over
             if (ended){
                 gameObject.SetActive(false); 
                 EventManager.instance.DialogEndEvent.Invoke();
                 return;
             }
-            // Check if the space key is pressed and the current message is not a choice
+            
             if (handler.currentMessageInfo.Type == QD_NodeType.Message && Input.GetKeyUp(KeyCode.Return))
                 Next();
         }
 
 
         private void SetText(){
-            // Clear everything
+            // Vacía txto de mensaje
             speakerName.text = "";
             messageText.gameObject.SetActive(false);
             messageText.text = "";
 
-            // If at the end, don't do anything
+            // Si acabó, no hace nada
             if (ended)
                 return;
 
-            // Generate choices if a choice, otherwise display the message
+            // Muestra mensaje (si hay) 
             if (handler.currentMessageInfo.Type == QD_NodeType.Message){
                 QD_Message message = handler.GetMessage();
                 speakerName.text = message.SpeakerName;
@@ -50,19 +50,17 @@ public class MyDialog : MonoBehaviour{
                 messageText.gameObject.SetActive(true);
 
             }
-            else if (handler.currentMessageInfo.Type == QD_NodeType.Choice)
-                speakerName.text = "Player";
         }
 
+        // Se pasa al siguiente mensaje
         public void Next(int choice = -1){
             if (ended)
                 return;
             
-            // Go to the next message
             handler.NextMessage(choice);
-            // Set the new text
             SetText();
-            // End if there is no next message
+
+            // Ended si no hay mensaje
             if (handler.currentMessageInfo.ID < 0)
                 ended = true;
         }
