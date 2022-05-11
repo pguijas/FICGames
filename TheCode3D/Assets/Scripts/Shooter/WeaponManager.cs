@@ -21,11 +21,12 @@ public class WeaponManager : MonoBehaviour {
         // Agregar armas iniciales
         foreach (WeaponController startingWeapon in startingWeapons)
             AddWeapon(startingWeapon);
-        // Activamos arma
+        // Activamos arma y rellenamos balas (hubo un bug en el cual a veces aparecíamos sin balas)
         weaponSlots[activeWeaponIndex].gameObject.SetActive(true);
         weaponSlots[activeWeaponIndex].currentMag = weaponSlots[activeWeaponIndex].MagSize;
         weaponSlots[activeWeaponIndex].bullets = weaponSlots[activeWeaponIndex].MagSize;
     }
+
 
     private void Update() {
         if (activeWeaponIndex != -1) {
@@ -92,17 +93,18 @@ public class WeaponManager : MonoBehaviour {
         return -1;
     }
     
-    
+    // Introduce un arma del suelo en nuestro inventario    
     public void PickWeapon(WeaponController p_weaponPrefab) {
-        // Ponermos la posición actual como la default
-        if (weaponSlots[activeWeaponIndex]==null) 
+        // Si no tenemos armas, la añadimos al principio
+        if (weaponSlots[activeWeaponIndex]==null)
             weaponSlots[0] = Instantiate(p_weaponPrefab, weaponParentSocket);
         else {
             // Tratamos de introducirla en un slot vacío
             int slot = AddWeapon(p_weaponPrefab);
             if (slot != -1) {
                 SwitchWeapon(slot);
-            } else {   
+            } else {
+                // Si están todos ocupados, se cambia por la actual
                 weaponSlots[activeWeaponIndex].Drop();
                 weaponSlots[activeWeaponIndex] = Instantiate(p_weaponPrefab, weaponParentSocket);
             }

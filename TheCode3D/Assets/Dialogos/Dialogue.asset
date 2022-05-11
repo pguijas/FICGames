@@ -215,8 +215,8 @@ MonoBehaviour:
     SpeakerName: Instrucciones
     PreviousMessage: 32
     NextMessage: 48
-    MessageText: Pulsa 'R' para recargar y usa el click derecho para apuntar y el
-      izquierdo para disparar.
+    MessageText: Usa el click derecho para apuntar y el izquierdo para disparar.
+      Pulsa 'R' para recargar.
     Clip: {fileID: 0}
   - ID: 35
     Speaker: 33
@@ -224,7 +224,7 @@ MonoBehaviour:
     PreviousMessage: 48
     NextMessage: 36
     MessageText: "tambi\xE9n podr\xE1s coger armas tiradas aproximandote y pulsando
-      la tecla 'E'."
+      la tecla 'E'. Podras llevar como maximo 2, alterna con las teclas 1 y 2."
     Clip: {fileID: 0}
   - ID: 36
     Speaker: 33

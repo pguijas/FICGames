@@ -16,11 +16,11 @@ public class GunSwayAnim : MonoBehaviour {
     void Update() {
         float t_xLookInput = Input.GetAxis("Mouse X");
         float t_yLookInput = Input.GetAxis("Mouse Y");
-        //Calculate the weapon rotation
+        // Calcular la rotación del arma
         Quaternion t_xAngleAdjustment = Quaternion.AngleAxis(-t_xLookInput * roationDelay, Vector3.up);
         Quaternion t_yAngleAdjustment = Quaternion.AngleAxis(t_yLookInput * roationDelay, Vector3.right);
         Quaternion t_targerRotation = originLocalRotation * t_xAngleAdjustment * t_yAngleAdjustment;
-        //Rotate towards tarjet rotation 
+        // rotacion del arma 
         transform.localRotation = Quaternion.Lerp(transform.localRotation, t_targerRotation, Time.deltaTime * 10f);
     }
 }

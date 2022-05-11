@@ -4,14 +4,14 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class WeaponController : MonoBehaviour{
-    //esta parte de aqui esta basatnte mal -> arreglarla 
-    // REVISAR LOS NOMBRES DE LAS VARIABLES (empiezan mayúsculas)
 
+    // Sonidos
     public AudioSource shootSound;
     public AudioSource reloadSound;
 
     [Header ("Model Dopeable")]
     [SerializeField]
+    // Modelo del arma que es el que se tira al suelo
     public GameObject dropeableModel;
     [Header ("Weapon Animations")]
     [SerializeField]
@@ -25,6 +25,7 @@ public class WeaponController : MonoBehaviour{
     
     [Header ("Gun Settings")]
     [SerializeField]
+    // Cambia el arma que muestra el hud
     public int typegun = 1;
     [SerializeField]
     public float Damage = 30f;
@@ -43,8 +44,10 @@ public class WeaponController : MonoBehaviour{
     [SerializeField]
     private float ShootDelay = 0.5f;
     [SerializeField]
+    // Recoil sin apuntar
     public float recoilForce = 4f;
     [SerializeField]
+    // Recoil apuntando
     public float RecoilCorrection = 2f;
     [SerializeField]
     private float BulletSpeed = 350f;
@@ -61,7 +64,6 @@ public class WeaponController : MonoBehaviour{
     private LayerMask Mask;
     [SerializeField]
     private LayerMask shootingMask;
-    private int shootingLayer = 9;
     
     private Animator animator;
     private float LastShootTime;
@@ -99,18 +101,22 @@ public class WeaponController : MonoBehaviour{
 
 
     public void Shoot() {
+        // comprobaciones para disparar o para recargar
         if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
+            // el disparo se realiza en una corrutina
             StartCoroutine(ShootCorroutine());
         } else if (currentMag == 0)
             Reload();
     }
 
-    // cambiar a sphere cast + raycast
+
     private IEnumerator ShootCorroutine(){
-        //animator.SetBool("Shooting", true);
+        // animación de fogueo y sonido
         ShootingSystem.Play();
         shootSound.Play();
+        // cálculo de la dirección de disparo del jugador
         Vector3 direction = GetDirection();
+        // IMPLEMENTACIÓN CON SPHERECAST -> al final ya lo hace Raycast por debajo
         /*
         // Trazamos un Spherecast para detectar colisiones y los añadimos a la capa shooting
         Collider[] rangeChecks = Physics.OverlapSphere(transform.position, 500, Mask);
@@ -136,9 +142,12 @@ public class WeaponController : MonoBehaviour{
             }
             // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
         }*/
+        // Trazamos un rayo desde la cámara en la dirección a la que esta apuntando el jugador, en las máscaras de enemigos y obstáculos
         if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
+            // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
             StartCoroutine(SpawnTrail(hit));
         } else {
+            // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
             StartCoroutine(SpawnTrail(direction));
         }
         LastShootTime = Time.time;
@@ -149,9 +158,6 @@ public class WeaponController : MonoBehaviour{
         AddRecoil();
         yield return null;
     }
-
-
-    /*           FÍSICAS DE DISPARO                */
     
     // Aleatorizar el vector que indica la direccion de disparo (bullet spread)
     private Vector3 GetDirection() {
@@ -174,6 +180,7 @@ public class WeaponController : MonoBehaviour{
     // Spawnear el trail desde el origen al punto de impacto
     private IEnumerator SpawnTrail(RaycastHit hit) {
         float time = 0;
+        // Creamos un objeto que animará nuestros disparos
         TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
         Vector3 startPosition = trail.transform.position;
         float distance = hit.distance;
@@ -181,19 +188,21 @@ public class WeaponController : MonoBehaviour{
         // distancia/velocidad = tiempo
         // spawneamos la bala un determinado tiempo
         while (time < distance/BulletSpeed) {
+            // movimiento de la bala
             trail.transform.position = Vector3.Lerp(startPosition, hit.point, time);
             time += BulletSpeed*Time.deltaTime/distance;
             yield return null;   
         }
         trail.transform.position = hit.point;
+        // después del tiempo necesario para llegar al punto de impacto
+        // comprobamos si hemos impactado con un enemigo
         SoldierPart soldier = hit.transform.GetComponent<SoldierPart>();
         if (soldier != null)
+            // si impactamos con uno, le quitamos salud
             soldier.DoDamage(Damage);
-        else {
+        else
+            // si no, instanciamos un animación de impacto en un obstáculo
             Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
-        }
-        if (hit.rigidbody != null)
-            hit.rigidbody.AddForce(-hit.normal * 60f);
         Destroy(trail.gameObject, trail.time);
     }
 
@@ -203,8 +212,10 @@ public class WeaponController : MonoBehaviour{
         float time = 0;
         TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
         Vector3 startPosition = trail.transform.position;
+        // precalculamos la distancia a la que llegará la bala
         Vector3 endPosition = startPosition + direction * 100;
         float distance = Vector3.Distance(startPosition, endPosition);
+        // renderizamos el efecto un determinado tiempo y después lo destruimos
         while (time < distance/BulletSpeed) {
             trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
             time += BulletSpeed*Time.deltaTime/distance;
@@ -214,13 +225,13 @@ public class WeaponController : MonoBehaviour{
         Destroy(trail.gameObject, trail.time);
     }
 
-
-    /*           ANIMACIONES DE DISPARO                */
-
+    // Esta función nos servirá para saber si se está ejecutando una animación de disparo
+    // para evitar realizar acciones que no se pueden, por ejemplo correr + apuntar.
     public bool IsAnimPlaying(string animation) {
         return animator.GetCurrentAnimatorStateInfo(0).IsName(animation);
     }
 
+    // Función para añadir una fuerza de retroceso al arma
     private void AddRecoil() {
         if (isAiming)
             transform.Rotate(-RecoilCorrection, 0f, 0f);
@@ -228,18 +239,22 @@ public class WeaponController : MonoBehaviour{
             transform.Rotate(-recoilForce, 0f, 0f);
     }
 
-
+    // Función global para realizar la recarca
     public void Reload() {
+        // comprobamos precondiciones
         if (isReloading == true || currentMag == MagSize || bullets == 0)
             return;
+        // iniciamos la animación de recarga y el sonido
         reloadSound.Play();
         animator.SetTrigger("Reload");
+        // actualizamos hud y flags
         EventManager.instance.UpdateBulletsEvent.Invoke(typegun,-1,bullets);
         isReloading = true;
+        // activamos una corrutina para actualizar el número de balas cuando se acabe la animación
         StartCoroutine(AfterReload());
     }
 
-    // esto esta mal, hay que hacerlo con animation events, pero en linux no me funciona
+    // Corrutina para activar la recarga una vez terminada la animación
     private IEnumerator AfterReload() {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         if (bullets >= MagSize) {
@@ -260,22 +275,26 @@ public class WeaponController : MonoBehaviour{
         EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
     }
 
+
     public bool IsReloading() {
         return isReloading;
     }
 
+    // Función para realizar el apuntado
     public void Aim() {
         if (!isAiming){
+            // la corrutina realiza toda la animación
             StartCoroutine(AimAnimation(originPosition, originPosition + aimcorrection));
             isAiming = true;
         }
     }
 
 
-    //revisar xq lo hice pero sin entenderlo al 100
+    // Animación de apuntado
     private IEnumerator AimAnimation(Vector3 origin, Vector3 target){
         float desiredDuration = .1f; //meterlo en otro lado
         float time = 0;
+        // vamos moviendo el arma hasta llegar a la posición de apuntado
         while (time < desiredDuration) {
             time += Time.deltaTime;
             transform.localPosition = Vector3.Lerp(origin, target, time/desiredDuration);
@@ -283,39 +302,49 @@ public class WeaponController : MonoBehaviour{
         }
     }
 
+
     public bool IsAiming() {
         return isAiming;
     }
 
+    // Desactivar cualquier animación
     public void Idle() {
+        // si se está apuntando, dejamos de apuntar
         if (isAiming) {
             StartCoroutine(AimAnimation(originPosition + aimcorrection, originPosition)); //recordar cargarse la otra corrutina
             isAiming = false;
         }
+        // desactivamos los flags de correr, y no dejamos correr a nuestro jugador
         animator.SetBool("Sprint",false);
         isSprinting = false;
-        GameObject player =GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindWithTag("Player");
         player.GetComponent<PlayerController>().StopSprint();
     }
 
+    // Sprint
     public void Sprint() {
+        // animación de sprint
         animator.SetBool("Sprint",true);
         isSprinting = true;
         GameObject player = GameObject.FindWithTag("Player");
+        // derivamos el sprint en el jugador
         player.GetComponent<PlayerController>().Sprint();
     }
+
 
     public bool IsSprinting() {
         return isSprinting;
     }
 
+    // Dropeo de un arma
     public void Drop() {
-        // Actualizamos las balas en el objeto a dropear
+        // Actualizamos las balas en el arma a dropear
         dropeableModel.GetComponent<DroppedWeapon>().SetBullets(currentMag,bullets);
-        // Drop
+        // Instanciamos el modelo dropeado
         GameObject drop = Instantiate(dropeableModel, transform.position, Quaternion.identity); 
         drop.GetComponent<Rigidbody>().AddForce(GameObject.FindWithTag("Player").transform.forward * 10f, ForceMode.Impulse);
         drop.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up * 10f, ForceMode.Impulse);
+        // eliminamos nuestra arma de las disponibles
         Destroy(gameObject);
     }
 }
