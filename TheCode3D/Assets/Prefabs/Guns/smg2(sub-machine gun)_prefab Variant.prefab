@@ -653,7 +653,7 @@ MonoBehaviour:
   MagSize: 35
   currentMag: 35
   maxbullets: 70
-  bullets: 70
+  bullets: 35
   isAutomatic: 1
   ShootDelay: 0.15
   recoilForce: 2

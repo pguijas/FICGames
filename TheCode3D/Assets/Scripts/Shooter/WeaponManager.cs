@@ -23,6 +23,8 @@ public class WeaponManager : MonoBehaviour {
             AddWeapon(startingWeapon);
         // Activamos arma
         weaponSlots[activeWeaponIndex].gameObject.SetActive(true);
+        weaponSlots[activeWeaponIndex].currentMag = weaponSlots[activeWeaponIndex].MagSize;
+        weaponSlots[activeWeaponIndex].bullets = weaponSlots[activeWeaponIndex].MagSize;
     }
 
     private void Update() {
@@ -74,8 +76,6 @@ public class WeaponManager : MonoBehaviour {
             }
         }
     }
-
-
 
     // Inicializar armas
     private int AddWeapon(WeaponController p_weaponPrefab) {
