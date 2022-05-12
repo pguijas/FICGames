@@ -1,0 +1,501 @@
+Unity Editor version:    2020.3.33f1 (915a7af8b0d5)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.3.1 (Build 21E258)
+Darwin version:          21.4.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52410
+Successfully changed project path to: /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D
+/Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 63.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Assets
+GfxDevice: creating device client; threaded=0
+2022-05-12 14:05:15.686 Unity[35111:1259403] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2022-05-12 14:05:15.686 Unity[35111:1259403] Metal devices available: 1
+2022-05-12 14:05:15.686 Unity[35111:1259403] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2022-05-12 14:05:15.686 Unity[35111:1259403] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 640
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56111
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003296 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 52.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.025 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1025ms)
+		BeginReloadAssembly (233ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (674ms)
+			LoadAssemblies (235ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (260ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (137ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003957 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.520 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1521ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1282ms)
+			LoadAssemblies (209ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (411ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (441ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (351ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.018942 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.052517 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Initializing Unity extensions:
+2022-05-12 14:05:20.615 Unity[35111:1259403] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000343a290 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-05-12 14:05:20.626 Unity[35111:1259403] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003420ee0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1710 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 200.9 MB.
+System memory in use after: 200.6 MB.
+
+Unloading 109 unused Assets to reduce memory usage. Loaded Objects now: 2202.
+Total: 3.233343 ms (FindLiveObjects: 0.150397 ms CreateObjectMapping: 0.063257 ms MarkObjects: 2.806084 ms  DeleteObjects: 0.212615 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_5.prefab
+  artifactKey: Guid(12b4eebf8d4563549ac51c8eea79737a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_5.prefab using Guid(12b4eebf8d4563549ac51c8eea79737a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d4694ddd23c77f88c22bad99b59f87') in 0.385195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_15.prefab
+  artifactKey: Guid(43c2b40910fdc7347a9b24eaa8cf4a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_15.prefab using Guid(43c2b40910fdc7347a9b24eaa8cf4a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106da5116500a6101db54de389e178a5') in 0.087159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000550 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_7.prefab
+  artifactKey: Guid(9bc53fc656ad0c046b71755ba0218977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_7.prefab using Guid(9bc53fc656ad0c046b71755ba0218977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b522ccf1e84a41fdd85b5d03f9ab85da') in 0.047298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_13.prefab
+  artifactKey: Guid(2f41411069fdac54a96b89d596a7a69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_13.prefab using Guid(2f41411069fdac54a96b89d596a7a69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344858667831dcf3ff4213804d7ee3a2') in 0.016059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_25.prefab
+  artifactKey: Guid(4362c5a9df5e48040bdfb79a25df45bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_25.prefab using Guid(4362c5a9df5e48040bdfb79a25df45bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5472e9693db002e1ab83268fe0069f') in 0.045536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000470 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_16.prefab
+  artifactKey: Guid(0f8a761de1ebdd741b7d97d57d054f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_16.prefab using Guid(0f8a761de1ebdd741b7d97d57d054f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8962feb4ab7d2f1d36630597770eee') in 0.019382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_19.prefab
+  artifactKey: Guid(d6c03edb0e4cc8542b7c9b665293b34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_19.prefab using Guid(d6c03edb0e4cc8542b7c9b665293b34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0deeba2ba2044a29ac41d45c48f7f5c2') in 0.031331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_2.prefab
+  artifactKey: Guid(f5cbc603d4f99ea4986d8f2ec5a479ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_2.prefab using Guid(f5cbc603d4f99ea4986d8f2ec5a479ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1acfa3e5c6d856f4ed2c833970da7f62') in 0.014785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_9.prefab
+  artifactKey: Guid(49ef492c893e3e549a7d1f8983d641d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_9.prefab using Guid(49ef492c893e3e549a7d1f8983d641d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d226f2c4a6fb1df27da5012ac931847') in 0.038850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002422 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_14.prefab
+  artifactKey: Guid(a69f6e3a9a6be3145848ddc4fe465b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_14.prefab using Guid(a69f6e3a9a6be3145848ddc4fe465b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae01b7b02a2db398d6eac0e9a8380f8') in 0.046777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_11.prefab
+  artifactKey: Guid(b20ee5f093f9aaa4eb816b2fe4bfb0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_11.prefab using Guid(b20ee5f093f9aaa4eb816b2fe4bfb0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a50785d39bda38e39306f14ad785b43') in 0.024831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_8.prefab
+  artifactKey: Guid(80b515f23ae6a6544bca47008edf25b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_8.prefab using Guid(80b515f23ae6a6544bca47008edf25b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40ec8b834a17aae9e411b35a2521c78') in 0.027999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass.prefab
+  artifactKey: Guid(8aca8d6c10c99fa4ab1bce2dcea74ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass.prefab using Guid(8aca8d6c10c99fa4ab1bce2dcea74ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4108a77df09a574ac0af649f8478f09d') in 0.045521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000581 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_10.prefab
+  artifactKey: Guid(b8b5d1fbe7ab5304fa03f7fb6f486a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_10.prefab using Guid(b8b5d1fbe7ab5304fa03f7fb6f486a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7230fbcfe5c56725b9474475388f980d') in 0.018524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_24.prefab
+  artifactKey: Guid(03f3f04fb7bde914ca33a9fe5d6ceb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_24.prefab using Guid(03f3f04fb7bde914ca33a9fe5d6ceb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5bb635e0f672f9e3b598d1ee942bf6') in 0.038105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_21.prefab
+  artifactKey: Guid(36de556be22e6784590c12214e0092e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_21.prefab using Guid(36de556be22e6784590c12214e0092e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4719898bc946d01b6a8c79ca64e4403d') in 0.019157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_6.prefab
+  artifactKey: Guid(31347e402e4454040a611165ab198d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_6.prefab using Guid(31347e402e4454040a611165ab198d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff4f07951960bac95228dc2db6b2a59') in 0.013702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_20.prefab
+  artifactKey: Guid(c8c87c0ac98f9a2458b83a50f789d70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_20.prefab using Guid(c8c87c0ac98f9a2458b83a50f789d70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0558bfa9b62e51c1177711d7305e90') in 0.033273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000698 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_22.prefab
+  artifactKey: Guid(95b8860f96b65e7499d76592a6923051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_22.prefab using Guid(95b8860f96b65e7499d76592a6923051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da30c6ebb4530500f38397725f33c33') in 0.017051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000572 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_12.prefab
+  artifactKey: Guid(0d3028055436e3449aea68abe0492d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_12.prefab using Guid(0d3028055436e3449aea68abe0492d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51314c1119d0e74246c991c3a9f2f8d') in 0.041055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_17.prefab
+  artifactKey: Guid(42ef4532f0580b4458e6dd59afbf8a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_17.prefab using Guid(42ef4532f0580b4458e6dd59afbf8a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a8f17ef25521e81d9c20553de99cd7') in 0.016387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_18.prefab
+  artifactKey: Guid(4fe7feb7f1e5c214da1654bd07e57807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_18.prefab using Guid(4fe7feb7f1e5c214da1654bd07e57807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abef37edf9a89c862bc1620d091cd164') in 0.064523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_23.prefab
+  artifactKey: Guid(d978425175226224082194bc9a1de580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_23.prefab using Guid(d978425175226224082194bc9a1de580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f8f3a6a2fbcf0f3bea749534da555e') in 0.015478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000521 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_1.prefab
+  artifactKey: Guid(bfe4d5d391c63d845bb094f83f140706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_1.prefab using Guid(bfe4d5d391c63d845bb094f83f140706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76ebfc913fd9444f8b85d50db6ea954c') in 0.040371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_4.prefab
+  artifactKey: Guid(50ad029403f04aa42800c58723220bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_4.prefab using Guid(50ad029403f04aa42800c58723220bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c99e85c22aea4e9d43ae41b81f7345ac') in 0.028423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_0.prefab
+  artifactKey: Guid(a604e8291c5d427499509c842df584f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_0.prefab using Guid(a604e8291c5d427499509c842df584f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08854549f9f57bc576a2f620008f1340') in 0.014815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_3.prefab
+  artifactKey: Guid(42b30bc62c7d1b84a96865dc9cf52934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Wand and Circles/Polygon City Free Pack - Environment and Interior/Prefabs/Grass/Grass_3.prefab using Guid(42b30bc62c7d1b84a96865dc9cf52934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc701a457ec0a5eff62d324003c9a76') in 0.066313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.322822 seconds.
+  path: Assets/Scripts/Shooter
+  artifactKey: Guid(85499eacb9cf64f80aa5f03f37b4e5c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Shooter using Guid(85499eacb9cf64f80aa5f03f37b4e5c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8a4258d4c8868cf734345b77063a41') in 0.001070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.099302 seconds.
+  path: Assets/Scripts/Shooter/WeaponController.cs
+  artifactKey: Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Shooter/WeaponController.cs using Guid(84693e1c3a0f4c886b70356cda7f3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68741ffaf12f9203738cf50ee4521106') in 0.861132 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001978 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-12 14:06:50.918 Unity[35111:1259403] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000034734f0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.505 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1506ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (69ms)
+		EndReloadAssembly (1245ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (474ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (286ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.4 MB.
+System memory in use after: 208.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2212.
+Total: 4.531631 ms (FindLiveObjects: 0.234858 ms CreateObjectMapping: 0.110779 ms MarkObjects: 4.155148 ms  DeleteObjects: 0.029379 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005855 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-12 14:09:35.963 Unity[35111:1259403] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000347c230 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.877 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1879ms)
+		BeginReloadAssembly (486ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (1306ms)
+			LoadAssemblies (586ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (363ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (444ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (319ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.6 MB.
+System memory in use after: 208.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2215.
+Total: 3.133198 ms (FindLiveObjects: 0.234446 ms CreateObjectMapping: 0.081371 ms MarkObjects: 2.787526 ms  DeleteObjects: 0.029028 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004654 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/pedro/Documents/UDC/4/CIIE/Prácticas/unity/FICGames/TheCode3D/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-05-12 14:10:56.777 Unity[35111:1259403] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600003456b50 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.047 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2048ms)
+		BeginReloadAssembly (487ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1498ms)
+			LoadAssemblies (786ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (386ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (488ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (354ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1686 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.8 MB.
+System memory in use after: 208.9 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2218.
+Total: 2.907373 ms (FindLiveObjects: 0.169880 ms CreateObjectMapping: 0.078975 ms MarkObjects: 2.635745 ms  DeleteObjects: 0.021826 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

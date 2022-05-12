@@ -30,10 +30,11 @@ public class WeaponManager : MonoBehaviour {
         if (activeWeaponIndex != -1 && Time.timeScale!=0f) {
             WeaponController activeWeapon = weaponSlots[activeWeaponIndex];
             // Números para cambiar de arma
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-                SwitchWeapon(0);
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-                SwitchWeapon(1);
+            if (!activeWeapon.IsReloading())
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                    SwitchWeapon(0);
+                else if (Input.GetKeyDown(KeyCode.Alpha2))
+                    SwitchWeapon(1);
           
             
             if (!activeWeapon.IsReloading()) {
