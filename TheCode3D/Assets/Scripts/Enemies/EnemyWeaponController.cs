@@ -37,10 +37,6 @@ public class EnemyWeaponController : MonoBehaviour {
     private Vector3 originPosition;
     private PlayerController Player;
 
-    // flags
-    private bool isReloading = false;
-    private bool isSprinting = false;
-
 
     private void Start(){
         originPosition = transform.localPosition;
