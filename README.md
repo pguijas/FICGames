@@ -1,2 +1,3 @@
 # FICGames
-Ola me llamo pedro i soi gei
+ 
+Que Deus nos abençoe e nos proteja.
