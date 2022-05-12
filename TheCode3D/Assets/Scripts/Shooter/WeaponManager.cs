@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// no se puede dropar, solo se puede recoger
-
 public class WeaponManager : MonoBehaviour {
 
     [Header ("Weapons")]
@@ -29,7 +27,7 @@ public class WeaponManager : MonoBehaviour {
 
 
     private void Update() {
-        if (activeWeaponIndex != -1) {
+        if (activeWeaponIndex != -1 && Time.timeScale!=0f) {
             WeaponController activeWeapon = weaponSlots[activeWeaponIndex];
             // Números para cambiar de arma
             if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -124,9 +122,9 @@ public class WeaponManager : MonoBehaviour {
     }
 
     public void SetMaxAmmo(){
-        foreach (WeaponController weapon in weaponSlots) {
-            if (weapon != null) 
-                weapon.SetMaxAmmo();
+        for (int i = 0; i<weaponSlots.Length; i++) {
+            if (weaponSlots[i] != null) 
+                weaponSlots[i].SetMaxAmmo(i==activeWeaponIndex);
         }
     }
 

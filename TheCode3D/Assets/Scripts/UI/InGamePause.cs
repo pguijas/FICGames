@@ -16,7 +16,7 @@ public class InGamePause : MonoBehaviour{
 
     void Update(){
         // Al pulsar ESC
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale!=0f){
             if (gameInPause)
                 Resume();
             else

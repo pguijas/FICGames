@@ -94,9 +94,10 @@ public class WeaponController : MonoBehaviour{
         return isAutomatic;
     }
 
-    public void SetMaxAmmo() {
+    public void SetMaxAmmo(bool notify = false) {
         bullets = maxbullets;
-        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
+        if (notify)
+            EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
     }
 
 
