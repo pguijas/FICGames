@@ -6,41 +6,41 @@ public class EnemyWeaponController : MonoBehaviour {
     
     [Header ("Gun Settings")]
     [SerializeField]
-    public float Damage = 10f;
+    public float damage = 10f;
 
     [Header ("Weapon Animations")]
     [SerializeField]
-    private ParticleSystem ShootingSystem;
+    private ParticleSystem shootingSystem;
     [SerializeField]
     public AudioSource shootSound;
     [SerializeField]
-    private Transform BulletSpawnPoint;
+    private Transform bulletSpawnPoint;
     [SerializeField]
-    private ParticleSystem ImpactParticleSystem;
+    private ParticleSystem impactParticleSystem;
     [SerializeField]
-    private TrailRenderer BulletTrail;
+    private TrailRenderer bulletTrail;
     
     [Header ("Shoot Settings")]
     [SerializeField]
-    private float ShootDelay = 0.5f;
+    private float shootDelay = 0.5f;
     [SerializeField]
-    private float BulletSpeed = 350f;
+    private float bulletSpeed = 350f;
     
     [Header ("Bullet Spreading")]
     [SerializeField]
-    private Vector3 BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
+    private Vector3 bulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
     
     [SerializeField]
-    private LayerMask Mask;
+    private LayerMask mask;
     
-    private float LastShootTime;
+    private float lastShootTime;
     private Vector3 originPosition;
-    private PlayerController Player;
+    private PlayerController player;
 
 
     private void Start(){
         originPosition = transform.localPosition;
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
 
@@ -48,33 +48,33 @@ public class EnemyWeaponController : MonoBehaviour {
         // utilizamos la distancia al jugador para ajustar
         // la dispersión de los disparos
         float conversion = distanceToTarget / 50;
-        if ((LastShootTime + ShootDelay) < Time.time) {
+        if ((lastShootTime + shootDelay) < Time.time) {
             // Animacion de fogeo y sonido
-            ShootingSystem.Play();
+            shootingSystem.Play();
             shootSound.Play();
             // Calculamos la dirección de disparo y la dispersión
             Vector3 direction = GetDirection(conversion);
             // Si el raycast impacta, el trail se renderiza hasta el punto de impacto, utilizamos las
             // capas de obstáculos y jugador para trazar este
-            if (Physics.Raycast(BulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, Mask)) {
+            if (Physics.Raycast(bulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, mask)) {
                 StartCoroutine(SpawnTrail(hit));
             } else {
                 // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
                 StartCoroutine(SpawnTrail(direction));
             }
-            LastShootTime = Time.time;
+            lastShootTime = Time.time;
         }
     }
     
     // Aleatorizar el vector que indica la direccion de disparo (bullet spread)
     private Vector3 GetDirection(float distance) {
-        Vector3 direction = Player.transform.position - BulletSpawnPoint.position;
+        Vector3 direction = player.transform.position - bulletSpawnPoint.position;
         // si la distancia es superior a 50 metros, no aplicamos dispersión
         if (distance < 1) {
             direction += new Vector3(
-                Random.Range(-(BulletSpreadVariance.x/distance), (BulletSpreadVariance.x/distance)),
-                Random.Range(-(BulletSpreadVariance.y/distance), (BulletSpreadVariance.y/distance)),
-                Random.Range(-(BulletSpreadVariance.z/distance), (BulletSpreadVariance.z/distance))
+                Random.Range(-(bulletSpreadVariance.x/distance), (bulletSpreadVariance.x/distance)),
+                Random.Range(-(bulletSpreadVariance.y/distance), (bulletSpreadVariance.y/distance)),
+                Random.Range(-(bulletSpreadVariance.z/distance), (bulletSpreadVariance.z/distance))
             );
         }
         direction.Normalize();
@@ -86,28 +86,28 @@ public class EnemyWeaponController : MonoBehaviour {
     private IEnumerator SpawnTrail(RaycastHit hit) {
         float time = 0;
         // Creamos un objeto que animará nuestros disparos
-        TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
+        TrailRenderer trail = Instantiate(bulletTrail, bulletSpawnPoint.position, Quaternion.identity);
         Vector3 startPosition = trail.transform.position;
         float distance = hit.distance;
         // un impacto q este a BulletSpeed m -> 1 segundo
         // distancia/velocidad = tiempo
         // spawneamos la bala un determinado tiempo
-        while (time < distance/BulletSpeed) {
+        while (time < distance/bulletSpeed) {
             // movimiento de la bala
             trail.transform.position = Vector3.Lerp(startPosition, hit.point, time);
-            time += BulletSpeed*Time.deltaTime/distance;
+            time += bulletSpeed*Time.deltaTime/distance;
             yield return null;
         }
         trail.transform.position = hit.point;
         // después del tiempo necesario para llegar al punto de impacto
         // comprobamos si hemos impactado en el jugador
-        PlayerController player = hit.transform.GetComponent<PlayerController>();
-        if (player != null)
+        PlayerController impact = hit.transform.GetComponent<PlayerController>();
+        if (impact != null)
             // si impactamos en el jugador, le quitamos salud
-            player.TakeDamage(Damage);
+            impact.TakeDamage(damage);
         else
             // si no, instanciamos un animación de impacto en un obstáculo
-            Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+            Instantiate(impactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(trail.gameObject, trail.time);
     }
 
@@ -115,15 +115,15 @@ public class EnemyWeaponController : MonoBehaviour {
     // por ejemplo disparar al cielo
     private IEnumerator SpawnTrail(Vector3 direction) {
         float time = 0;
-        TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
+        TrailRenderer trail = Instantiate(bulletTrail, bulletSpawnPoint.position, Quaternion.identity);
         Vector3 startPosition = trail.transform.position;
         // precalculamos la distancia a la que llegará la bala
         Vector3 endPosition = startPosition + direction * 100;
         float distance = Vector3.Distance(startPosition, endPosition);
         // renderizamos el efecto un determinado tiempo y después lo destruimos
-        while (time < distance/BulletSpeed) {
+        while (time < distance/bulletSpeed) {
             trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
-            time += BulletSpeed*Time.deltaTime/distance;
+            time += bulletSpeed*Time.deltaTime/distance;
             yield return null;
         }
         trail.transform.position = endPosition;

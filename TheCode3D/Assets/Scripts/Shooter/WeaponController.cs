@@ -15,22 +15,22 @@ public class WeaponController : MonoBehaviour{
     public GameObject dropeableModel;
     [Header ("Weapon Animations")]
     [SerializeField]
-    private ParticleSystem ShootingSystem;
+    private ParticleSystem shootingSystem;
     [SerializeField]
-    private Transform BulletSpawnPoint;
+    private Transform bulletSpawnPoint;
     [SerializeField]
-    private ParticleSystem ImpactParticleSystem;
+    private ParticleSystem impactParticleSystem;
     [SerializeField]
-    private TrailRenderer BulletTrail;
+    private TrailRenderer bulletTrail;
     
     [Header ("Gun Settings")]
     [SerializeField]
     // Cambia el arma que muestra el hud
     public int typegun = 1;
     [SerializeField]
-    public float Damage = 30f;
+    public float damage = 30f;
     [SerializeField]
-    public int MagSize = 30;
+    public int magSize = 30;
     [SerializeField]
     public int currentMag = 30;
     [SerializeField]
@@ -42,31 +42,29 @@ public class WeaponController : MonoBehaviour{
 
     [Header ("Shoot Settings")]
     [SerializeField]
-    private float ShootDelay = 0.5f;
+    private float shootDelay = 0.5f;
     [SerializeField]
     // Recoil sin apuntar
     public float recoilForce = 4f;
     [SerializeField]
     // Recoil apuntando
-    public float RecoilCorrection = 2f;
+    public float recoilCorrection = 2f;
     [SerializeField]
-    private float BulletSpeed = 350f;
+    private float bulletSpeed = 350f;
     [SerializeField]
     public Vector3 aimcorrection = new Vector3(0f, 0f, 0f);
     
     [Header ("Bullet Spreading")]
     [SerializeField]
-    private bool AddBulletSpread = true;
+    private bool addBulletSpread = true;
     [SerializeField]
-    private Vector3 BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
+    private Vector3 bulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
     
     [SerializeField]
-    private LayerMask Mask;
-    [SerializeField]
-    private LayerMask shootingMask;
+    private LayerMask mask;
     
     private Animator animator;
-    private float LastShootTime;
+    private float lastShootTime;
     private Vector3 originPosition;
 
     // flags
@@ -77,7 +75,7 @@ public class WeaponController : MonoBehaviour{
 
     private void Start(){
         originPosition = transform.localPosition;
-        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun, currentMag, bullets);
     }
 
 
@@ -86,7 +84,7 @@ public class WeaponController : MonoBehaviour{
     }
 
     private void OnEnable(){
-        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun, currentMag, bullets);
     }
 
 
@@ -97,13 +95,13 @@ public class WeaponController : MonoBehaviour{
     public void SetMaxAmmo(bool notify = false) {
         bullets = maxbullets;
         if (notify)
-            EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
+            EventManager.instance.UpdateBulletsEvent.Invoke(typegun, currentMag, bullets);
     }
 
 
     public void Shoot() {
         // comprobaciones para disparar o para recargar
-        if ((LastShootTime + ShootDelay < Time.time) && (currentMag > 0) && !isReloading) {
+        if ((lastShootTime + shootDelay < Time.time) && (currentMag > 0) && !isReloading) {
             // el disparo se realiza en una corrutina
             StartCoroutine(ShootCorroutine());
         } else if (currentMag == 0)
@@ -113,7 +111,7 @@ public class WeaponController : MonoBehaviour{
 
     private IEnumerator ShootCorroutine(){
         // animación de fogueo y sonido
-        ShootingSystem.Play();
+        shootingSystem.Play();
         shootSound.Play();
         // cálculo de la dirección de disparo del jugador
         Vector3 direction = GetDirection();
@@ -144,17 +142,17 @@ public class WeaponController : MonoBehaviour{
             // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
         }*/
         // Trazamos un rayo desde la cámara en la dirección a la que esta apuntando el jugador, en las máscaras de enemigos y obstáculos
-        if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, Mask)){
+        if (Physics.Raycast(GameObject.FindWithTag("MainCamera").transform.position, direction, out RaycastHit hit, float.MaxValue, mask)){
             // Si el raycast impacta, el trail se renderiza hasta el punto de impacto
             StartCoroutine(SpawnTrail(hit));
         } else {
             // Si no impacta, lo renderizamos desde la boquilla en línea recta + dispersión una determinada distancia
             StartCoroutine(SpawnTrail(direction));
         }
-        LastShootTime = Time.time;
+        lastShootTime = Time.time;
         currentMag -= 1;
         //Actualizamos Hud
-        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun, currentMag, bullets);
         // Fuerza de retroceso en el arma
         AddRecoil();
         yield return null;
@@ -163,14 +161,14 @@ public class WeaponController : MonoBehaviour{
     // Aleatorizar el vector que indica la direccion de disparo (bullet spread)
     private Vector3 GetDirection() {
         Vector3 direction = transform.forward;
-        if (AddBulletSpread) {
+        if (addBulletSpread) {
             // Añadimos una dispersión aleatoria al vector de dirección, 
             // si estamos apuntando
             if (!isAiming) {
                 direction += new Vector3(
-                    Random.Range(-BulletSpreadVariance.x, BulletSpreadVariance.x),
-                    Random.Range(-BulletSpreadVariance.y, BulletSpreadVariance.y),
-                    Random.Range(-BulletSpreadVariance.z, BulletSpreadVariance.z)
+                    Random.Range(-bulletSpreadVariance.x, bulletSpreadVariance.x),
+                    Random.Range(-bulletSpreadVariance.y, bulletSpreadVariance.y),
+                    Random.Range(-bulletSpreadVariance.z, bulletSpreadVariance.z)
                 );
                 direction.Normalize();
             }
@@ -182,16 +180,16 @@ public class WeaponController : MonoBehaviour{
     private IEnumerator SpawnTrail(RaycastHit hit) {
         float time = 0;
         // Creamos un objeto que animará nuestros disparos
-        TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
+        TrailRenderer trail = Instantiate(bulletTrail, bulletSpawnPoint.position, Quaternion.identity);
         Vector3 startPosition = trail.transform.position;
         float distance = hit.distance;
         // un impacto q este a BulletSpeed m -> 1 segundo
         // distancia/velocidad = tiempo
         // spawneamos la bala un determinado tiempo
-        while (time < distance/BulletSpeed) {
+        while (time < distance/bulletSpeed) {
             // movimiento de la bala
             trail.transform.position = Vector3.Lerp(startPosition, hit.point, time);
-            time += BulletSpeed*Time.deltaTime/distance;
+            time += bulletSpeed*Time.deltaTime/distance;
             yield return null;   
         }
         trail.transform.position = hit.point;
@@ -200,10 +198,10 @@ public class WeaponController : MonoBehaviour{
         SoldierPart soldier = hit.transform.GetComponent<SoldierPart>();
         if (soldier != null)
             // si impactamos con uno, le quitamos salud
-            soldier.DoDamage(Damage);
+            soldier.DoDamage(damage);
         else
             // si no, instanciamos un animación de impacto en un obstáculo
-            Instantiate(ImpactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
+            Instantiate(impactParticleSystem, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(trail.gameObject, trail.time);
     }
 
@@ -211,15 +209,15 @@ public class WeaponController : MonoBehaviour{
     // para dar sensación de disparo hasta el infinito
     private IEnumerator SpawnTrail(Vector3 direction) {
         float time = 0;
-        TrailRenderer trail = Instantiate(BulletTrail, BulletSpawnPoint.position, Quaternion.identity);
+        TrailRenderer trail = Instantiate(bulletTrail, bulletSpawnPoint.position, Quaternion.identity);
         Vector3 startPosition = trail.transform.position;
         // precalculamos la distancia a la que llegará la bala
         Vector3 endPosition = startPosition + direction * 100;
         float distance = Vector3.Distance(startPosition, endPosition);
         // renderizamos el efecto un determinado tiempo y después lo destruimos
-        while (time < distance/BulletSpeed) {
+        while (time < distance/bulletSpeed) {
             trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
-            time += BulletSpeed*Time.deltaTime/distance;
+            time += bulletSpeed*Time.deltaTime/distance;
             yield return null;   
         }
         trail.transform.position = endPosition;
@@ -235,7 +233,7 @@ public class WeaponController : MonoBehaviour{
     // Función para añadir una fuerza de retroceso al arma
     private void AddRecoil() {
         if (isAiming)
-            transform.Rotate(-RecoilCorrection, 0f, 0f);
+            transform.Rotate(-recoilCorrection, 0f, 0f);
         else 
             transform.Rotate(-recoilForce, 0f, 0f);
     }
@@ -243,7 +241,7 @@ public class WeaponController : MonoBehaviour{
     // Función global para realizar la recarca
     public void Reload() {
         // comprobamos precondiciones
-        if (isReloading == true || currentMag == MagSize || bullets == 0)
+        if (isReloading == true || currentMag == magSize || bullets == 0)
             return;
         // iniciamos la animación de recarga y el sonido
         reloadSound.Play();
@@ -258,22 +256,22 @@ public class WeaponController : MonoBehaviour{
     // Corrutina para activar la recarga una vez terminada la animación
     private IEnumerator AfterReload() {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        if (bullets >= MagSize) {
-            int load = MagSize - currentMag%MagSize;
+        if (bullets >= magSize) {
+            int load = magSize - currentMag%magSize;
             bullets -= load;
             currentMag += load;
         } else {
             int tmp = bullets + currentMag;
-            if (tmp > MagSize) {
-                bullets = tmp % MagSize;
-                currentMag = MagSize;
+            if (tmp > magSize) {
+                bullets = tmp % magSize;
+                currentMag = magSize;
             } else {
                 currentMag = tmp;
                 bullets = 0;
             }
         }
         isReloading = false;
-        EventManager.instance.UpdateBulletsEvent.Invoke(typegun,currentMag,bullets);
+        EventManager.instance.UpdateBulletsEvent.Invoke(typegun, currentMag, bullets);
     }
 
 

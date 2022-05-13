@@ -160,6 +160,14 @@ PrefabInstance:
       propertyPath: soldier
       value: 
       objectReference: {fileID: 5707053756759818688}
+    - target: {fileID: 7938877530094888010, guid: e47922cb6751292998db8f72ac46e03d, type: 3}
+      propertyPath: damage
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938877530094888010, guid: e47922cb6751292998db8f72ac46e03d, type: 3}
+      propertyPath: shootDelay
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8032125774555237666, guid: e47922cb6751292998db8f72ac46e03d, type: 3}
       propertyPath: soldier
       value: 

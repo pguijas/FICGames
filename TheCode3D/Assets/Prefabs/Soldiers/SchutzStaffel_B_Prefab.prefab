@@ -149,16 +149,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b596977aac69de009c609e1e5f00e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 30
-  ShootingSystem: {fileID: 7019555522244326923}
+  damage: 35
+  shootingSystem: {fileID: 7019555522244326923}
   shootSound: {fileID: 38721797155840867}
-  BulletSpawnPoint: {fileID: 7180280245738374981}
-  ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
-  BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
-  ShootDelay: 0.2
-  BulletSpeed: 350
-  BulletSpreadVariance: {x: 0.001, y: 0.001, z: 0.001}
-  Mask:
+  bulletSpawnPoint: {fileID: 7180280245738374981}
+  impactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
+  bulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
+  shootDelay: 0.2
+  bulletSpeed: 350
+  bulletSpreadVariance: {x: 0.1, y: 0.1, z: 0.1}
+  mask:
     serializedVersion: 2
     m_Bits: 384
 --- !u!82 &38721797155840867

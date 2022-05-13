@@ -652,30 +652,27 @@ MonoBehaviour:
   shootSound: {fileID: 7093015421469774525}
   reloadSound: {fileID: 5798595054465051035}
   dropeableModel: {fileID: 2249230036487248749, guid: 19712ea4a161c402699f2f75ac1b6790, type: 3}
-  ShootingSystem: {fileID: 2199367952236641572}
-  BulletSpawnPoint: {fileID: 2038647555923758186}
-  ImpactParticleSystem: {fileID: 9064919875212695174, guid: a5e1e2c4d2cd81f4abed6272a2b8187a, type: 3}
-  BulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
+  shootingSystem: {fileID: 2199367952236641572}
+  bulletSpawnPoint: {fileID: 2038647555923758186}
+  impactParticleSystem: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
+  bulletTrail: {fileID: 328621789431213768, guid: 43559d27d223bf340b413fde1315c256, type: 3}
   typegun: 1
-  Damage: 90
-  MagSize: 40
+  damage: 90
+  magSize: 40
   currentMag: 40
-  maxbullets: 90
+  maxbullets: 80
   bullets: 40
   isAutomatic: 1
-  ShootDelay: 0.2
+  shootDelay: 0.2
   recoilForce: 3
-  RecoilCorrection: 1.7
-  BulletSpeed: 420
+  recoilCorrection: 2
+  bulletSpeed: 400
   aimcorrection: {x: -0.25, y: 0.06, z: -0.31}
-  AddBulletSpread: 1
-  BulletSpreadVariance: {x: 0.05, y: 0.05, z: 0.05}
-  Mask:
+  addBulletSpread: 1
+  bulletSpreadVariance: {x: 0.04, y: 0.04, z: 0.04}
+  mask:
     serializedVersion: 2
     m_Bits: 192
-  shootingMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &3553153515936006193
 MonoBehaviour:
   m_ObjectHideFlags: 0

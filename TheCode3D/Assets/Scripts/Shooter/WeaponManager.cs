@@ -21,8 +21,8 @@ public class WeaponManager : MonoBehaviour {
             AddWeapon(startingWeapon);
         // Activamos arma y rellenamos balas (hubo un bug en el cual a veces aparecíamos sin balas)
         weaponSlots[activeWeaponIndex].gameObject.SetActive(true);
-        weaponSlots[activeWeaponIndex].currentMag = weaponSlots[activeWeaponIndex].MagSize;
-        weaponSlots[activeWeaponIndex].bullets = weaponSlots[activeWeaponIndex].MagSize;
+        weaponSlots[activeWeaponIndex].currentMag = weaponSlots[activeWeaponIndex].magSize;
+        weaponSlots[activeWeaponIndex].bullets = weaponSlots[activeWeaponIndex].magSize;
     }
 
 
