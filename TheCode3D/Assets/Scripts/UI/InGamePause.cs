@@ -13,14 +13,15 @@ public class InGamePause : MonoBehaviour{
     void Start(){
         audioManager = AudioManager.instance;
     }
-
+    
     void Update(){
         // Al pulsar ESC
-        if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale!=0f){
+        if (Input.GetKeyDown(KeyCode.Escape)){
             if (gameInPause)
                 Resume();
             else
-                Pause();
+                if (Time.timeScale!=0f)
+                    Pause();
         }
     }
 
